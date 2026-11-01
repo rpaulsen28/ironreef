@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iron Reef LLC | Rodeo &amp; Dive Consulting</title>
+<meta name="description" content="Iron Reef LLC offers rodeo consulting and rodeo school instruction in every IGRA event, plus dive consulting from a certified divemaster with Caribbean and US freshwater experience. Based in Kansas City, Missouri.">
+<meta property="og:title" content="Iron Reef LLC | Rodeo &amp; Dive Consulting">
+<meta property="og:description" content="Rodeo school instruction in every IGRA event, and dive consulting from a certified divemaster.">
+<meta property="og:image" content="logo.webp">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Work+Sans:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#f9f6f3; --cream-2:#f0e9e0;
+    --navy:#012e4d; --navy-2:#0b3d63; --wave:#40607a; --sea:#2f6290;
+    --tan:#a98262; --tan-dark:#8a6648; --tan-light:#d0c3b4;
+    --ink:#1b2430; --muted:#5a6573;
+    --display:"Holtwood One SC", Georgia, serif;
+    --body:"Source Serif 4", Georgia, serif;
+    --ui:"Work Sans", system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--cream);color:var(--ink);font-family:var(--body);font-size:1.08rem;line-height:1.65}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+  section[id]{scroll-margin-top:72px}
+
+  /* Nav */
+  header{position:sticky;top:0;z-index:10;background:rgba(249,246,243,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--tan-light)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy)}
+  .brand img{width:52px;height:45px;object-fit:contain}
+  .brand span{font-family:var(--display);font-size:1.2rem;letter-spacing:.04em}
+  nav ul{display:flex;gap:24px;list-style:none;font-family:var(--ui);font-weight:600;font-size:.84rem;letter-spacing:.1em;text-transform:uppercase}
+  nav a{text-decoration:none;color:var(--navy);padding:6px 0;border-bottom:2px solid transparent}
+  nav a:hover{border-color:var(--tan)}
+  .short{display:none}
+  @media (max-width:820px){ nav ul{gap:12px;font-size:.72rem;letter-spacing:.05em} .brand span{display:none} .full{display:none} .short{display:inline} }
+
+  /* Shared */
+  .eyebrow{font-family:var(--ui);font-weight:600;font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--tan)}
+  .section-title{font-family:var(--display);font-size:clamp(1.9rem,4.4vw,3rem);line-height:1.12;margin:8px 0 16px;letter-spacing:.02em}
+  .lede{font-size:1.15rem;max-width:62ch}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;font-family:var(--ui);font-weight:600;font-size:.88rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:14px 24px;border-radius:3px;border:2px solid var(--navy);transition:.2s}
+  .btn.solid{background:var(--navy);color:var(--cream)}
+  .btn.solid:hover{background:var(--navy-2)}
+  .btn.line{color:var(--navy)}
+  .btn.line:hover{background:var(--navy);color:var(--cream)}
+  .btn.tan{background:var(--tan);border-color:var(--tan);color:#fff}
+  .btn.tan:hover{background:var(--tan-dark);border-color:var(--tan-dark)}
+  .btn.light{border-color:var(--cream);color:var(--cream)}
+  .btn.light:hover{background:var(--cream);color:var(--navy)}
+
+  /* Hero */
+  .hero{padding:48px 0 64px;text-align:center}
+  .hero .logo{width:min(360px,76vw);margin:0 auto}
+  .hero h1{font-family:var(--body);font-weight:600;font-size:clamp(1.6rem,3.6vw,2.4rem);color:var(--navy);margin:10px auto 10px;max-width:24ch;line-height:1.2}
+  .hero p{color:var(--muted);max-width:58ch;margin:0 auto 28px}
+  .hero .btns{justify-content:center}
+
+  /* Split chooser */
+  .chooser{display:grid;grid-template-columns:1fr 1fr}
+  @media (max-width:760px){.chooser{grid-template-columns:1fr}}
+  .choice{padding:48px clamp(20px,5vw,64px);text-decoration:none;display:block;transition:.25s}
+  .choice.rodeo{background:var(--tan);color:#fff}
+  .choice.dive{background:var(--navy);color:var(--cream)}
+  .choice:hover{filter:brightness(1.08)}
+  .choice .eyebrow{color:inherit;opacity:.85}
+  .choice h2{font-family:var(--display);font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:.03em;margin:6px 0 8px}
+  .choice p{opacity:.92;max-width:44ch}
+  .choice .go{font-family:var(--ui);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.82rem;margin-top:18px;display:inline-block;border-bottom:2px solid currentColor;padding-bottom:2px}
+
+  /* Rodeo consulting */
+  .rodeo-sec{padding:96px 0;background:var(--cream)}
+  .rodeo-sec .section-title{color:var(--navy)}
+  .rodeo-sec .lede{color:var(--ink)}
+  .events{margin-top:48px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  @media (max-width:900px){.events{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:520px){.events{grid-template-columns:1fr}}
+  .ev{background:#fff;border:1px solid var(--tan-light);border-top:4px solid var(--tan);border-radius:4px;padding:22px 22px 24px}
+  .ev h3{font-family:var(--display);font-size:1.12rem;color:var(--navy);letter-spacing:.03em;margin-bottom:12px}
+  .ev ul{list-style:none;display:grid;gap:8px}
+  .ev li{font-family:var(--ui);font-weight:500;font-size:.95rem;padding-left:18px;position:relative}
+  .ev li::before{content:"\2726";position:absolute;left:0;color:var(--tan);font-size:.72rem;top:.25em}
+  .events-note{margin-top:14px;font-family:var(--ui);font-size:.85rem;color:var(--muted)}
+
+  .offer{margin-top:64px;display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  @media (max-width:760px){.offer{grid-template-columns:1fr}}
+  .offer-item{padding:28px 28px 30px;border-radius:4px;background:var(--cream-2);border:1px solid var(--tan-light)}
+  .offer-item .n{font-family:var(--ui);font-weight:600;color:var(--tan);letter-spacing:.2em;font-size:.78rem}
+  .offer-item h4{font-family:var(--body);font-weight:600;font-size:1.3rem;color:var(--navy);margin:4px 0 8px;line-height:1.25}
+  .offer-item p{color:var(--muted)}
+  .sec-cta{margin-top:44px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+  .sec-cta span{color:var(--muted)}
+
+  .wave{display:block;width:100%;height:80px}
+
+  /* Dive consulting */
+  .dive-sec{background:var(--navy);color:var(--cream);padding:40px 0 96px}
+  .dive-sec .lede{color:#d4dde7}
+  .regions{margin-top:48px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  @media (max-width:760px){.regions{grid-template-columns:1fr}}
+  .region{border-radius:6px;padding:34px 30px;border:1px solid rgba(255,255,255,.14)}
+  .region.carib{background:linear-gradient(155deg,#2f6f9e,#0b3d63)}
+  .region.fresh{background:linear-gradient(155deg,#35576f,#0d2f45)}
+  .region .tag{font-family:var(--ui);font-weight:600;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--tan-light)}
+  .region h3{font-family:var(--display);font-size:1.5rem;letter-spacing:.03em;margin:6px 0 10px}
+  .region p{color:#d4dde7}
+  .dive-sec .offer-item{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)}
+  .dive-sec .offer-item h4{color:var(--cream)}
+  .dive-sec .offer-item p{color:#c3cfdb}
+  .dive-sec .sec-cta span{color:#c3cfdb}
+  .scope{margin-top:28px;font-family:var(--ui);font-size:.85rem;color:#9fb1c3;max-width:70ch}
+
+  /* About */
+  .about{padding:88px 0}
+  .about .grid{display:grid;grid-template-columns:260px 1fr;gap:56px;align-items:center}
+  @media (max-width:800px){.about .grid{grid-template-columns:1fr;gap:28px}.about .badge{max-width:220px;margin:auto}}
+  .badge{background:var(--cream-2);border-radius:50%;padding:26px;border:2px solid var(--tan-light)}
+  .about .section-title{color:var(--navy);font-size:clamp(1.6rem,3.4vw,2.3rem)}
+  .about p+p{margin-top:14px}
+
+  /* Contact */
+  .contact{padding:88px 0;text-align:center;background:var(--cream-2);border-top:1px solid var(--tan-light)}
+  .contact .section-title{color:var(--navy)}
+  .contact p{color:var(--muted);max-width:54ch;margin:0 auto 28px}
+  .contact .btns{justify-content:center}
+  .contact-lines{display:flex;gap:28px;justify-content:center;flex-wrap:wrap;margin-top:30px;font-family:var(--ui);font-weight:500}
+  .contact-lines a{color:var(--navy);text-decoration:none;border-bottom:1px solid var(--tan-light)}
+  .contact-lines a:hover{border-color:var(--navy)}
+  .contact-lines span{color:var(--navy)}
+
+  footer{background:var(--navy);color:#b9c6d3;padding:32px 0;font-family:var(--ui);font-size:.85rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+  footer .star{color:var(--tan);margin-inline:8px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><img src="emblem.webp" alt="" width="52" height="45"><span>Iron Reef</span></a>
+    <nav><ul>
+      <li><a href="#rodeo"><span class="full">Rodeo Consulting</span><span class="short">Rodeo</span></a></li>
+      <li><a href="#dive"><span class="full">Dive Consulting</span><span class="short">Dive</span></a></li>
+      <li><a href="eat-for-your-heart/"><span class="full">Eat for your Heart</span><span class="short">Recipes</span></a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <img class="logo" src="logo.webp" alt="Iron Reef LLC logo: a bull's head over an anchor, set above ocean waves" width="360" height="360">
+      <h1>Consulting for the arena and the open water.</h1>
+      <p>Rodeo school instruction in every IGRA event, and dive consulting from a certified divemaster with Caribbean and US freshwater experience.</p>
+      <div class="btns">
+        <a class="btn solid" href="#rodeo">Rodeo consulting</a>
+        <a class="btn line" href="#dive">Dive consulting</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="chooser">
+    <a class="choice rodeo" href="#rodeo">
+      <div class="eyebrow">In the arena</div>
+      <h2>Rodeo Consulting</h2>
+      <p>Rodeo school instruction and coaching across all 13 IGRA events, from first-timers to seasoned competitors.</p>
+      <span class="go">Explore rodeo</span>
+    </a>
+    <a class="choice dive" href="#dive">
+      <div class="eyebrow">Below the surface</div>
+      <h2>Dive Consulting</h2>
+      <p>Divemaster guidance for Caribbean destinations and freshwater dive sites across the US.</p>
+      <span class="go">Explore diving</span>
+    </a>
+  </div>
+
+  <!-- RODEO CONSULTING -->
+  <section class="rodeo-sec" id="rodeo">
+    <div class="wrap">
+      <div class="eyebrow">Rodeo Consulting</div>
+      <h2 class="section-title">Rodeo school, every event</h2>
+      <p class="lede">Whether you've never sat on a horse or you're chasing points at the Finals, Iron Reef teaches every event offered at an IGRA rodeo. Sessions cover technique, safety, arena rules and the mental side of competing.</p>
+
+      <div class="events">
+        <div class="ev">
+          <h3>Rough Stock</h3>
+          <ul><li>Bull Riding</li><li>Ranch Saddle Bronc Riding</li><li>Steer Riding</li><li>Chute Dogging</li></ul>
+        </div>
+        <div class="ev">
+          <h3>Roping</h3>
+          <ul><li>Calf Roping on Foot</li><li>Mounted Breakaway Roping</li><li>Team Roping</li></ul>
+        </div>
+        <div class="ev">
+          <h3>Speed</h3>
+          <ul><li>Barrel Racing</li><li>Pole Bending</li><li>Flag Racing</li></ul>
+        </div>
+        <div class="ev">
+          <h3>Camp Events</h3>
+          <ul><li>Steer Decorating</li><li>Wild Drag Race</li><li>Goat Dressing</li></ul>
+        </div>
+      </div>
+      <p class="events-note">All 13 IGRA-sanctioned events, grouped the way IGRA groups them.</p>
+
+      <div class="offer">
+        <div class="offer-item">
+          <div class="n">01</div>
+          <h4>Rodeo school instruction</h4>
+          <p>Group clinics that walk new contestants through each event: equipment, rules, safety and hands-on practice.</p>
+        </div>
+        <div class="offer-item">
+          <div class="n">02</div>
+          <h4>One-on-one event coaching</h4>
+          <p>Focused coaching on the events you're entering, with feedback on technique, timing and consistency.</p>
+        </div>
+        <div class="offer-item">
+          <div class="n">03</div>
+          <h4>Rodeo school planning for associations</h4>
+          <p>Help for state and regional associations organizing a rodeo school: schedule, event stations, safety plans and volunteer roles.</p>
+        </div>
+        <div class="offer-item">
+          <div class="n">04</div>
+          <h4>First rodeo readiness</h4>
+          <p>Choosing your first events, what to bring, how entries work and what to expect on rodeo weekend.</p>
+        </div>
+      </div>
+
+      <div class="sec-cta">
+        <a class="btn tan" href="mailto:paulsen742@hotmail.com?subject=Rodeo%20consulting%20inquiry">Ask about rodeo consulting</a>
+        <span>Tell me which events you're interested in and your experience level.</span>
+      </div>
+    </div>
+  </section>
+
+  <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="background:var(--cream)">
+    <path d="M0 44 C 180 8 360 8 540 40 S 900 76 1080 44 S 1320 12 1440 36 V80 H0Z" fill="#40607a" opacity=".55"/>
+    <path d="M0 56 C 200 26 380 30 560 54 S 920 84 1100 58 S 1330 34 1440 50 V80 H0Z" fill="#012e4d"/>
+  </svg>
+
+  <!-- DIVE CONSULTING -->
+  <section class="dive-sec" id="dive">
+    <div class="wrap">
+      <div class="eyebrow">Dive Consulting</div>
+      <h2 class="section-title">Dive with a divemaster's eye</h2>
+      <p class="lede">As a certified divemaster, I've led and supported divers in Caribbean waters and at freshwater dive sites across the US. Dive consulting puts that experience to work for your next trip, whether it's a reef vacation or a weekend at an inland site.</p>
+
+      <div class="regions">
+        <div class="region carib">
+          <div class="tag">Saltwater</div>
+          <h3>The Caribbean</h3>
+          <p>Choosing islands and dive operators, matching reefs, walls and wrecks to your skill level, and planning dive days around the season and conditions.</p>
+        </div>
+        <div class="region fresh">
+          <div class="tag">Freshwater</div>
+          <h3>US Freshwater Sites</h3>
+          <p>Quarries, lakes and springs close to home: what to expect from cold water, thermoclines and limited visibility, and how to gear up for them.</p>
+        </div>
+      </div>
+
+      <div class="offer">
+        <div class="offer-item">
+          <div class="n">01</div>
+          <h4>Dive trip planning</h4>
+          <p>Destination, operator and itinerary recommendations built around your certification level and goals.</p>
+        </div>
+        <div class="offer-item">
+          <div class="n">02</div>
+          <h4>Skills and readiness check-ins</h4>
+          <p>Getting comfortable again before a trip, especially after time away from the water.</p>
+        </div>
+        <div class="offer-item">
+          <div class="n">03</div>
+          <h4>Gear guidance</h4>
+          <p>What to buy, rent or bring for warm Caribbean water versus cold freshwater diving.</p>
+        </div>
+        <div class="offer-item">
+          <div class="n">04</div>
+          <h4>Group and club trip support</h4>
+          <p>Planning help for dive clubs and groups heading out together, from logistics to dive-day briefings.</p>
+        </div>
+      </div>
+
+      <div class="sec-cta">
+        <a class="btn light" href="mailto:paulsen742@hotmail.com?subject=Dive%20consulting%20inquiry">Ask about dive consulting</a>
+        <span>Share where you want to dive and your certification level.</span>
+      </div>
+      <p class="scope">Dive consulting is advisory and trip-planning support. Certification courses are taught by a qualified scuba instructor.</p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap grid">
+      <div class="badge"><img src="emblem.webp" alt="" width="260" height="224"></div>
+      <div>
+        <div class="eyebrow">About Iron Reef</div>
+        <h2 class="section-title">Strength on land, steadiness at sea</h2>
+        <p>Iron Reef LLC was founded by Ryan Villanueva, a rodeo performer and competitor and a certified scuba divemaster. The bull and the anchor in the logo stand for both sides of the work.</p>
+        <p>After relocating from Colorado to the Kansas City area, Ryan rebuilt the business as Iron Reef LLC to bring rodeo and dive consulting together under one name.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="eyebrow">Let's talk</div>
+      <h2 class="section-title">Book a consultation</h2>
+      <p>Send a note with what you're looking for, your experience level and any dates you have in mind.</p>
+      <div class="btns">
+        <a class="btn solid" href="mailto:paulsen742@hotmail.com?subject=Rodeo%20consulting%20inquiry">Rodeo consulting</a>
+        <a class="btn line" href="mailto:paulsen742@hotmail.com?subject=Dive%20consulting%20inquiry">Dive consulting</a>
+      </div>
+      <div class="contact-lines">
+        <a href="mailto:paulsen742@hotmail.com">paulsen742@hotmail.com</a>
+        <a href="tel:+16083857470">608-385-7470</a>
+        <span>Kansas City, MO</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr">2026</span> Iron Reef LLC<span class="star">&#10022;</span>Kansas City, Missouri</span>
+    <span>Rodeo &amp; Dive Consulting</span>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

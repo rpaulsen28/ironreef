@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eat for your Heart</title>
+<meta name="description" content="Eat for your Heart: a searchable collection of simple, wholesome recipes.">
+<meta property="og:title" content="Eat for your Heart">
+<meta property="og:description" content="A searchable collection of simple, wholesome recipes.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Work+Sans:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#f9f6f3; --cream-2:#f0e9e0;
+    --navy:#012e4d; --navy-2:#0b3d63; --wave:#40607a; --sea:#2f6290;
+    --tan:#a98262; --tan-dark:#8a6648; --tan-light:#d0c3b4;
+    --ink:#1b2430; --muted:#5a6573;
+    --display:"Holtwood One SC", Georgia, serif;
+    --body:"Source Serif 4", Georgia, serif;
+    --ui:"Work Sans", system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--cream);color:var(--ink);font-family:var(--body);font-size:1.08rem;line-height:1.65}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+  [hidden]{display:none !important}
+
+  /* Nav (matches home page) */
+  header{position:sticky;top:0;z-index:10;background:rgba(249,246,243,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--tan-light)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy)}
+  .brand img{width:52px;height:45px;object-fit:contain}
+  .brand span{font-family:var(--display);font-size:1.2rem;letter-spacing:.04em}
+  nav ul{display:flex;gap:22px;list-style:none;font-family:var(--ui);font-weight:600;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase}
+  nav a{text-decoration:none;color:var(--navy);padding:6px 0;border-bottom:2px solid transparent}
+  nav a:hover,nav a[aria-current]{border-color:var(--tan)}
+  .short{display:none}
+  @media (max-width:820px){ nav ul{gap:12px;font-size:.72rem;letter-spacing:.05em} .brand span{display:none} .full{display:none} .short{display:inline} }
+
+  /* Page header */
+  .intro{background:var(--navy);color:var(--cream);padding:56px 0 48px}
+  .eyebrow{font-family:var(--ui);font-weight:600;font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--tan)}
+  .intro h1{font-family:var(--display);font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;letter-spacing:.02em;margin:8px 0 12px}
+  .intro p{color:#d4dde7;max-width:60ch}
+
+  /* Controls */
+  .controls{padding:28px 0 8px;display:grid;gap:16px}
+  .search{position:relative;max-width:520px}
+  .search input{width:100%;font:500 1rem var(--ui);padding:14px 16px 14px 44px;border:1.5px solid var(--tan-light);border-radius:4px;background:#fff;color:var(--ink)}
+  .search input:focus{outline:none;border-color:var(--navy)}
+  .search svg{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:var(--muted)}
+  .chips{display:flex;gap:8px;flex-wrap:wrap}
+  .chip{font:600 .8rem var(--ui);letter-spacing:.08em;text-transform:uppercase;padding:9px 14px;border-radius:99px;border:1.5px solid var(--tan-light);background:#fff;color:var(--navy);cursor:pointer}
+  .chip:hover{border-color:var(--tan)}
+  .chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:var(--cream)}
+  .count{font-family:var(--ui);font-size:.85rem;color:var(--muted)}
+
+  /* Grid */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;padding:12px 0 88px}
+  .card{background:#fff;border:1px solid var(--tan-light);border-top:4px solid var(--tan);border-radius:4px;padding:22px 22px 20px;text-align:left;font:inherit;color:inherit;text-decoration:none;cursor:pointer;display:flex;flex-direction:column;gap:8px;transition:.2s}
+  .card:hover{border-color:var(--tan);transform:translateY(-2px);box-shadow:0 6px 18px rgba(1,46,77,.08)}
+  .card .cat{font:600 .72rem var(--ui);letter-spacing:.2em;text-transform:uppercase;color:var(--tan)}
+  .card h2{font-family:var(--body);font-weight:600;font-size:1.25rem;line-height:1.25;color:var(--navy)}
+  .card p{color:var(--muted);font-size:.98rem}
+  .meta{display:flex;gap:14px;flex-wrap:wrap;font:500 .8rem var(--ui);color:var(--muted);margin-top:auto;padding-top:8px}
+  .empty{padding:40px 0 88px;color:var(--muted)}
+
+  /* Detail */
+  .detail{padding:28px 0 88px}
+  .back{font:600 .82rem var(--ui);letter-spacing:.1em;text-transform:uppercase;color:var(--navy);background:none;border:none;cursor:pointer;padding:6px 0;border-bottom:2px solid var(--tan)}
+  .detail h2{font-family:var(--display);font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.15;color:var(--navy);letter-spacing:.02em;margin:18px 0 8px}
+  .detail .summary{color:var(--muted);max-width:60ch}
+  .facts{display:flex;gap:28px;flex-wrap:wrap;margin:22px 0 32px;padding:18px 0;border-block:1px solid var(--tan-light)}
+  .facts div{font:500 .78rem var(--ui);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .facts b{display:block;font-family:var(--body);font-size:1.15rem;letter-spacing:0;text-transform:none;color:var(--navy);font-weight:600}
+  .cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:48px}
+  @media (max-width:760px){.cols{grid-template-columns:1fr;gap:28px}}
+  .cols h3{font-family:var(--display);font-size:1.2rem;color:var(--navy);letter-spacing:.03em;margin-bottom:12px}
+  .ing{list-style:none;display:grid;gap:10px}
+  .ing li{padding-left:22px;position:relative}
+  .ing li::before{content:"\2726";position:absolute;left:0;color:var(--tan);font-size:.75rem;top:.3em}
+  .steps{list-style:none;counter-reset:s;display:grid;gap:16px}
+  .steps li{counter-increment:s;padding-left:44px;position:relative}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:.05em;width:30px;height:30px;border-radius:50%;background:var(--navy);color:var(--cream);font:600 .85rem/30px var(--ui);text-align:center}
+  .note{margin-top:32px;background:var(--cream-2);border-left:4px solid var(--tan);padding:16px 20px;border-radius:0 4px 4px 0}
+  .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+  .tags span{font:500 .78rem var(--ui);padding:5px 10px;border-radius:99px;background:var(--cream-2);color:var(--navy)}
+  .actions{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  .print{font:600 .8rem var(--ui);letter-spacing:.1em;text-transform:uppercase;padding:9px 16px;border:1.5px solid var(--navy);border-radius:3px;background:none;color:var(--navy);cursor:pointer;margin-left:auto}
+  .print:hover{background:var(--navy);color:var(--cream)}
+
+  .error{margin:28px 0 88px;padding:20px;border:1.5px solid #b4534a;border-radius:4px;background:#fbefed;color:#6d241d}
+
+  footer{background:var(--navy);color:#b9c6d3;padding:32px 0;font-family:var(--ui);font-size:.85rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+  footer .star{color:var(--tan);margin-inline:8px}
+
+  @media print{
+    header,footer,.intro,.controls,.grid,.back,.print{display:none !important}
+    body{background:#fff}
+    .detail{padding:0}
+  }
+</style>
+</head>
+<body>
+
+<!-- The header and footer are filled in from SITE SETTINGS in the script at the bottom of this file. -->
+<header>
+  <div class="wrap nav">
+    <a class="brand" id="brand" href="./"><span>Eat for your Heart</span></a>
+    <nav><ul id="navlinks"></ul></nav>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="wrap">
+    <div class="eyebrow">Recipe collection</div>
+    <h1>Eat for your Heart</h1>
+    <p>Simple, wholesome recipes for training days, travel days and everything in between. Search by name or ingredient, or browse by meal.</p>
+  </div>
+</section>
+
+<main class="wrap">
+  <div id="list">
+    <div class="controls">
+      <label class="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Search recipes or ingredients" aria-label="Search recipes or ingredients">
+      </label>
+      <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+      <div class="count" id="count" aria-live="polite"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>No recipes match that search. Try a different word or category.</p>
+  </div>
+
+  <article class="detail" id="detail" hidden></article>
+  <div class="error" id="error" hidden></div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span id="footer-left"></span>
+    <span id="footer-right"></span>
+  </div>
+</footer>
+
+<script>
+/* ================= SITE SETTINGS =================
+   This page is self-contained: everything it needs is in this folder.
+   While it lives inside the Iron Reef site, "parent" adds the Iron Reef
+   logo, menu and footer. To run Eat for your Heart as its own website,
+   copy this folder to a new project and replace the whole "parent" block
+   below (from the word parent down to the closing curly bracket) with:  parent: null
+   ================================================== */
+const SITE = {
+  name: "Eat for your Heart",
+  footerRight: "Simple, wholesome recipes",
+
+  parent: {
+    name: "Iron Reef",
+    owner: "Iron Reef LLC",
+    location: "Kansas City, Missouri",
+    homeUrl: "../",
+    logo: "../emblem.webp",
+    links: [
+      { label: "Rodeo Consulting", short: "Rodeo",   href: "../#rodeo" },
+      { label: "Dive Consulting",  short: "Dive",    href: "../#dive" },
+      { label: "Eat for your Heart", short: "Recipes", href: "./", current: true },
+      { label: "Contact",          short: "Contact", href: "../#contact" }
+    ]
+  }
+};
+/* ============== END OF SITE SETTINGS ============== */
+
+(() => {
+  const CATEGORY_ORDER = ["Breakfast","Lunch","Dinner","Sides","Snacks","Desserts","Drinks"];
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const slug = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+  let recipes = [], active = "All";
+  const BASE_TITLE = SITE.parent ? `${SITE.name} | ${SITE.parent.owner}` : SITE.name;
+  const year = new Date().getFullYear();
+
+  // Header and footer
+  const p = SITE.parent;
+  if (p) {
+    $("brand").href = p.homeUrl;
+    $("brand").innerHTML = `<img src="${esc(p.logo)}" alt="" width="52" height="45"><span>${esc(p.name)}</span>`;
+    $("navlinks").innerHTML = p.links.map(l =>
+      `<li><a href="${esc(l.href)}"${l.current ? ' aria-current="page"' : ""}><span class="full">${esc(l.label)}</span><span class="short">${esc(l.short || l.label)}</span></a></li>`).join("");
+    $("footer-left").innerHTML = `&copy; ${year} ${esc(p.owner)}<span class="star">&#10022;</span>${esc(p.location)}`;
+  } else {
+    $("brand").innerHTML = `<span style="display:inline">${esc(SITE.name)}</span>`;
+    $("footer-left").innerHTML = `&copy; ${year} ${esc(SITE.name)}`;
+  }
+  $("footer-right").textContent = SITE.footerRight;
+  document.title = BASE_TITLE;
+
+  fetch("recipes.json", {cache:"no-cache"})
+    .then(r => { if (!r.ok) throw new Error("not found"); return r.text(); })
+    .then(t => {
+      try { return JSON.parse(t); }
+      catch (e) { throw new Error("format"); }
+    })
+    .then(data => {
+      recipes = data.map(r => ({...r, id: slug(r.title)}));
+      buildChips(); render(); route();
+    })
+    .catch(err => {
+      $("list").hidden = true;
+      $("error").hidden = false;
+      $("error").textContent = err.message === "format"
+        ? "The recipe list couldn't be read. Check recipes.json for a missing comma, quote or bracket near your last edit."
+        : "The recipe list couldn't be loaded. Please try again later.";
+    });
+
+  function buildChips(){
+    const present = [...new Set(recipes.map(r => r.category).filter(Boolean))];
+    present.sort((a,b) => (CATEGORY_ORDER.indexOf(a)+1 || 99) - (CATEGORY_ORDER.indexOf(b)+1 || 99));
+    $("chips").innerHTML = ["All", ...present].map(c =>
+      `<button class="chip" type="button" data-cat="${esc(c)}" aria-pressed="${c===active}">${esc(c)}</button>`).join("");
+  }
+
+  $("chips").addEventListener("click", e => {
+    const b = e.target.closest(".chip"); if (!b) return;
+    active = b.dataset.cat;
+    $("chips").querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", x === b));
+    render();
+  });
+  $("q").addEventListener("input", render);
+
+  function matches(r, q){
+    if (active !== "All" && r.category !== active) return false;
+    if (!q) return true;
+    const hay = [r.title, r.summary, r.category, ...(r.tags||[]), ...(r.ingredients||[])].join(" ").toLowerCase();
+    return q.split(/\s+/).every(w => hay.includes(w));
+  }
+
+  function render(){
+    const q = $("q").value.trim().toLowerCase();
+    const list = recipes.filter(r => matches(r, q));
+    $("grid").innerHTML = list.map(r => `
+      <a class="card" href="#${r.id}">
+        <span class="cat">${esc(r.category)}</span>
+        <h2>${esc(r.title)}</h2>
+        <p>${esc(r.summary)}</p>
+        <div class="meta">${timeLabel(r)}${r.servings ? `<span>Serves ${esc(r.servings)}</span>` : ""}</div>
+      </a>`).join("");
+    $("empty").hidden = list.length > 0;
+    $("count").textContent = `${list.length} recipe${list.length === 1 ? "" : "s"}`;
+  }
+
+  function timeLabel(r){
+    const parts = [];
+    if (r.prep) parts.push(`<span>Prep ${esc(r.prep)}</span>`);
+    if (r.cook && r.cook !== "None") parts.push(`<span>Cook ${esc(r.cook)}</span>`);
+    return parts.join("");
+  }
+
+  function showDetail(r){
+    $("detail").innerHTML = `
+      <div class="actions">
+        <button class="back" type="button" id="back">&larr; All recipes</button>
+        <button class="print" type="button" onclick="window.print()">Print recipe</button>
+      </div>
+      <div class="eyebrow" style="margin-top:22px">${esc(r.category)}</div>
+      <h2>${esc(r.title)}</h2>
+      ${r.summary ? `<p class="summary">${esc(r.summary)}</p>` : ""}
+      <div class="facts">
+        ${r.prep ? `<div><b>${esc(r.prep)}</b>Prep</div>` : ""}
+        ${r.cook ? `<div><b>${esc(r.cook)}</b>Cook</div>` : ""}
+        ${r.servings ? `<div><b>${esc(r.servings)}</b>Servings</div>` : ""}
+      </div>
+      <div class="cols">
+        <section><h3>Ingredients</h3><ul class="ing">${(r.ingredients||[]).map(i => `<li>${esc(i)}</li>`).join("")}</ul></section>
+        <section><h3>Steps</h3><ol class="steps">${(r.steps||[]).map(s => `<li>${esc(s)}</li>`).join("")}</ol></section>
+      </div>
+      ${r.notes ? `<div class="note"><strong>Note:</strong> ${esc(r.notes)}</div>` : ""}
+      ${(r.tags||[]).length ? `<div class="tags">${r.tags.map(t => `<span>${esc(t)}</span>`).join("")}</div>` : ""}`;
+    $("back").addEventListener("click", () => { history.pushState("", "", location.pathname); route(); });
+    document.title = `${r.title} | ${SITE.name}`;
+  }
+
+  function route(){
+    const id = decodeURIComponent(location.hash.slice(1));
+    const r = recipes.find(x => x.id === id);
+    $("list").hidden = !!r;
+    $("detail").hidden = !r;
+    if (r) { showDetail(r); window.scrollTo(0, 0); }
+    else document.title = BASE_TITLE;
+  }
+  window.addEventListener("hashchange", route);
+  window.addEventListener("popstate", route);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+[
+  {
+    "title": "Overnight Oats with Berries",
+    "category": "Breakfast",
+    "summary": "Make-ahead oats that are ready when you wake up.",
+    "prep": "5 min + overnight",
+    "cook": "None",
+    "servings": 2,
+    "tags": ["make-ahead", "no-cook", "oats"],
+    "ingredients": [
+      "1 cup old-fashioned rolled oats",
+      "1 cup low-fat milk or unsweetened almond milk",
+      "1/2 cup plain Greek yogurt",
+      "1 tbsp chia seeds",
+      "1 tsp honey or maple syrup",
+      "1 cup mixed berries"
+    ],
+    "steps": [
+      "Stir the oats, milk, yogurt, chia seeds and honey together in a jar or bowl.",
+      "Cover and refrigerate overnight, or at least 4 hours.",
+      "Stir, top with berries and serve cold."
+    ],
+    "notes": "Keeps in the fridge for up to 3 days."
+  },
+  {
+    "title": "Lemon Herb Baked Salmon",
+    "category": "Dinner",
+    "summary": "Simple sheet-pan salmon with lemon, garlic and dill.",
+    "prep": "10 min",
+    "cook": "15 min",
+    "servings": 4,
+    "tags": ["fish", "sheet-pan", "quick"],
+    "ingredients": [
+      "4 salmon fillets (about 5 oz each)",
+      "1 tbsp olive oil",
+      "2 cloves garlic, minced",
+      "1 lemon, zested and sliced",
+      "1 tbsp fresh dill, chopped (or 1 tsp dried)",
+      "1/4 tsp black pepper"
+    ],
+    "steps": [
+      "Heat the oven to 400°F and line a baking sheet with parchment.",
+      "Place the salmon on the sheet. Brush with olive oil and sprinkle with garlic, lemon zest, dill and pepper.",
+      "Lay lemon slices on top and bake 12–15 minutes, until the fish flakes easily with a fork."
+    ],
+    "notes": "Serve with brown rice and a green vegetable."
+  },
+  {
+    "title": "Black Bean and Corn Salad",
+    "category": "Lunch",
+    "summary": "A bright, filling salad that holds up well in the fridge.",
+    "prep": "15 min",
+    "cook": "None",
+    "servings": 4,
+    "tags": ["beans", "no-cook", "make-ahead"],
+    "ingredients": [
+      "1 can (15 oz) no-salt-added black beans, rinsed and drained",
+      "1 1/2 cups corn (frozen and thawed, or fresh)",
+      "1 red bell pepper, diced",
+      "1/4 red onion, finely diced",
+      "1/4 cup chopped cilantro",
+      "2 tbsp olive oil",
+      "Juice of 2 limes",
+      "1/2 tsp ground cumin"
+    ],
+    "steps": [
+      "Combine the beans, corn, bell pepper, onion and cilantro in a large bowl.",
+      "Whisk the olive oil, lime juice and cumin together.",
+      "Pour the dressing over the salad and toss. Chill 20 minutes before serving if you have time."
+    ],
+    "notes": "Add diced avocado right before serving."
+  },
+  {
+    "title": "Roasted Vegetable Quinoa Bowl",
+    "category": "Dinner",
+    "summary": "Quinoa topped with roasted vegetables and a lemon-tahini drizzle.",
+    "prep": "15 min",
+    "cook": "30 min",
+    "servings": 4,
+    "tags": ["vegetarian", "grain bowl", "meal prep"],
+    "ingredients": [
+      "1 cup quinoa, rinsed",
+      "2 cups water or low-sodium vegetable broth",
+      "1 sweet potato, cubed",
+      "1 zucchini, sliced",
+      "1 red onion, cut into wedges",
+      "1 can (15 oz) chickpeas, rinsed and drained",
+      "2 tbsp olive oil",
+      "2 tbsp tahini",
+      "Juice of 1 lemon",
+      "2–3 tbsp water for the drizzle"
+    ],
+    "steps": [
+      "Heat the oven to 425°F. Toss the sweet potato, zucchini, onion and chickpeas with olive oil on a baking sheet.",
+      "Roast 25–30 minutes, turning once, until the vegetables are tender and browned.",
+      "Meanwhile, simmer the quinoa in the water or broth, covered, for 15 minutes. Let it rest 5 minutes, then fluff.",
+      "Whisk the tahini, lemon juice and water into a pourable sauce.",
+      "Divide the quinoa into bowls, top with the vegetables and drizzle with the sauce."
+    ],
+    "notes": "Packs well for lunches through the week."
+  },
+  {
+    "title": "Turkey and Vegetable Chili",
+    "category": "Dinner",
+    "summary": "A hearty one-pot chili with lean turkey and plenty of vegetables.",
+    "prep": "15 min",
+    "cook": "40 min",
+    "servings": 6,
+    "tags": ["one-pot", "freezer-friendly", "turkey"],
+    "ingredients": [
+      "1 lb lean ground turkey",
+      "1 tbsp olive oil",
+      "1 onion, diced",
+      "1 green bell pepper, diced",
+      "2 carrots, diced",
+      "3 cloves garlic, minced",
+      "2 tbsp chili powder",
+      "1 tsp ground cumin",
+      "1 can (28 oz) no-salt-added crushed tomatoes",
+      "2 cans (15 oz each) no-salt-added kidney beans, rinsed and drained",
+      "1 cup low-sodium chicken broth"
+    ],
+    "steps": [
+      "Heat the oil in a large pot over medium heat. Brown the turkey, breaking it up, about 6 minutes.",
+      "Add the onion, bell pepper, carrots and garlic. Cook 5 minutes until softened.",
+      "Stir in the chili powder and cumin for 1 minute.",
+      "Add the tomatoes, beans and broth. Simmer, partly covered, for 30 minutes, stirring now and then."
+    ],
+    "notes": "Freezes well for up to 3 months."
+  },
+  {
+    "title": "Hummus Veggie Wraps",
+    "category": "Lunch",
+    "summary": "A crunchy, no-cook wrap you can make in five minutes.",
+    "prep": "5 min",
+    "cook": "None",
+    "servings": 2,
+    "tags": ["vegetarian", "no-cook", "quick"],
+    "ingredients": [
+      "2 whole-wheat tortillas",
+      "1/2 cup hummus",
+      "1 cup baby spinach",
+      "1/2 cucumber, sliced into strips",
+      "1 carrot, shredded",
+      "1/4 cup roasted red peppers, sliced"
+    ],
+    "steps": [
+      "Spread hummus over each tortilla, leaving a small border.",
+      "Layer the spinach, cucumber, carrot and red peppers down the center.",
+      "Roll up tightly, folding in the sides, and cut in half."
+    ],
+    "notes": "Wrap in foil to pack for the road or the arena."
+  },
+  {
+    "title": "Garlic Roasted Green Beans",
+    "category": "Sides",
+    "summary": "Crisp-tender green beans with garlic and lemon.",
+    "prep": "5 min",
+    "cook": "15 min",
+    "servings": 4,
+    "tags": ["vegetables", "quick", "sheet-pan"],
+    "ingredients": [
+      "1 lb green beans, trimmed",
+      "1 tbsp olive oil",
+      "3 cloves garlic, thinly sliced",
+      "1/4 tsp black pepper",
+      "1 tsp lemon zest"
+    ],
+    "steps": [
+      "Heat the oven to 425°F.",
+      "Toss the green beans with olive oil, garlic and pepper on a baking sheet.",
+      "Roast 12–15 minutes, until tender and lightly browned. Sprinkle with lemon zest."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Baked Cinnamon Apples",
+    "category": "Desserts",
+    "summary": "Warm apples with oats and cinnamon, no added butter.",
+    "prep": "10 min",
+    "cook": "30 min",
+    "servings": 4,
+    "tags": ["fruit", "warm", "oats"],
+    "ingredients": [
+      "4 apples, cored and sliced",
+      "1 tsp ground cinnamon",
+      "1 tbsp maple syrup",
+      "1/2 cup rolled oats",
+      "2 tbsp chopped walnuts"
+    ],
+    "steps": [
+      "Heat the oven to 350°F.",
+      "Toss the apples with cinnamon and maple syrup and spread in a small baking dish.",
+      "Sprinkle with oats and walnuts.",
+      "Bake 25–30 minutes, until the apples are soft."
+    ],
+    "notes": "Top with a spoonful of plain Greek yogurt."
+  }
+]
