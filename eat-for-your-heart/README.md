@@ -8,9 +8,15 @@ A searchable recipe collection. It lives at `ironreefllc.com/eat-for-your-heart/
 |---|---|
 | `index.html` | The recipe page. You rarely need to touch it. |
 | `recipes.json` | **All the recipes.** Edit this file to add, change or remove recipes. |
+| `recipes.css` | The look of the recipe pages (colors, fonts, layout). |
+| `recipe-view.js` | How a recipe card and a full recipe are laid out. Also used by the Recipe Editor's preview. |
 | `favicon.png`, `apple-touch-icon.png` | Browser tab and phone home-screen icons. |
 
-## Add a recipe
+## Easiest way: the Recipe Editor
+
+`Recipe Editor.html` lives on your computer, not on the website, so visitors can't use it. Double-click it to open it in your browser, fill in the form, and click **Publish to site**. The live site updates in about a minute. The first time, it walks you through connecting it to GitHub with a private key that only works for this repository.
+
+## Add a recipe by hand on GitHub
 
 1. On GitHub, open `eat-for-your-heart/recipes.json` and click the pencil icon.
 2. Copy an existing recipe, from its opening `{` to its closing `},`, and paste it right after it.
