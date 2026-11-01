@@ -171,6 +171,7 @@ const SITE = {
       { label: "Rodeo",            short: "Rodeo",   href: "../rodeo/" },
       { label: "Diving",           short: "Diving",  href: "../diving/" },
       { label: "Eat for your Heart", short: "Recipes", href: "./", current: true },
+      { label: "Store",            short: "Store",   href: "https://xhs4wp-ky.myshopify.com", external: true },
       { label: "Contact",          short: "Contact", href: "../#contact" }
     ]
   }
@@ -192,7 +193,7 @@ const SITE = {
     $("brand").href = p.homeUrl;
     $("brand").innerHTML = `<img src="${esc(p.logo)}" alt="" width="52" height="45"><span>${esc(p.name)}</span>`;
     $("navlinks").innerHTML = p.links.map(l =>
-      `<li><a href="${esc(l.href)}"${l.current ? ' aria-current="page"' : ""}><span class="full">${esc(l.label)}</span><span class="short">${esc(l.short || l.label)}</span></a></li>`).join("");
+      `<li><a href="${esc(l.href)}"${l.current ? ' aria-current="page"' : ""}${l.external ? ' target="_blank" rel="noopener"' : ""}><span class="full">${esc(l.label)}</span><span class="short">${esc(l.short || l.label)}</span></a></li>`).join("");
     $("footer-left").innerHTML = `&copy; ${year} ${esc(p.owner)}<span class="star">&#10022;</span>${esc(p.location)}`;
   } else {
     $("brand").innerHTML = `<span style="display:inline">${esc(SITE.name)}</span>`;

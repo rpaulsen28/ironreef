@@ -41,8 +41,11 @@
   .path .go{margin-top:auto;font-family:var(--ui);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem;align-self:flex-start;border-bottom:2px solid currentColor;padding-bottom:2px}
 
   .recipes{padding:72px 0}
-  .recipes .card{display:grid;grid-template-columns:1fr auto;gap:24px 48px;align-items:center;background:#fff;border:1px solid var(--tan-light);border-left:6px solid var(--tan);border-radius:4px;padding:36px clamp(20px,4vw,44px)}
-  @media (max-width:760px){.recipes .card{grid-template-columns:1fr}}
+  .recipes .cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  @media (max-width:860px){.recipes .cards{grid-template-columns:1fr}}
+  .recipes .card{display:flex;flex-direction:column;align-items:flex-start;gap:20px;background:#fff;border:1px solid var(--tan-light);border-left:6px solid var(--tan);border-radius:4px;padding:36px clamp(20px,4vw,40px)}
+  .recipes .card.shop{border-left-color:var(--navy)}
+  .recipes .card .btn{margin-top:auto}
   .recipes h2{font-family:var(--display);font-size:clamp(1.5rem,3vw,2.1rem);color:var(--navy);letter-spacing:.02em;margin:6px 0 8px}
   .recipes p{color:var(--muted);max-width:56ch}
 
@@ -63,6 +66,7 @@
       <li><a href="/rodeo/">Rodeo</a></li>
       <li><a href="/diving/">Diving</a></li>
       <li><a href="/eat-for-your-heart/"><span class="full">Eat for your Heart</span><span class="short">Recipes</span></a></li>
+      <li><a href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Store</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul></nav>
   </div>
@@ -119,13 +123,23 @@
 
   <section class="recipes">
     <div class="wrap">
-      <div class="card">
-        <div>
-          <div class="eyebrow">Recipe collection</div>
-          <h2>Eat for your Heart</h2>
-          <p>Simple, wholesome recipes for training days, travel days and everything in between. Search by ingredient or browse by meal.</p>
+      <div class="cards">
+        <div class="card">
+          <div>
+            <div class="eyebrow">Recipe collection</div>
+            <h2>Eat for your Heart</h2>
+            <p>Simple, wholesome recipes for training days, travel days and everything in between. Search by ingredient or browse by meal.</p>
+          </div>
+          <a class="btn solid" href="/eat-for-your-heart/">Browse recipes</a>
         </div>
-        <a class="btn solid" href="/eat-for-your-heart/">Browse recipes</a>
+        <div class="card shop">
+          <div>
+            <div class="eyebrow">Iron Reef Store</div>
+            <h2>Shop Iron Reef</h2>
+            <p>Shirts, tanks and more from the Iron Reef online store.</p>
+          </div>
+          <a class="btn solid" href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Visit the store</a>
+        </div>
       </div>
     </div>
   </section>
@@ -163,7 +177,7 @@
 <footer>
   <div class="wrap">
     <span>&copy; <span class="yr">2026</span> Iron Reef LLC<span class="star">&#10022;</span>Kansas City, Missouri</span>
-    <nav><a href="/rodeo/">Rodeo</a><a href="/diving/">Diving</a><a href="/eat-for-your-heart/">Eat for your Heart</a></nav>
+    <nav><a href="/rodeo/">Rodeo</a><a href="/diving/">Diving</a><a href="/eat-for-your-heart/">Eat for your Heart</a><a href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Store</a></nav>
   </div>
 </footer>
 <script>document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());</script>
