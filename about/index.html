@@ -31,7 +31,7 @@
   .photo.portrait{aspect-ratio:4/5;border:6px solid var(--cream)}
   .photo.wide{aspect-ratio:4/3}
   .photo.tall{aspect-ratio:4/5}
-  .photo.tall2{aspect-ratio:2/3}
+  .photo.tall2{aspect-ratio:594/1070;max-width:400px;width:100%;justify-self:center}
   @media (max-width:820px){.photo.tall,.photo.tall2{max-width:440px;width:100%;margin:0 auto}}
   .photo[hidden]{display:none}
 
@@ -170,8 +170,8 @@
       <h2 class="section-title">Work with me</h2>
       <p>Whether you're getting ready for your first rodeo or planning your next dive trip, send me a note.</p>
       <div class="btns">
-        <a class="btn solid" href="/rodeo/">Rodeo consulting</a>
-        <a class="btn line" href="/diving/">Dive consulting</a>
+        <a class="btn solid" href="mailto:info@ironreefllc.com?subject=Rodeo%20consulting%20inquiry">Rodeo consulting</a>
+        <a class="btn line" href="mailto:info@ironreefllc.com?subject=Dive%20consulting%20inquiry">Dive consulting</a>
       </div>
       <div class="contact-lines">
         <a href="mailto:info@ironreefllc.com">info@ironreefllc.com</a>
@@ -199,5 +199,6 @@ document.querySelectorAll('[data-photo] img').forEach(img=>{
   if(img.complete && img.naturalWidth===0) hide(); else img.addEventListener('error',hide);
 });
 </script>
+<script src="/contact.js" defer></script>
 </body>
 </html>
