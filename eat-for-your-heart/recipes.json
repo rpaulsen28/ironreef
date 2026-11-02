@@ -258,5 +258,738 @@
       "Bring to a simmer then reduce over low heat for 15 to 20 minutes."
     ],
     "notes": ""
+  },
+  {
+    "title": "Wing Marinade",
+    "category": "Sauces & Seasonings",
+    "summary": "A yogurt-and-garlic marinade that keeps wings juicy and well seasoned.",
+    "prep": "10 min + 1–2 hr marinating",
+    "cook": "",
+    "servings": "",
+    "tags": [
+      "wings",
+      "chicken",
+      "marinade"
+    ],
+    "ingredients": [
+      "2 tablespoons yogurt",
+      "1/2 cup milk",
+      "2 cloves garlic, crushed",
+      "4–5 tablespoons olive oil",
+      "1 tablespoon tomato paste",
+      "1 teaspoon ground pepper",
+      "1 teaspoon paprika",
+      "1 teaspoon oregano",
+      "1 1/2 teaspoons salt",
+      "1 teaspoon honey",
+      "1 teaspoon mustard or lemon juice"
+    ],
+    "steps": [
+      "Whisk all the ingredients together.",
+      "Coat the wings and marinate for 1 to 2 hours, then cook."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "No-Salt Taco and Fajita Seasoning",
+    "category": "Sauces & Seasonings",
+    "summary": "All the flavor of a taco packet with none of the added salt.",
+    "prep": "5 min",
+    "cook": "",
+    "servings": "",
+    "tags": [
+      "no salt",
+      "tacos",
+      "fajitas",
+      "spice blend"
+    ],
+    "ingredients": [
+      "2 1/2 tablespoons paprika",
+      "2 1/2 tablespoons chili powder",
+      "2 tablespoons onion powder",
+      "2 tablespoons garlic powder",
+      "1 tablespoon cumin",
+      "1 tablespoon dried oregano",
+      "1 teaspoon black pepper",
+      "1 teaspoon red pepper flakes",
+      "1/2 teaspoon cayenne pepper"
+    ],
+    "steps": [
+      "Mix everything together and store in an airtight container."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Tartar Sauce",
+    "category": "Sauces & Seasonings",
+    "summary": "Bright, briny tartar sauce that's best made a day ahead.",
+    "prep": "10 min + overnight",
+    "cook": "",
+    "servings": "",
+    "tags": [
+      "fish",
+      "seafood",
+      "make-ahead"
+    ],
+    "ingredients": [
+      "1 cup mayonnaise",
+      "1 shallot, finely minced",
+      "1 tablespoon capers, finely chopped",
+      "1/4 cup dill pickle relish or sweet relish",
+      "Zest of 1 lemon",
+      "1 tablespoon lemon juice",
+      "2 teaspoons Worcestershire sauce",
+      "1 teaspoon mustard"
+    ],
+    "steps": [
+      "Mix everything together well.",
+      "Refrigerate for a day before serving so the flavors come together."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Lemon Posset",
+    "category": "Desserts",
+    "summary": "A silky, three-ingredient British lemon cream that sets in the fridge.",
+    "prep": "10 min + 2 hr chilling",
+    "cook": "5 min",
+    "servings": 4,
+    "tags": [
+      "lemon",
+      "make-ahead",
+      "no-bake"
+    ],
+    "ingredients": [
+      "2 cups heavy cream",
+      "2/3 cup sugar",
+      "5 tablespoons lemon juice"
+    ],
+    "steps": [
+      "In a small saucepan, bring the cream and sugar to a boil, stirring to dissolve the sugar. Boil for 5 minutes, watching closely so it doesn't boil over.",
+      "Take the pan off the heat and stir in the lemon juice. Let it cool for about 15 minutes.",
+      "Divide among four ramekins and refrigerate for at least 2 hours, or overnight."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Crispy Batter",
+    "category": "Sauces & Seasonings",
+    "summary": "A light, crunchy batter for frying fish, shrimp or vegetables.",
+    "prep": "5 min",
+    "cook": "",
+    "servings": "",
+    "tags": [
+      "batter",
+      "frying",
+      "fish"
+    ],
+    "ingredients": [
+      "3/4 cup flour",
+      "2 tablespoons cornstarch",
+      "1/4 teaspoon baking soda",
+      "1/4 teaspoon baking powder",
+      "1/4 teaspoon salt",
+      "3/4 cup water"
+    ],
+    "steps": [
+      "Whisk the dry ingredients together.",
+      "Add the water when you're ready to fry and mix until smooth."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Spicy Peanut Sauce",
+    "category": "Sauces & Seasonings",
+    "summary": "A sweet-and-spicy peanut dressing for noodles, salads and bowls.",
+    "prep": "5 min",
+    "cook": "",
+    "servings": "",
+    "tags": [
+      "peanut",
+      "dressing",
+      "spicy"
+    ],
+    "ingredients": [
+      "1/4 cup creamy peanut butter",
+      "2 tablespoons maple syrup",
+      "1 1/2–2 tablespoons water, depending on preferred thickness",
+      "1 tablespoon low-sodium soy sauce",
+      "1 tablespoon sriracha",
+      "2 teaspoons rice vinegar",
+      "1 teaspoon sesame oil"
+    ],
+    "steps": [
+      "Whisk everything together until smooth, adding water until it's as thick or thin as you like."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Chipotle Honey Vinaigrette",
+    "category": "Sauces & Seasonings",
+    "summary": "Smoky, sweet and tangy dressing made in the blender.",
+    "prep": "5 min",
+    "cook": "",
+    "servings": "",
+    "tags": [
+      "dressing",
+      "chipotle",
+      "salad"
+    ],
+    "ingredients": [
+      "6 tablespoons red wine vinegar",
+      "5 tablespoons honey",
+      "1/3 cup oil",
+      "1/2 teaspoon oregano",
+      "1/2 teaspoon salt substitute",
+      "2 chipotle peppers",
+      "2 garlic cloves"
+    ],
+    "steps": [
+      "Blend everything together until smooth."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Lemon Butter Cod and Orzo",
+    "category": "Dinner",
+    "summary": "Golden seared cod over lemony orzo and asparagus, all in one skillet.",
+    "prep": "10 min",
+    "cook": "25 min",
+    "servings": 4,
+    "tags": [
+      "fish",
+      "one-pan",
+      "orzo"
+    ],
+    "ingredients": [
+      "2 tablespoons extra-virgin olive oil",
+      "4 cod fillets (6 to 8 oz each)",
+      "Kosher salt and freshly ground pepper",
+      "3 tablespoons all-purpose flour",
+      "2 tablespoons salted butter",
+      "1 Meyer or regular lemon, sliced, plus more for serving",
+      "1 garlic clove, minced or grated",
+      "1 bunch asparagus, ends trimmed, cut into 1-inch pieces",
+      "1 cup uncooked orzo",
+      "2 2/3 cups low-sodium chicken broth",
+      "1 tablespoon lemon juice",
+      "1 tablespoon chopped fresh dill, for serving"
+    ],
+    "steps": [
+      "Heat the oil in a large cast-iron skillet over medium-high heat. Season the cod with salt and pepper and dust both sides with flour. Sear until golden, 3 to 4 minutes per side, then move to a plate.",
+      "In the same skillet, brown the butter with the lemon slices, about 1 minute per side. Add the lemons to the plate with the cod.",
+      "Add the garlic, asparagus and orzo to the skillet and toast for 2 to 3 minutes. Stir in the broth and lemon juice, bring to a boil, and cook, stirring now and then, until the orzo is al dente, about 10 minutes.",
+      "Set the cod and lemon slices back on top to warm through. Finish with dill and extra lemon."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Brown Butter Scallops",
+    "category": "Dinner",
+    "summary": "Seared scallops in a garlicky brown butter and white wine sauce with burst tomatoes.",
+    "prep": "10 min",
+    "cook": "20 min",
+    "servings": "",
+    "tags": [
+      "seafood",
+      "scallops",
+      "date night"
+    ],
+    "ingredients": [
+      "4 tablespoons extra-virgin olive oil, divided",
+      "1 pound large scallops",
+      "Kosher salt and freshly ground pepper",
+      "4 garlic cloves, smashed",
+      "1 tablespoon chopped fresh thyme",
+      "Crushed red pepper flakes",
+      "4 tablespoons salted butter",
+      "1/4 cup dry white wine, such as pinot grigio or sauvignon blanc",
+      "2 cups cherry tomatoes",
+      "2 chives, chopped",
+      "Zest of 1 lemon"
+    ],
+    "steps": [
+      "Heat 2 tablespoons of the oil in a large skillet over medium heat. Season the scallops on both sides and sear until browned, 2 to 3 minutes per side. Set aside on a plate.",
+      "Add the rest of the oil to the skillet with the garlic, thyme and a pinch of red pepper flakes. Cook until fragrant, 3 to 4 minutes. Add the butter and cook until lightly browned, 2 to 3 minutes.",
+      "Pour in the wine and add the tomatoes. Cook until the tomatoes burst and the wine reduces a little, about 5 minutes.",
+      "Return the scallops and their juices to the pan and warm through, about 3 minutes. Top with chives and lemon zest."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Potato Shakshuka",
+    "category": "Breakfast",
+    "summary": "Smoky tomato and potato skillet with eggs baked right in.",
+    "prep": "15 min",
+    "cook": "30 min",
+    "servings": 4,
+    "tags": [
+      "eggs",
+      "skillet",
+      "brunch"
+    ],
+    "ingredients": [
+      "2 tablespoons extra-virgin olive oil",
+      "1 medium yellow onion, chopped",
+      "1 pound baby Yukon gold potatoes, halved",
+      "2 teaspoons chipotle chile powder",
+      "1 teaspoon smoked paprika",
+      "Kosher salt and freshly ground pepper",
+      "1 can (28 oz) crushed tomatoes",
+      "1 jar (12 oz) roasted red peppers, drained and chopped",
+      "1/2 cup shredded sharp cheddar cheese",
+      "4 to 6 large eggs",
+      "1/4 cup fresh parsley, roughly chopped, for garnish",
+      "2 tablespoons toasted sesame seeds, for garnish",
+      "4 slices crusty bread, for serving (optional)"
+    ],
+    "steps": [
+      "Heat the oil in a large skillet over medium heat. Cook the onion and potatoes until softened, 8 to 10 minutes. Stir in the chipotle powder, smoked paprika and a pinch of salt and pepper for 1 minute.",
+      "Add the tomatoes, red peppers and 1/3 cup water. Bring to a low boil, then simmer over medium heat until the sauce thickens and the potatoes are fork-tender, about 5 minutes. Season to taste.",
+      "Make 4 to 6 wells in the sauce, sprinkle cheese into each, and crack an egg into each one. Cover and cook until the whites are set and the yolks are done the way you like them.",
+      "Top with parsley and sesame seeds and serve with crusty bread."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Chicken Khao Soi",
+    "category": "Dinner",
+    "summary": "Northern Thai-style coconut curry noodle soup with tender shredded chicken.",
+    "prep": "15 min",
+    "cook": "30 min",
+    "servings": 4,
+    "tags": [
+      "soup",
+      "curry",
+      "noodles",
+      "Thai"
+    ],
+    "ingredients": [
+      "2 boneless, skin-on chicken breasts (about 1 pound)",
+      "Kosher salt and freshly ground pepper",
+      "2 tablespoons extra-virgin olive oil",
+      "1/4 cup Thai red curry paste",
+      "2 large carrots, sliced",
+      "2 cans (14 oz each) full-fat unsweetened coconut milk",
+      "3 cups low-sodium chicken broth",
+      "3 tablespoons fish sauce",
+      "1 tablespoon honey",
+      "2 cups baby spinach or chopped baby bok choy",
+      "8 ounces egg noodles",
+      "Cilantro, sliced chiles and limes, for garnish"
+    ],
+    "steps": [
+      "Season the chicken all over with salt and pepper.",
+      "Heat the oil in a large pot over high heat. Sear the chicken skin side down until golden and crisp, about 5 minutes. Flip it, add the curry paste and carrots, and cook until fragrant, 1 to 2 minutes.",
+      "Stir in the coconut milk, broth, fish sauce and honey. Cover and bring to a boil, then lower to medium-low and cook, covered, until the chicken is cooked through, about 15 minutes.",
+      "Shred the chicken with two forks and return it to the pot. Add the noodles and greens and cook until the noodles are tender.",
+      "Serve topped with cilantro, sliced chiles and lime wedges."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Dragon Sauce",
+    "category": "Sauces & Seasonings",
+    "summary": "Sweet and spicy creamy sauce for dipping or drizzling.",
+    "prep": "5 min + 30 min chilling",
+    "cook": "",
+    "servings": "",
+    "tags": [
+      "spicy",
+      "dipping sauce",
+      "sriracha"
+    ],
+    "ingredients": [
+      "1/2 cup mayonnaise",
+      "1/4 cup sweet chili sauce",
+      "1 tablespoon sriracha (adjust for heat)",
+      "1 tablespoon rice vinegar",
+      "1 teaspoon garlic powder",
+      "1 teaspoon lemon juice",
+      "1 teaspoon honey (optional)",
+      "1/2 teaspoon sesame oil",
+      "Pinch of salt"
+    ],
+    "steps": [
+      "Whisk everything together in a small bowl until smooth.",
+      "Taste and adjust: more sriracha for heat, more honey for sweetness.",
+      "Refrigerate for at least 30 minutes before serving."
+    ],
+    "notes": "Great with seafood, grilled chicken and fried foods, or drizzled over rice bowls and tacos."
+  },
+  {
+    "title": "Creole Seasoning",
+    "category": "Sauces & Seasonings",
+    "summary": "A smoky, peppery all-purpose Creole spice blend.",
+    "prep": "5 min",
+    "cook": "",
+    "servings": "",
+    "tags": [
+      "spice blend",
+      "Cajun",
+      "Creole"
+    ],
+    "ingredients": [
+      "2 1/2 tablespoons smoked paprika",
+      "2 tablespoons garlic powder",
+      "1 1/2 tablespoons salt",
+      "1 tablespoon black pepper",
+      "1 tablespoon onion powder",
+      "1 tablespoon cayenne pepper",
+      "1 tablespoon dried oregano",
+      "1 tablespoon dried thyme"
+    ],
+    "steps": [
+      "Mix everything together and store in an airtight container."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Cranberry Sauce",
+    "category": "Sauces & Seasonings",
+    "summary": "Homemade cranberry sauce loaded with fruit, pecans and warm spices.",
+    "prep": "15 min",
+    "cook": "30 min",
+    "servings": "",
+    "tags": [
+      "holiday",
+      "cranberry",
+      "Thanksgiving"
+    ],
+    "ingredients": [
+      "1 cup water",
+      "1 cup sugar",
+      "1 package (12 oz) fresh cranberries",
+      "1 orange, peeled and pureed",
+      "1 apple, peeled, cored and diced",
+      "1 pear, peeled, cored and diced",
+      "1 cup chopped pecans",
+      "1/2 teaspoon salt",
+      "1 teaspoon cinnamon",
+      "1/2 teaspoon nutmeg",
+      "1 cup dried fruit, chopped"
+    ],
+    "steps": [
+      "Bring the water to a boil, then add the sugar and let it dissolve.",
+      "Lower the heat to a simmer and add everything else.",
+      "Cover and simmer for 30 minutes, or until the cranberries burst. Let cool."
+    ],
+    "notes": "Great spooned over a block of cream cheese and served with crackers."
+  },
+  {
+    "title": "Red Sauce",
+    "category": "Sauces & Seasonings",
+    "summary": "A quick, mildly spicy red sauce for enchiladas and more.",
+    "prep": "5 min",
+    "cook": "20 min",
+    "servings": "",
+    "tags": [
+      "enchilada",
+      "tomato",
+      "quick"
+    ],
+    "ingredients": [
+      "1 can (8 oz) tomato sauce",
+      "1/3 cup water",
+      "1/2 teaspoon chili powder",
+      "1 1/2 teaspoons cumin",
+      "1/2 teaspoon onion powder",
+      "1 tablespoon white vinegar",
+      "1 teaspoon garlic powder",
+      "1/4 teaspoon paprika",
+      "1/4 teaspoon cayenne pepper"
+    ],
+    "steps": [
+      "Add everything to a small saucepan and bring to a boil.",
+      "Turn the heat to low and simmer for 15 to 20 minutes."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Cowboy Butter Air Fryer Chicken Thighs",
+    "category": "Dinner",
+    "summary": "Chicken thighs marinated in a lightened-up herby cowboy butter, then air fried.",
+    "prep": "10 min + 1 hr marinating",
+    "cook": "16 min",
+    "servings": "",
+    "tags": [
+      "air fryer",
+      "chicken",
+      "marinade"
+    ],
+    "ingredients": [
+      "Chicken thighs",
+      "1 tablespoon fresh garlic, minced",
+      "1 tablespoon fresh parsley, chopped",
+      "1 tablespoon fresh chives, chopped",
+      "1 tablespoon fresh thyme, chopped",
+      "Juice of 1/2 lemon",
+      "1 teaspoon Dijon mustard",
+      "1 teaspoon paprika",
+      "1 teaspoon Worcestershire sauce",
+      "1 teaspoon chili flakes",
+      "Salt and pepper, to taste",
+      "6 tablespoons light mayonnaise"
+    ],
+    "steps": [
+      "Mix everything except the chicken to make the cowboy butter. Set some aside to spread on bread or sandwiches.",
+      "Coat the chicken thighs in the cowboy butter and marinate for 1 hour, or overnight.",
+      "Air fry at 385°F for 16 minutes, flipping halfway, until the chicken reaches 165°F inside."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Canned Tomato Salsa",
+    "category": "Sauces & Seasonings",
+    "summary": "A big-batch salsa for water-bath canning. Makes 16 to 18 pints.",
+    "prep": "1 hr",
+    "cook": "30 min + 15 min processing",
+    "servings": "",
+    "tags": [
+      "canning",
+      "salsa",
+      "big batch"
+    ],
+    "ingredients": [
+      "7 quarts peeled, cored, chopped paste or plum tomatoes",
+      "4 cups seeded, chopped long green chiles",
+      "5 cups chopped onion",
+      "1/2 cup seeded, finely chopped jalapeño peppers",
+      "6 cloves garlic, finely chopped",
+      "2 cups bottled lemon or lime juice",
+      "2 tablespoons salt",
+      "1 tablespoon black pepper",
+      "Optional: 3 tablespoons oregano leaves",
+      "Optional: 2 tablespoons ground cumin",
+      "Optional: 2 tablespoons fresh cilantro"
+    ],
+    "steps": [
+      "Wear gloves when handling the hot peppers, and keep your hands away from your face.",
+      "If you want to peel the long green chiles, slit each one, blister the skins under a broiler or in a 400°F oven for 6 to 8 minutes, cover with a damp cloth to steam, then peel. Seed and chop. Jalapeños don't need peeling.",
+      "Dip the tomatoes in boiling water for 30 to 60 seconds until the skins split, then into cold water. Slip off the skins and remove the cores.",
+      "Combine everything except the oregano, cumin and cilantro in a large pot. Bring to a boil, stirring often, then simmer for 10 minutes. Add the optional spices and simmer 20 minutes more, stirring now and then.",
+      "Ladle hot salsa into hot jars, leaving 1/2-inch headspace. Remove air bubbles, wipe the rims and put on the lids.",
+      "Process pints in a boiling-water canner for 15 minutes."
+    ],
+    "notes": "Paste tomatoes work best; slicing tomatoes take much longer to cook down. Keep the ingredient amounts as written so the salsa stays safely acidic for canning, and add processing time if you're at a high altitude."
+  },
+  {
+    "title": "Low-Sodium Soy Sauce Substitute",
+    "category": "Sauces & Seasonings",
+    "summary": "A homemade stand-in for soy sauce with a fraction of the salt.",
+    "prep": "5 min",
+    "cook": "15 min",
+    "servings": "",
+    "tags": [
+      "low sodium",
+      "soy sauce",
+      "Asian"
+    ],
+    "ingredients": [
+      "1 cup low-sodium beef or vegetable broth",
+      "1 tablespoon vinegar (balsamic, cider or rice)",
+      "2 teaspoons molasses or brown sugar",
+      "1/8 teaspoon ground ginger",
+      "1/8 teaspoon garlic powder",
+      "1/8 teaspoon black pepper",
+      "1/8 teaspoon salt"
+    ],
+    "steps": [
+      "Whisk everything together in a pot and bring to a boil. Boil for 1 minute.",
+      "Lower the heat to medium and cook for 10 minutes more. Remove from the heat and let cool."
+    ],
+    "notes": "Also works in place of other salty condiments like fish, hoisin, oyster and teriyaki sauce."
+  },
+  {
+    "title": "Healthy BBQ Sauce",
+    "category": "Sauces & Seasonings",
+    "summary": "A no-salt-added barbecue sauce with a splash of bourbon.",
+    "prep": "10 min",
+    "cook": "1 hr 10 min",
+    "servings": "",
+    "tags": [
+      "BBQ",
+      "low sodium",
+      "bourbon"
+    ],
+    "ingredients": [
+      "1/4 cup diced onion",
+      "1/4 cup diced bell pepper",
+      "3 cloves garlic, minced",
+      "1 1/2 cups tomato puree (no salt added)",
+      "1 tablespoon low-sodium Dijon mustard",
+      "1/2 cup apple cider vinegar",
+      "2 oz apple juice concentrate",
+      "1 tablespoon lemon juice",
+      "1 1/2 tablespoons chili powder (no salt added)",
+      "1 teaspoon liquid smoke",
+      "1 teaspoon fresh ground black pepper",
+      "Hot sauce, to taste",
+      "1/4 cup bourbon",
+      "2 tablespoons honey"
+    ],
+    "steps": [
+      "In a large pot over medium heat, cook the onion, bell pepper, garlic, apple juice concentrate and vinegar.",
+      "Cook until it turns syrupy, about 8 to 10 minutes.",
+      "Add everything else. Bring to a boil, then lower the heat and simmer for 1 hour."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Shrimp Ceviche",
+    "category": "Lunch",
+    "summary": "Fresh, zesty shrimp ceviche with crunchy vegetables.",
+    "prep": "20 min + 2 hr chilling",
+    "cook": "3 min",
+    "servings": "",
+    "tags": [
+      "seafood",
+      "shrimp",
+      "no-oven"
+    ],
+    "ingredients": [
+      "1.3 pounds shrimp (or fish)",
+      "Juice of several limes, enough to cover the shrimp",
+      "1 white onion, diced",
+      "1 carrot, peeled and grated",
+      "1 cucumber, cubed",
+      "2/3 pound Roma tomatoes, diced",
+      "Capers, to taste",
+      "1 serrano pepper, chopped"
+    ],
+    "steps": [
+      "Blanch the shrimp or fish in boiling water for 3 minutes.",
+      "Drain and submerge in lime juice.",
+      "Refrigerate for 2 hours.",
+      "Drain, then mix with all the remaining ingredients."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Scotcharoos",
+    "category": "Desserts",
+    "summary": "Peanut butter crispy bars with a butterscotch-chocolate topping.",
+    "prep": "15 min",
+    "cook": "10 min",
+    "servings": "",
+    "tags": [
+      "bars",
+      "no-bake",
+      "peanut butter"
+    ],
+    "ingredients": [
+      "1 cup sugar",
+      "1 cup light corn syrup",
+      "1 cup crunchy or creamy peanut butter",
+      "6 cups Rice Krispies",
+      "1 cup butterscotch chips",
+      "1 cup chocolate chips"
+    ],
+    "steps": [
+      "Melt the sugar, corn syrup and peanut butter together in a large saucepan. Don't overcook.",
+      "Stir in the cereal until well mixed, then press into a greased 9x13 pan.",
+      "Melt the butterscotch and chocolate chips together over a double boiler until smooth.",
+      "Spread over the cooled bars, let cool completely, and cut into squares."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Calabacitas",
+    "category": "Sides",
+    "summary": "A cheesy Southwest sauté of summer squash, corn, tomatoes and peppers.",
+    "prep": "15 min",
+    "cook": "20 min",
+    "servings": "",
+    "tags": [
+      "vegetarian",
+      "squash",
+      "Southwest"
+    ],
+    "ingredients": [
+      "1 tablespoon olive oil",
+      "1 small onion, diced",
+      "1 poblano pepper, diced",
+      "1 jalapeño pepper, diced (seeds removed if you don't want it spicy)",
+      "1 can (15 oz) whole kernel corn, drained",
+      "2 plum tomatoes, diced",
+      "1 large zucchini, sliced into half moons",
+      "1 large yellow squash, sliced into half moons",
+      "3 cloves garlic, minced",
+      "2 teaspoons kosher salt",
+      "1/4 teaspoon freshly ground black pepper",
+      "1/4 teaspoon dried oregano",
+      "1/4 teaspoon ground cumin",
+      "1/4 cup water",
+      "1/2 cup shredded cheddar cheese",
+      "1/4 cup milk",
+      "Optional garnishes: crumbled cotija cheese, chopped cilantro"
+    ],
+    "steps": [
+      "Heat the oil in a large skillet. Cook the onion and peppers for 5 minutes.",
+      "Add the corn and tomatoes and cook 5 minutes.",
+      "Add the squash, garlic and seasonings and cook 5 minutes.",
+      "Add the water, cover and cook 5 minutes.",
+      "Stir in the cheddar and milk until melted. Top with cotija and cilantro if you like."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Burger Seasoning",
+    "category": "Sauces & Seasonings",
+    "summary": "An all-purpose blend to mix into patties or sprinkle on top.",
+    "prep": "5 min",
+    "cook": "",
+    "servings": "",
+    "tags": [
+      "burgers",
+      "spice blend",
+      "grilling"
+    ],
+    "ingredients": [
+      "1 tablespoon paprika",
+      "1 tablespoon garlic powder",
+      "1 tablespoon onion powder",
+      "1 tablespoon ground black pepper",
+      "1 tablespoon ground mustard",
+      "1 teaspoon salt",
+      "1/2 teaspoon cayenne pepper (optional, for extra heat)"
+    ],
+    "steps": [
+      "Mix everything together in a small bowl until evenly combined.",
+      "Store in an airtight container."
+    ],
+    "notes": ""
+  },
+  {
+    "title": "Cherry Mash",
+    "category": "Desserts",
+    "summary": "A homemade take on the classic Cherry Mash candy bar.",
+    "prep": "15 min + chilling",
+    "cook": "10 min",
+    "servings": "",
+    "tags": [
+      "candy",
+      "chocolate",
+      "cherry"
+    ],
+    "ingredients": [
+      "2 cups sugar",
+      "2/3 cup evaporated milk",
+      "Dash of salt",
+      "12 regular-size marshmallows",
+      "1/2 cup margarine",
+      "1 package (10 oz) cherry chips",
+      "1 teaspoon vanilla",
+      "1 package (12 oz) chocolate chips",
+      "3/4 cup peanut butter",
+      "2 cups crushed peanuts"
+    ],
+    "steps": [
+      "Combine the sugar, evaporated milk, salt, marshmallows and margarine in a saucepan over medium heat. Boil for 5 minutes.",
+      "Remove from the heat, stir in the cherry chips and vanilla, and pour into a buttered 9x13 pan.",
+      "Melt the chocolate chips in a double boiler, then stir in the peanut butter and crushed peanuts.",
+      "Spread over the cherry layer and chill until set."
+    ],
+    "notes": ""
   }
 ]
