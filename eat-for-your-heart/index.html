@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Eat for your Heart</title>
-<meta name="description" content="Eat for your Heart: a searchable collection of simple, wholesome recipes.">
+<meta name="description" content="Eat for your Heart: heart-healthy recipes that are low or no salt, lower in saturated fat and cholesterol-conscious, plus homemade swaps for salty store-bought staples.">
 <meta property="og:title" content="Eat for your Heart">
-<meta property="og:description" content="A searchable collection of simple, wholesome recipes.">
+<meta property="og:description" content="Heart-healthy recipes and homemade swaps for salty store-bought staples.">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,14 +26,23 @@
 
 <section class="intro">
   <div class="wrap">
-    <div class="eyebrow">Recipe collection</div>
+    <div class="eyebrow">Heart-healthy recipes</div>
     <h1>Eat for your Heart</h1>
-    <p>Simple, wholesome recipes for training days, travel days and everything in between. Search by name or ingredient, or browse by meal.</p>
+    <p>Low-salt, lower-fat, cholesterol-conscious cooking that still tastes like something. Real recipes, homemade swaps for salty store-bought staples, and small changes that add up.</p>
   </div>
 </section>
 
 <main class="wrap">
   <div id="list">
+    <section class="approach" aria-labelledby="approach-title">
+      <h2 id="approach-title" class="approach-title">How these recipes are built</h2>
+      <div class="pillars">
+        <div class="pillar"><b>Low or no salt</b><p>Flavor comes from herbs, spices, citrus and vinegar instead of the salt shaker. The American Heart Association recommends no more than 2,300 mg of sodium a day, and ideally 1,500 mg for most adults.</p></div>
+        <div class="pillar"><b>Lower saturated fat</b><p>Olive oil instead of butter, lean proteins, skinless poultry, and low-fat or nonfat dairy.</p></div>
+        <div class="pillar"><b>Cholesterol-conscious</b><p>Plenty of fish, beans, whole grains and vegetables, with rich ingredients like cheese and eggs used in moderation.</p></div>
+        <div class="pillar swapcard"><b>Homemade swaps</b><p>More than 70% of the sodium Americans eat comes from packaged, prepared and restaurant foods. Look for the <span class="swap-badge">Swap</span> tag to make your own versions of salty store-bought staples.</p></div>
+      </div>
+    </section>
     <div class="controls">
       <label class="search">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
@@ -44,6 +53,11 @@
     </div>
     <div class="grid" id="grid"></div>
     <p class="empty" id="empty" hidden>No recipes match that search. Try a different word or category.</p>
+    <aside class="disclaimer">
+      <p><b>Good to know:</b> These recipes are everyday cooking ideas, not medical or nutrition advice. If you're managing a heart condition, high blood pressure or high cholesterol, or follow a diet your doctor prescribed, check with your doctor or a registered dietitian about what's right for you.</p>
+      <p>Sources: American Heart Association, <a href="https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/sodium/how-much-sodium-should-i-eat-per-day" target="_blank" rel="noopener">How much sodium should I eat per day?</a> and <a href="https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats" target="_blank" rel="noopener">Saturated fat</a>.</p>
+      <p id="connection" hidden></p>
+    </aside>
   </div>
 
   <article class="detail" id="detail" hidden></article>
@@ -68,20 +82,22 @@
    ================================================== */
 const SITE = {
   name: "Eat for your Heart",
-  footerRight: "Simple, wholesome recipes",
+  footerRight: "Heart-healthy recipes",
 
   parent: {
     name: "Iron Reef",
     owner: "Iron Reef LLC",
     location: "Kansas City, Missouri",
     homeUrl: "../",
+    connection: "Eat for your Heart is a side project from Ryan Villanueva of Iron Reef: good food to fuel the arena and the dive.",
     logo: "../emblem.webp",
     links: [
+      { label: "About",            short: "About",   href: "../about/" },
       { label: "Rodeo",            short: "Rodeo",   href: "../rodeo/" },
       { label: "Diving",           short: "Diving",  href: "../diving/" },
       { label: "Eat for your Heart", short: "Recipes", href: "./", current: true },
       { label: "Store",            short: "Store",   href: "https://xhs4wp-ky.myshopify.com", external: true },
-      { label: "Contact",          short: "Contact", href: "../#contact" }
+      { label: "Contact",          short: "Contact", href: "../#contact", hideSmall: true }
     ]
   }
 };
@@ -91,7 +107,7 @@ const SITE = {
   const CATEGORY_ORDER = ["Breakfast","Lunch","Dinner","Sides","Sauces & Seasonings","Snacks","Desserts","Drinks"];
   const $ = id => document.getElementById(id);
   const { esc, slug } = RecipeView;
-  let recipes = [], active = "All";
+  let recipes = [], active = "All", swapsOnly = false;
   const BASE_TITLE = SITE.parent ? `${SITE.name} | ${SITE.parent.owner}` : SITE.name;
   const year = new Date().getFullYear();
 
@@ -101,13 +117,14 @@ const SITE = {
     $("brand").href = p.homeUrl;
     $("brand").innerHTML = `<img src="${esc(p.logo)}" alt="" width="52" height="45"><span>${esc(p.name)}</span>`;
     $("navlinks").innerHTML = p.links.map(l =>
-      `<li><a href="${esc(l.href)}"${l.current ? ' aria-current="page"' : ""}${l.external ? ' target="_blank" rel="noopener"' : ""}><span class="full">${esc(l.label)}</span><span class="short">${esc(l.short || l.label)}</span></a></li>`).join("");
+      `<li${l.hideSmall ? ' class="hide-sm"' : ""}><a href="${esc(l.href)}"${l.current ? ' aria-current="page"' : ""}${l.external ? ' target="_blank" rel="noopener"' : ""}><span class="full">${esc(l.label)}</span><span class="short">${esc(l.short || l.label)}</span></a></li>`).join("");
     $("footer-left").innerHTML = `&copy; ${year} ${esc(p.owner)}<span class="star">&#10022;</span>${esc(p.location)}`;
   } else {
     $("brand").innerHTML = `<span style="display:inline">${esc(SITE.name)}</span>`;
     $("footer-left").innerHTML = `&copy; ${year} ${esc(SITE.name)}`;
   }
   $("footer-right").textContent = SITE.footerRight;
+  if (p && p.connection) { $("connection").textContent = p.connection; $("connection").hidden = false; }
   document.title = BASE_TITLE;
 
   fetch("recipes.json", {cache:"no-cache"})
@@ -132,21 +149,24 @@ const SITE = {
     const present = [...new Set(recipes.map(r => r.category).filter(Boolean))];
     present.sort((a,b) => (CATEGORY_ORDER.indexOf(a)+1 || 99) - (CATEGORY_ORDER.indexOf(b)+1 || 99));
     $("chips").innerHTML = ["All", ...present].map(c =>
-      `<button class="chip" type="button" data-cat="${esc(c)}" aria-pressed="${c===active}">${esc(c)}</button>`).join("");
+      `<button class="chip" type="button" data-cat="${esc(c)}" aria-pressed="${c===active}">${esc(c)}</button>`).join("")
+      + (recipes.some(r => r.replaces) ? `<button class="chip swaps" type="button" data-swaps aria-pressed="${swapsOnly}">Store-bought swaps</button>` : "");
   }
 
   $("chips").addEventListener("click", e => {
     const b = e.target.closest(".chip"); if (!b) return;
+    if (b.hasAttribute("data-swaps")) { swapsOnly = !swapsOnly; b.setAttribute("aria-pressed", swapsOnly); render(); return; }
     active = b.dataset.cat;
-    $("chips").querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", x === b));
+    $("chips").querySelectorAll(".chip:not([data-swaps])").forEach(x => x.setAttribute("aria-pressed", x === b));
     render();
   });
   $("q").addEventListener("input", render);
 
   function matches(r, q){
     if (active !== "All" && r.category !== active) return false;
+    if (swapsOnly && !r.replaces) return false;
     if (!q) return true;
-    const hay = [r.title, r.summary, r.category, ...(r.tags||[]), ...(r.ingredients||[])].join(" ").toLowerCase();
+    const hay = [r.title, r.summary, r.category, r.replaces, r.heartNotes, ...(r.tags||[]), ...(r.ingredients||[])].join(" ").toLowerCase();
     return q.split(/\s+/).every(w => hay.includes(w));
   }
 

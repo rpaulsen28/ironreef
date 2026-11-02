@@ -16,7 +16,7 @@ window.RecipeView = (() => {
   function cardHTML(r, href){
     return `
       <a class="card" href="${esc(href || "#")}">
-        <span class="cat">${esc(r.category)}</span>
+        <span class="cat">${esc(r.category)}${r.replaces ? ` <span class="swap-badge">Swap</span>` : ""}</span>
         <h2>${esc(r.title)}</h2>
         <p>${esc(r.summary)}</p>
         <div class="meta">${timeLabel(r)}${r.servings ? `<span>Serves ${esc(r.servings)}</span>` : ""}</div>
@@ -29,6 +29,7 @@ window.RecipeView = (() => {
       <div class="eyebrow" style="margin-top:22px">${esc(r.category)}</div>
       <h2>${esc(r.title)}</h2>
       ${r.summary ? `<p class="summary">${esc(r.summary)}</p>` : ""}
+      ${r.replaces ? `<p class="replaces"><span class="swap-badge">Swap</span> Homemade swap for: <b>${esc(r.replaces)}</b></p>` : ""}
       <div class="facts">
         ${r.prep ? `<div><b>${esc(r.prep)}</b>Prep</div>` : ""}
         ${r.cook ? `<div><b>${esc(r.cook)}</b>Cook</div>` : ""}
@@ -38,6 +39,7 @@ window.RecipeView = (() => {
         <section><h3>Ingredients</h3><ul class="ing">${(r.ingredients||[]).map(i => `<li>${esc(i)}</li>`).join("")}</ul></section>
         <section><h3>Steps</h3><ol class="steps">${(r.steps||[]).map(s => `<li>${esc(s)}</li>`).join("")}</ol></section>
       </div>
+      ${r.heartNotes ? `<div class="heart-note"><span class="heart-icon" aria-hidden="true">&#9829;</span><div><strong>Heart-healthy notes</strong><p>${esc(r.heartNotes)}</p></div></div>` : ""}
       ${r.notes ? `<div class="note"><strong>Note:</strong> ${esc(r.notes)}</div>` : ""}
       ${(r.tags||[]).length ? `<div class="tags">${r.tags.map(t => `<span>${esc(t)}</span>`).join("")}</div>` : ""}`;
   }

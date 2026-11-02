@@ -18,7 +18,7 @@
   /* Home page only */
   .hero{padding:48px 0 64px;text-align:center}
   .hero .logo{width:min(340px,74vw);margin:0 auto}
-  .hero h1{font-family:var(--body);font-weight:600;font-size:clamp(1.6rem,3.6vw,2.4rem);color:var(--navy);margin:10px auto;max-width:24ch;line-height:1.2}
+  .hero h1{font-family:var(--body);font-weight:600;font-size:clamp(1.6rem,3.6vw,2.4rem);color:var(--navy);margin:32px auto 10px;max-width:24ch;line-height:1.2}
   .hero p{color:var(--muted);max-width:58ch;margin:0 auto 28px}
   .hero .btns{justify-content:center}
 
@@ -63,11 +63,12 @@
   <div class="wrap nav">
     <a class="brand" href="/"><img src="/emblem.webp" alt="" width="52" height="45"><span>Iron Reef</span></a>
     <nav><ul>
+      <li><a href="/about/">About</a></li>
       <li><a href="/rodeo/">Rodeo</a></li>
       <li><a href="/diving/">Diving</a></li>
       <li><a href="/eat-for-your-heart/"><span class="full">Eat for your Heart</span><span class="short">Recipes</span></a></li>
       <li><a href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Store</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li class="hide-sm"><a href="#contact">Contact</a></li>
     </ul></nav>
   </div>
 </header>
@@ -75,7 +76,7 @@
 <main>
   <section class="hero">
     <div class="wrap">
-      <img class="logo" src="/logo.webp" alt="Iron Reef LLC logo: a bull's head over an anchor, set above ocean waves" width="340" height="340">
+      <img class="logo" src="/logo.webp" alt="Iron Reef LLC logo: a bull's head over an anchor above ocean waves, with the motto Ride Hard. Dive Deep." width="340" height="409">
       <h1>Consulting for the arena and the open water.</h1>
       <p>Iron Reef LLC brings together two passions: teaching rodeo, from first-timers to Finals contenders, and helping divers plan and prepare for their next dive.</p>
       <div class="btns">
@@ -126,9 +127,9 @@
       <div class="cards">
         <div class="card">
           <div>
-            <div class="eyebrow">Recipe collection</div>
+            <div class="eyebrow">Side project</div>
             <h2>Eat for your Heart</h2>
-            <p>Simple, wholesome recipes for training days, travel days and everything in between. Search by ingredient or browse by meal.</p>
+            <p>Heart-healthy recipes that are low or no salt and lower in fat, plus homemade swaps for salty store-bought staples.</p>
           </div>
           <a class="btn solid" href="/eat-for-your-heart/">Browse recipes</a>
         </div>
@@ -150,8 +151,9 @@
       <div>
         <div class="eyebrow">About Iron Reef</div>
         <h2 class="section-title">Strength on land, steadiness at sea</h2>
-        <p>Iron Reef LLC was founded by Ryan Villanueva, a rodeo performer and competitor and a PADI Divemaster. The bull and the anchor in the logo stand for both sides of the work.</p>
+        <p>Iron Reef LLC was founded by Ryan Villanueva, a PADI Divemaster who has been diving since 2015 and an IGRA rodeo competitor, rodeo school instructor and 2025 World Finals chute dogging champion. The bull and the anchor in the logo stand for both sides of the work.</p>
         <p>After relocating from Colorado to the Kansas City area, Ryan rebuilt the business as Iron Reef LLC to bring rodeo and dive consulting together under one name.</p>
+        <p style="margin-top:22px"><a class="btn line" href="/about/">Read my story</a></p>
       </div>
     </div>
   </section>
@@ -176,7 +178,7 @@
 <footer>
   <div class="wrap">
     <span>&copy; <span class="yr">2026</span> Iron Reef LLC<span class="star">&#10022;</span>Kansas City, Missouri</span>
-    <nav><a href="/rodeo/">Rodeo</a><a href="/diving/">Diving</a><a href="/eat-for-your-heart/">Eat for your Heart</a><a href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Store</a></nav>
+    <nav><a href="/about/">About</a><a href="/rodeo/">Rodeo</a><a href="/diving/">Diving</a><a href="/eat-for-your-heart/">Eat for your Heart</a><a href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Store</a></nav>
   </div>
 </footer>
 <script>document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());</script>

@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Ryan Villanueva | Iron Reef LLC</title>
+<meta name="description" content="Meet Ryan Villanueva, founder of Iron Reef LLC: PADI Divemaster diving since 2015, and IGRA rodeo competitor, rodeo school instructor and 2025 World Finals chute dogging champion.">
+<meta property="og:title" content="About Ryan Villanueva | Iron Reef LLC">
+<meta property="og:description" content="PADI Divemaster and 2025 World Finals chute dogging champion. Ride hard. Dive deep.">
+<meta property="og:image" content="/logo.webp">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Work+Sans:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<style>
+  /* About page only */
+  .intro{background:var(--navy);color:var(--cream);padding:64px 0}
+  .intro .grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:56px;align-items:center}
+  .intro.no-photo .grid{grid-template-columns:1fr}
+  @media (max-width:820px){.intro .grid{grid-template-columns:1fr;gap:32px}}
+  .intro .eyebrow{color:var(--tan-light)}
+  .intro h1{font-family:var(--display);font-size:clamp(2.1rem,5.5vw,3.5rem);line-height:1.08;letter-spacing:.02em;margin:10px 0 18px}
+  .intro p{color:#d4dde7;font-size:1.15rem;max-width:58ch}
+  .intro p+p{margin-top:14px}
+
+  /* Photo slots: hidden until the photo file exists */
+  .photo{margin:0;border-radius:6px;overflow:hidden;background:var(--cream-2);box-shadow:0 10px 30px rgba(1,46,77,.18)}
+  .photo img{display:block;width:100%;height:100%;object-fit:cover}
+  .photo.portrait{aspect-ratio:4/5;border:6px solid var(--cream)}
+  .photo.wide{aspect-ratio:4/3}
+  .photo[hidden]{display:none}
+
+  .story{padding:88px 0}
+  .story .grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:56px;align-items:start}
+  .story.flip .grid > :first-child{order:2}
+  @media (max-width:820px){.story .grid{grid-template-columns:1fr;gap:32px}.story.flip .grid > :first-child{order:0}}
+  .story .grid.solo{grid-template-columns:1fr}
+  .story p{max-width:62ch}
+  .story p+p{margin-top:14px}
+  .story.light .section-title{color:var(--navy)}
+  .story.dark{background:var(--navy);color:var(--cream);padding-top:40px}
+  .story.dark p{color:#d4dde7}
+
+  .stats{display:flex;gap:16px;flex-wrap:wrap;margin-top:32px}
+  .stat{flex:1 1 140px;border-radius:4px;padding:18px 18px 16px;background:#fff;border:1px solid var(--tan-light);border-top:4px solid var(--tan)}
+  .stat b{display:block;font-family:var(--display);font-size:1.6rem;color:var(--navy);letter-spacing:.02em;line-height:1.1}
+  .stat span{font:500 .85rem var(--ui);color:var(--muted)}
+  .story.dark .stat{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);border-top-color:var(--tan)}
+  .story.dark .stat b{color:var(--cream)}
+  .story.dark .stat span{color:#b9c6d3}
+
+  .teach{background:var(--cream-2);border-top:1px solid var(--tan-light);padding:88px 0}
+  .teach .section-title{color:var(--navy)}
+  .teach p{max-width:64ch}
+  .teach p+p{margin-top:14px}
+  .teach blockquote{margin:28px 0 0;padding:22px 26px;border-left:6px solid var(--tan);background:#fff;border-radius:0 4px 4px 0;font-size:1.2rem;color:var(--navy);max-width:64ch}
+
+  .timeline{list-style:none;margin-top:36px;position:relative;padding-left:28px}
+  .timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--tan-light)}
+  .timeline li{position:relative;padding:0 0 24px 18px}
+  .timeline li::before{content:"";position:absolute;left:-27px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--cream);border:3px solid var(--tan)}
+  .timeline li.dive::before{border-color:var(--sea)}
+  .timeline b{display:block;font-family:var(--display);color:var(--navy);font-size:1.2rem;letter-spacing:.02em}
+  .timeline span{color:var(--ink)}
+  .legend{display:flex;gap:20px;font:500 .85rem var(--ui);color:var(--muted);margin-top:14px}
+  .legend i{display:inline-block;width:12px;height:12px;border-radius:50%;border:3px solid var(--tan);margin-right:6px;vertical-align:-1px}
+  .legend i.dive{border-color:var(--sea)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/"><img src="/emblem.webp" alt="" width="52" height="45"><span>Iron Reef</span></a>
+    <nav><ul>
+      <li><a href="/about/" aria-current="page">About</a></li>
+      <li><a href="/rodeo/">Rodeo</a></li>
+      <li><a href="/diving/">Diving</a></li>
+      <li><a href="/eat-for-your-heart/"><span class="full">Eat for your Heart</span><span class="short">Recipes</span></a></li>
+      <li><a href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Store</a></li>
+      <li class="hide-sm"><a href="/#contact">Contact</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main>
+  <!-- PHOTOS: upload these into the about/photos folder on GitHub and they appear automatically:
+       portrait.jpg  (tall, of you)   diving.jpg  (wide, underwater)   rodeo.jpg  (wide, in the arena) -->
+  <section class="intro" id="intro">
+    <div class="wrap grid">
+      <div>
+        <div class="eyebrow">About me</div>
+        <h1>Ride hard. Dive deep.</h1>
+        <p>I'm Ryan Villanueva, the founder of Iron Reef LLC. My life runs in two directions, down into the water and out into the arena, and I've built this business around both.</p>
+        <p>I'm a PADI Divemaster who has been diving since 2015, and an IGRA rodeo competitor, rodeo school instructor and 2025 World Finals chute dogging champion.</p>
+      </div>
+      <figure class="photo portrait" data-photo><img src="photos/portrait.jpg" alt="Ryan Villanueva"></figure>
+    </div>
+  </section>
+
+  <section class="story light">
+    <div class="wrap grid">
+      <div>
+        <div class="eyebrow">Below the surface</div>
+        <h2 class="section-title">A world few people ever see</h2>
+        <p>I've been diving since 2015. My first certification dives were at Lake Wazee, a freshwater quarry in Wisconsin. Since then I've logged more than 200 recreational dives, plus countless training dives, across the Caribbean, Mexico, Colorado and Utah. In 2024 I earned my PADI Divemaster certification.</p>
+        <p>What keeps me coming back is the serenity. Underwater, the world goes quiet except for the sound of your own bubbles, and you get to experience a place that few people on this planet ever will.</p>
+        <div class="stats">
+          <div class="stat"><b>2015</b><span>First certification dives</span></div>
+          <div class="stat"><b>200+</b><span>Recreational dives</span></div>
+          <div class="stat"><b>2024</b><span>PADI Divemaster</span></div>
+        </div>
+      </div>
+      <figure class="photo wide" data-photo><img src="photos/diving.jpg" alt="Ryan diving underwater"></figure>
+    </div>
+  </section>
+
+  <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="background:var(--cream)">
+    <path d="M0 44 C 180 8 360 8 540 40 S 900 76 1080 44 S 1320 12 1440 36 V80 H0Z" fill="#40607a" opacity=".55"/>
+    <path d="M0 56 C 200 26 380 30 560 54 S 920 84 1100 58 S 1330 34 1440 50 V80 H0Z" fill="#012e4d"/>
+  </svg>
+
+  <section class="story dark flip">
+    <div class="wrap grid">
+      <div>
+        <div class="eyebrow">In the arena</div>
+        <h2 class="section-title">From first rodeo to World Finals</h2>
+        <p>I went to my first gay rodeo on April 27, 2019, in Little Rock, Arkansas, hosted by the Diamond State Rodeo Association. Later that season I competed for the first time at the Rocky Mountain Regional Rodeo in Denver and placed in steer decorating on my very first attempt.</p>
+        <p>Over the years I've grown into all three camp events, chute dogging and calf roping on foot, and in 2026 I added barrel racing, flag racing and pole bending. In 2022 I won my first buckle at the Show Me State Rodeo in Sedalia, Missouri, and competed in my first World Finals that same year. In 2025 I earned my first World Finals buckle, winning chute dogging with first-place finishes both days in Reno, Nevada, the year IGRA celebrated 50 years of gay rodeo.</p>
+        <p>I also serve as IGRA's acting Contestant Liaison, the bridge between contestants and officials on rough stock matters and on patterns for the speed events, where I usually work alongside a partner. The role has made me a go-to resource for new and seasoned contestants alike.</p>
+        <div class="stats">
+          <div class="stat"><b>2019</b><span>First rodeo</span></div>
+          <div class="stat"><b>2022</b><span>First buckle</span></div>
+          <div class="stat"><b>2025</b><span>World Finals champion, chute dogging</span></div>
+          <div class="stat"><b>IGRA</b><span>Acting Contestant Liaison</span></div>
+        </div>
+      </div>
+      <figure class="photo wide" data-photo><img src="photos/rodeo.jpg" alt="Ryan competing at a rodeo"></figure>
+    </div>
+  </section>
+
+  <section class="teach">
+    <div class="wrap">
+      <div class="eyebrow">Why I teach</div>
+      <h2 class="section-title">Paying it forward</h2>
+      <p>My passion for rodeo is tied to the people who helped me become a strong competitor. The way they showed up for me inspired me to do the same for others. I now teach rodeo schools across the circuit and work with new competitors at every rodeo I can.</p>
+      <blockquote>Nothing beats watching someone new find the same thrill I did: wrestling steers in the dirt, riding through the arena, getting bucked off the back of a steer in a dress and a wig, and playing in the dirt with people who love it as much as they do.</blockquote>
+
+      <ul class="timeline">
+        <li class="dive"><b>2015</b><span>First certification dives at Lake Wazee, Wisconsin</span></li>
+        <li><b>2019</b><span>First gay rodeo in Little Rock, Arkansas, then first competition at the Rocky Mountain Regional Rodeo in Denver, placing in steer decorating</span></li>
+        <li><b>2022</b><span>First buckle at the Show Me State Rodeo in Sedalia, Missouri, and first World Finals</span></li>
+        <li class="dive"><b>2024</b><span>Certified PADI Divemaster</span></li>
+        <li><b>2025</b><span>First World Finals buckle: chute dogging champion in Reno, Nevada, during IGRA's 50th year</span></li>
+        <li><b>2026</b><span>Added barrel racing, flag racing and pole bending</span></li>
+      </ul>
+      <div class="legend"><span><i></i>Rodeo</span><span><i class="dive"></i>Diving</span></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="eyebrow">Let's talk</div>
+      <h2 class="section-title">Work with me</h2>
+      <p>Whether you're getting ready for your first rodeo or planning your next dive trip, send me a note.</p>
+      <div class="btns">
+        <a class="btn solid" href="/rodeo/">Rodeo consulting</a>
+        <a class="btn line" href="/diving/">Dive consulting</a>
+      </div>
+      <div class="contact-lines">
+        <a href="mailto:info@ironreefllc.com">info@ironreefllc.com</a>
+        <span>Kansas City, MO</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span class="yr">2026</span> Iron Reef LLC<span class="star">&#10022;</span>Kansas City, Missouri</span>
+    <nav><a href="/">Home</a><a href="/rodeo/">Rodeo</a><a href="/diving/">Diving</a><a href="/eat-for-your-heart/">Eat for your Heart</a><a href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Store</a></nav>
+  </div>
+</footer>
+<script>
+document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());
+// Hide any photo spot whose picture hasn't been uploaded yet
+document.querySelectorAll('[data-photo] img').forEach(img=>{
+  const hide=()=>{
+    const fig=img.closest('[data-photo]'); fig.hidden=true;
+    const sec=fig.closest('section'); const grid=fig.parentElement;
+    if(sec.id==='intro') sec.classList.add('no-photo'); else grid.classList.add('solo');
+  };
+  if(img.complete && img.naturalWidth===0) hide(); else img.addEventListener('error',hide);
+});
+</script>
+</body>
+</html>

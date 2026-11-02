@@ -27,7 +27,7 @@ nav ul{display:flex;gap:24px;list-style:none;font-family:var(--ui);font-weight:6
 nav a{text-decoration:none;color:var(--navy);padding:6px 0;border-bottom:2px solid transparent}
 nav a:hover,nav a[aria-current]{border-color:var(--tan)}
 .short{display:none}
-@media (max-width:820px){ nav ul{gap:12px;font-size:.72rem;letter-spacing:.05em} .brand span{display:none} .full{display:none} .short{display:inline} }
+@media (max-width:820px){ nav ul{gap:12px;font-size:.72rem;letter-spacing:.05em} .brand span{display:none} .full{display:none} .short{display:inline} nav .hide-sm{display:none} }
 
 /* ---------- Shared pieces ---------- */
 .eyebrow{font-family:var(--ui);font-weight:600;font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--tan)}

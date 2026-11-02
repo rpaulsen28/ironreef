@@ -1,6 +1,6 @@
 # Eat for your Heart
 
-A searchable recipe collection. It lives at `ironreefllc.com/eat-for-your-heart/`, but everything it needs is inside this folder, so it can be moved to its own website later.
+A searchable collection of heart-healthy recipes: low or no salt, lower in saturated fat, cholesterol-conscious, plus homemade swaps for salty store-bought staples. It lives at `ironreefllc.com/eat-for-your-heart/`, but everything it needs is inside this folder, so it can be moved to its own website later.
 
 ## Files
 
@@ -41,7 +41,9 @@ Each recipe looks like this:
     "First step.",
     "Second step."
   ],
-  "notes": "Optional tip. Leave as \"\" if none."
+  "notes": "Optional tip. Leave as \"\" if none.",
+  "replaces": "Optional: the store-bought item this recipe replaces (adds a Swap badge). Leave as \"\" if none.",
+  "heartNotes": "Why it's heart-healthy, or tips to cut salt and fat. Leave as \"\" if none."
 },
 ```
 
