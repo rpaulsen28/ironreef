@@ -52,6 +52,7 @@ Rules that keep the file working:
 - Every recipe except the last one ends with `},` (with a comma). The last recipe ends with `}` (no comma).
 - Every line inside a list (`ingredients`, `steps`, `tags`) ends with a comma except the last line.
 - Text goes inside straight double quotes `"like this"`. To use a quote mark inside text, write `\"`.
+- To split ingredients into groups, add a line that ends with a colon, like `"For the dressing:"`. It shows as a small heading.
 - Categories that already exist: Breakfast, Lunch, Dinner, Sides, Snacks, Desserts, Drinks. A new category name creates a new filter button automatically.
 
 If the page says the recipe list couldn't be read, there's a missing or extra comma, quote or bracket. GitHub's editor shows a red marker on the problem line.

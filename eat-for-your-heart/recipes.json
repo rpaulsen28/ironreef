@@ -86,13 +86,13 @@
       "1/4 red onion, finely diced",
       "1 cup cherry tomatoes, halved",
       "1 jalapeño, seeded and minced (optional)",
-      "1/4 cup chopped cilantro",
+      "1/4 cup chopped parsley",
       "2 tbsp avocado oil",
       "Juice of 2 limes",
       "1/2 tsp ground cumin"
     ],
     "steps": [
-      "Combine the beans, corn, bell pepper, tomatoes, onion, jalapeño and cilantro in a large bowl.",
+      "Combine the beans, corn, bell pepper, tomatoes, onion, jalapeño and parsley in a large bowl.",
       "Whisk the avocado oil, lime juice and cumin together.",
       "Pour the dressing over the salad and toss. Chill 20 minutes before serving if you have time."
     ],
@@ -430,14 +430,14 @@
       "1/4 cup water",
       "1/2 cup shredded reduced-fat cheddar cheese",
       "1/4 cup low-fat milk",
-      "Optional garnish: chopped cilantro"
+      "Optional garnish: chopped parsley"
     ],
     "steps": [
       "Heat the oil in a large skillet. Cook the onion and peppers for 5 minutes.",
       "Add the corn and tomatoes and cook 5 minutes.",
       "Add the squash, garlic and seasonings and cook 5 minutes.",
       "Add the water, cover and cook 5 minutes.",
-      "Stir in the cheddar and milk until melted. Top with cilantro if you like."
+      "Stir in the cheddar and milk until melted. Top with parsley if you like."
     ],
     "notes": "",
     "heartNotes": "Lightened from the original: the salt is cut from 2 teaspoons to an optional pinch, with reduced-fat cheese and low-fat milk. The cumin, oregano and peppers carry plenty of flavor."
@@ -650,13 +650,13 @@
       "1 tablespoon black pepper",
       "Optional: 3 tablespoons oregano leaves",
       "Optional: 2 tablespoons ground cumin",
-      "Optional: 2 tablespoons fresh cilantro"
+      "Optional: 2 tablespoons fresh parsley"
     ],
     "steps": [
       "Wear gloves when handling the hot peppers, and keep your hands away from your face.",
       "If you want to peel the long green chiles, slit each one, blister the skins under a broiler or in a 400°F oven for 6 to 8 minutes, cover with a damp cloth to steam, then peel. Seed and chop. Jalapeños don't need peeling.",
       "Dip the tomatoes in boiling water for 30 to 60 seconds until the skins split, then into cold water. Slip off the skins and remove the cores.",
-      "Combine everything except the oregano, cumin and cilantro in a large pot. Bring to a boil, stirring often, then simmer for 10 minutes. Add the optional spices and simmer 20 minutes more, stirring now and then.",
+      "Combine everything except the oregano, cumin and parsley in a large pot. Bring to a boil, stirring often, then simmer for 10 minutes. Add the optional spices and simmer 20 minutes more, stirring now and then.",
       "Ladle hot salsa into hot jars, leaving 1/2-inch headspace. Remove air bubbles, wipe the rims and put on the lids.",
       "Process pints in a boiling-water canner for 15 minutes."
     ],
@@ -1040,5 +1040,55 @@
     ],
     "notes": "Leave the jalapeño seeds in for more heat, or take them out for a milder curry. Adapted from Peas and Crayons (peasandcrayons.com). Monk fruit tip: many monk fruit sweeteners are blended with erythritol. Check the label and pick pure monk fruit or a monk fruit and allulose blend.",
     "heartNotes": "Lightened: light coconut milk replaces full-fat, which cuts the saturated fat by more than half. The fish sauce is gone, there's less curry paste (it's salty), monk fruit replaces the brown sugar, and lime makes up the difference. Extra vegetables stretch each serving."
+  },
+  {
+    "title": "Southwest Chicken Salad",
+    "category": "Lunch",
+    "summary": "Smoky, spicy shredded chicken tossed with beans, corn and fresh vegetables in a creamy Greek yogurt dressing.",
+    "prep": "15 min",
+    "cook": "22 min + 10 min resting",
+    "servings": 4,
+    "replaces": "",
+    "tags": [
+      "chicken",
+      "air fryer",
+      "salad",
+      "meal prep",
+      "high protein"
+    ],
+    "ingredients": [
+      "For the chicken:",
+      "500 g (about 1.1 lb) boneless, skinless chicken breast",
+      "2 teaspoons paprika",
+      "1 teaspoon cayenne pepper",
+      "1 teaspoon onion powder",
+      "1 teaspoon garlic powder",
+      "For the salad:",
+      "1/2 red bell pepper, diced",
+      "1/3 red onion, finely diced",
+      "1/2 cup corn",
+      "1 large tomato, diced",
+      "100 g (about 2/3 cup) no-salt-added black beans, rinsed and drained",
+      "1 bunch fresh parsley, chopped",
+      "Juice of 1 lime",
+      "For the dressing:",
+      "125 g (about 1/2 cup) plain nonfat Greek yogurt",
+      "1/2 tablespoon light mayonnaise",
+      "Juice of 1 lime",
+      "2 teaspoons paprika",
+      "1 teaspoon cayenne pepper",
+      "1 teaspoon onion powder",
+      "1 teaspoon garlic powder",
+      "1 teaspoon local honey or monk fruit sweetener"
+    ],
+    "steps": [
+      "Season the chicken breast on all sides with the paprika, cayenne, onion powder and garlic powder.",
+      "Air fry at 360°F for 22 minutes, flipping halfway through, until the chicken reaches 165°F inside.",
+      "Let the chicken rest for 10 minutes, then shred it into thin pieces with two forks.",
+      "Whisk all the dressing ingredients together until smooth.",
+      "In a large bowl, combine the shredded chicken, bell pepper, onion, corn, tomato, black beans, parsley and lime juice. Add the dressing and mix well."
+    ],
+    "notes": "Keeps well in the fridge for 3 to 4 days, so it's great for meal prep. Serve it on its own, over greens, or in lettuce wraps. Using 2 teaspoons of cayenne makes it spicy; use half if you want it milder. Monk fruit tip: many monk fruit sweeteners are blended with erythritol. Check the label and pick pure monk fruit or a monk fruit and allulose blend.",
+    "heartNotes": "No added salt: the spice blend, lime and parsley carry the flavor. Lean chicken breast, nonfat Greek yogurt and just a little light mayo keep the saturated fat low, and the beans add fiber."
   }
 ]

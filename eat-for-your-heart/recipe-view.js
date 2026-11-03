@@ -36,7 +36,7 @@ window.RecipeView = (() => {
         ${r.servings ? `<div><b>${esc(r.servings)}</b>Servings</div>` : ""}
       </div>
       <div class="cols">
-        <section><h3>Ingredients</h3><ul class="ing">${(r.ingredients||[]).map(i => `<li>${esc(i)}</li>`).join("")}</ul></section>
+        <section><h3>Ingredients</h3><ul class="ing">${(r.ingredients||[]).map(i => /:\s*$/.test(i) ? `<li class="ing-group">${esc(i.replace(/:\s*$/, ""))}</li>` : `<li>${esc(i)}</li>`).join("")}</ul></section>
         <section><h3>Steps</h3><ol class="steps">${(r.steps||[]).map(s => `<li>${esc(s)}</li>`).join("")}</ol></section>
       </div>
       ${r.heartNotes ? `<div class="heart-note"><span class="heart-icon" aria-hidden="true">&#9829;</span><div><strong>Heart-healthy notes</strong><p>${esc(r.heartNotes)}</p></div></div>` : ""}
