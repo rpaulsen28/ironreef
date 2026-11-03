@@ -16,6 +16,29 @@ window.RecipeView = (() => {
   }
   const hideOnError = `onerror="this.closest('[data-photo]').remove()"`;
 
+  // Links: any mention of another recipe's exact title becomes a link to that recipe.
+  // The recipe page calls RecipeView.setRecipes(list) once the list loads.
+  let LINKS = [];
+  function setRecipes(list){
+    LINKS = (list || []).map(x => ({ title: x.title, esc: esc(x.title), id: slug(x.title) }))
+      .filter(x => x.title.length > 6)
+      .sort((a, b) => b.title.length - a.title.length);
+  }
+  function linkify(text, selfId){
+    let html = esc(text);
+    if (!LINKS.length) return html;
+    const marks = [];
+    for (const l of LINKS) {
+      if (l.id === selfId) continue;
+      const i = html.indexOf(l.esc);
+      if (i < 0 || marks.some(m => i < m.end && i + l.esc.length > m.start)) continue;
+      marks.push({ start: i, end: i + l.esc.length, l });
+    }
+    marks.sort((a, b) => b.start - a.start);
+    for (const m of marks) html = html.slice(0, m.start) + `<a class="recipe-link" href="#${m.l.id}">${m.l.esc}</a>` + html.slice(m.end);
+    return html.replace(/ \(from this site\)/g, "");
+  }
+
   function timeLabel(r){
     const parts = [];
     if (r.prep) parts.push(`<span>Prep ${esc(r.prep)}</span>`);
@@ -53,13 +76,13 @@ window.RecipeView = (() => {
         ${r.image ? `<figure class="recipe-photo" data-photo><img src="${esc(imgSrc(r))}" alt="${esc(r.imageAlt || r.title)}" ${hideOnError}></figure>` : ""}
       </div>
       <div class="cols">
-        <section><h3>Ingredients</h3><ul class="ing">${(r.ingredients||[]).map(i => /:\s*$/.test(i) ? `<li class="ing-group">${esc(i.replace(/:\s*$/, ""))}</li>` : `<li>${esc(i)}</li>`).join("")}</ul></section>
-        <section><h3>Steps</h3><ol class="steps">${(r.steps||[]).map(s => `<li>${esc(s)}</li>`).join("")}</ol></section>
+        <section><h3>Ingredients</h3><ul class="ing">${(r.ingredients||[]).map(i => /:\s*$/.test(i) ? `<li class="ing-group">${esc(i.replace(/:\s*$/, ""))}</li>` : `<li>${linkify(i, slug(r.title))}</li>`).join("")}</ul></section>
+        <section><h3>Steps</h3><ol class="steps">${(r.steps||[]).map(s => `<li>${linkify(s, slug(r.title))}</li>`).join("")}</ol></section>
       </div>
-      ${r.heartNotes ? `<div class="heart-note"><span class="heart-icon" aria-hidden="true">&#9829;</span><div><strong>Heart-healthy notes</strong><p>${esc(r.heartNotes)}</p></div></div>` : ""}
-      ${r.notes ? `<div class="note"><strong>Note:</strong> ${esc(r.notes)}</div>` : ""}
+      ${r.heartNotes ? `<div class="heart-note"><span class="heart-icon" aria-hidden="true">&#9829;</span><div><strong>Heart-healthy notes</strong><p>${linkify(r.heartNotes, slug(r.title))}</p></div></div>` : ""}
+      ${r.notes ? `<div class="note"><strong>Note:</strong> ${linkify(r.notes, slug(r.title))}</div>` : ""}
       ${(r.tags||[]).length ? `<div class="tags">${r.tags.map(t => `<span>${esc(t)}</span>`).join("")}</div>` : ""}`;
   }
 
-  return { esc, slug, cardHTML, detailHTML };
+  return { esc, slug, cardHTML, detailHTML, setRecipes };
 })();

@@ -244,6 +244,7 @@ const SITE = {
     })
     .then(data => {
       recipes = data.map(r => ({...r, id: slug(r.title)}));
+      RecipeView.setRecipes(recipes);
       buildChips(); render(); route();
     })
     .catch(err => {
