@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eat for your Heart</title>
+<meta name="description" content="Eat for your Heart: heart-healthy recipes that are low or no salt, lower in saturated fat and cholesterol-conscious, plus homemade swaps for salty store-bought staples.">
+<meta property="og:title" content="Eat for your Heart">
+<meta property="og:description" content="Heart-healthy recipes and homemade swaps for salty store-bought staples.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Work+Sans:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+
+<!-- The header and footer are filled in from SITE SETTINGS in the script at the bottom of this file. -->
+<header>
+  <div class="wrap nav">
+    <a class="brand" id="brand" href="./"><span>Eat for your Heart</span></a>
+    <nav><ul id="navlinks"></ul></nav>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="wrap">
+    <div class="eyebrow">Heart-healthy recipes</div>
+    <h1>Eat for your Heart</h1>
+    <p>Low-salt, lower-fat, cholesterol-conscious cooking that still tastes like something. Real recipes, homemade swaps for salty store-bought staples, and small changes that add up.</p>
+  </div>
+</section>
+
+<main class="wrap">
+  <div id="list">
+    <section class="approach" aria-labelledby="approach-title">
+      <h2 id="approach-title" class="approach-title">How these recipes are built</h2>
+      <div class="pillars">
+        <div class="pillar"><b>Low or no salt</b><p>Flavor comes from herbs, spices, citrus and vinegar instead of the salt shaker. The American Heart Association recommends no more than 2,300 mg of sodium a day, and ideally 1,500 mg for most adults.</p></div>
+        <div class="pillar"><b>Lower saturated fat</b><p>Olive oil instead of butter, lean proteins, skinless poultry, and low-fat or nonfat dairy.</p></div>
+        <div class="pillar"><b>Cholesterol-conscious</b><p>Plenty of fish, beans, whole grains and vegetables, with rich ingredients like cheese and eggs used in moderation.</p></div>
+        <div class="pillar swapcard"><b>Homemade swaps</b><p>More than 70% of the sodium Americans eat comes from packaged, prepared and restaurant foods. Look for the <span class="swap-badge">Swap</span> tag to make your own versions of salty store-bought staples.</p></div>
+      </div>
+    </section>
+    <div class="controls">
+      <label class="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Search recipes or ingredients" aria-label="Search recipes or ingredients">
+      </label>
+      <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+      <div class="count" id="count" aria-live="polite"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>No recipes match that search. Try a different word or category.</p>
+    <aside class="disclaimer">
+      <p><b>Good to know:</b> These recipes are everyday cooking ideas, not medical or nutrition advice. If you're managing a heart condition, high blood pressure or high cholesterol, or follow a diet your doctor prescribed, check with your doctor or a registered dietitian about what's right for you.</p>
+      <p>Sources: American Heart Association, <a href="https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/sodium/how-much-sodium-should-i-eat-per-day" target="_blank" rel="noopener">How much sodium should I eat per day?</a> and <a href="https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats" target="_blank" rel="noopener">Saturated fat</a>.</p>
+      <p id="connection" hidden></p>
+    </aside>
+  </div>
+
+  <article class="detail" id="detail" hidden></article>
+  <div class="error" id="error" hidden></div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span id="footer-left"></span>
+    <span id="footer-right"></span>
+  </div>
+</footer>
+
+<script src="recipe-view.js"></script>
+<script>
+/* ================= SITE SETTINGS =================
+   This page is self-contained: everything it needs is in this folder.
+   While it lives inside the Iron Reef site, "parent" adds the Iron Reef
+   logo, menu and footer. To run Eat for your Heart as its own website,
+   copy this folder to a new project and replace the whole "parent" block
+   below (from the word parent down to the closing curly bracket) with:  parent: null
+   ================================================== */
+const SITE = {
+  name: "Eat for your Heart",
+  footerRight: "Heart-healthy recipes",
+
+  parent: {
+    name: "Iron Reef",
+    owner: "Iron Reef LLC",
+    location: "Kansas City, Missouri",
+    homeUrl: "../",
+    connection: "Eat for your Heart is a side project from Ryan Villanueva of Iron Reef: good food to fuel the arena and the dive.",
+    logo: "../emblem.webp",
+    links: [
+      { label: "About",            short: "About",   href: "../about/" },
+      { label: "Rodeo",            short: "Rodeo",   href: "../rodeo/" },
+      { label: "Diving",           short: "Diving",  href: "../diving/" },
+      { label: "Eat for your Heart", short: "Recipes", href: "./", current: true },
+      { label: "Store",            short: "Store",   href: "https://xhs4wp-ky.myshopify.com", external: true },
+      { label: "Contact",          short: "Contact", href: "../?contact", hideSmall: true }
+    ]
+  }
+};
+/* ============== END OF SITE SETTINGS ============== */
+
+(() => {
+  const CATEGORY_ORDER = ["Breakfast","Lunch","Dinner","Sides","Sauces & Seasonings","Snacks","Desserts","Drinks"];
+  const $ = id => document.getElementById(id);
+  const { esc, slug } = RecipeView;
+  let recipes = [], active = "All", swapsOnly = false;
+  const BASE_TITLE = SITE.parent ? `${SITE.name} | ${SITE.parent.owner}` : SITE.name;
+  const year = new Date().getFullYear();
+
+  // Header and footer
+  const p = SITE.parent;
+  if (p) {
+    $("brand").href = p.homeUrl;
+    $("brand").innerHTML = `<img src="${esc(p.logo)}" alt="" width="52" height="45"><span>${esc(p.name)}</span>`;
+    $("navlinks").innerHTML = p.links.map(l =>
+      `<li${l.hideSmall ? ' class="hide-sm"' : ""}><a href="${esc(l.href)}"${l.current ? ' aria-current="page"' : ""}${l.external ? ' target="_blank" rel="noopener"' : ""}><span class="full">${esc(l.label)}</span><span class="short">${esc(l.short || l.label)}</span></a></li>`).join("");
+    $("footer-left").innerHTML = `&copy; ${year} ${esc(p.owner)}<span class="star">&#10022;</span>${esc(p.location)}`;
+  } else {
+    $("brand").innerHTML = `<span style="display:inline">${esc(SITE.name)}</span>`;
+    $("footer-left").innerHTML = `&copy; ${year} ${esc(SITE.name)}`;
+  }
+  $("footer-right").textContent = SITE.footerRight;
+  if (p && p.connection) { $("connection").textContent = p.connection; $("connection").hidden = false; }
+  document.title = BASE_TITLE;
+
+  fetch("recipes.json", {cache:"no-cache"})
+    .then(r => { if (!r.ok) throw new Error("not found"); return r.text(); })
+    .then(t => {
+      try { return JSON.parse(t); }
+      catch (e) { throw new Error("format"); }
+    })
+    .then(data => {
+      recipes = data.map(r => ({...r, id: slug(r.title)}));
+      buildChips(); render(); route();
+    })
+    .catch(err => {
+      $("list").hidden = true;
+      $("error").hidden = false;
+      $("error").textContent = err.message === "format"
+        ? "The recipe list couldn't be read. Check recipes.json for a missing comma, quote or bracket near your last edit."
+        : "The recipe list couldn't be loaded. Please try again later.";
+    });
+
+  function buildChips(){
+    const present = [...new Set(recipes.map(r => r.category).filter(Boolean))];
+    present.sort((a,b) => (CATEGORY_ORDER.indexOf(a)+1 || 99) - (CATEGORY_ORDER.indexOf(b)+1 || 99));
+    $("chips").innerHTML = ["All", ...present].map(c =>
+      `<button class="chip" type="button" data-cat="${esc(c)}" aria-pressed="${c===active}">${esc(c)}</button>`).join("")
+      + (recipes.some(r => r.replaces) ? `<button class="chip swaps" type="button" data-swaps aria-pressed="${swapsOnly}">Store-bought swaps</button>` : "");
+  }
+
+  $("chips").addEventListener("click", e => {
+    const b = e.target.closest(".chip"); if (!b) return;
+    if (b.hasAttribute("data-swaps")) { swapsOnly = !swapsOnly; b.setAttribute("aria-pressed", swapsOnly); render(); return; }
+    active = b.dataset.cat;
+    $("chips").querySelectorAll(".chip:not([data-swaps])").forEach(x => x.setAttribute("aria-pressed", x === b));
+    render();
+  });
+  $("q").addEventListener("input", render);
+
+  function matches(r, q){
+    if (active !== "All" && r.category !== active) return false;
+    if (swapsOnly && !r.replaces) return false;
+    if (!q) return true;
+    const hay = [r.title, r.summary, r.category, r.replaces, r.heartNotes, ...(r.tags||[]), ...(r.ingredients||[])].join(" ").toLowerCase();
+    return q.split(/\s+/).every(w => hay.includes(w));
+  }
+
+  function render(){
+    const q = $("q").value.trim().toLowerCase();
+    const list = recipes.filter(r => matches(r, q));
+    $("grid").innerHTML = list.map(r => RecipeView.cardHTML(r, "#" + r.id)).join("");
+    $("empty").hidden = list.length > 0;
+    $("count").textContent = `${list.length} recipe${list.length === 1 ? "" : "s"}`;
+  }
+
+  function showDetail(r){
+    $("detail").innerHTML = `
+      <div class="actions">
+        <button class="back" type="button" id="back">&larr; All recipes</button>
+        <button class="print" type="button" onclick="window.print()">Print recipe</button>
+      </div>
+      ${RecipeView.detailHTML(r)}`;
+    $("back").addEventListener("click", () => { history.pushState("", "", location.pathname); route(); });
+    document.title = `${r.title} | ${SITE.name}`;
+  }
+
+  function route(){
+    const id = decodeURIComponent(location.hash.slice(1));
+    const r = recipes.find(x => x.id === id);
+    $("list").hidden = !!r;
+    $("detail").hidden = !r;
+    if (r) { showDetail(r); window.scrollTo(0, 0); }
+    else document.title = BASE_TITLE;
+  }
+  window.addEventListener("hashchange", route);
+  window.addEventListener("popstate", route);
+})();
+</script>
+</body>
+</html>

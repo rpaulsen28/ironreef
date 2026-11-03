@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iron Reef LLC | Rodeo &amp; Dive Consulting</title>
+<meta name="description" content="Iron Reef LLC offers rodeo school instruction in every IGRA event and dive consulting from a PADI Divemaster. Based in Kansas City, Missouri.">
+<meta property="og:title" content="Iron Reef LLC | Rodeo &amp; Dive Consulting">
+<meta property="og:description" content="Rodeo school instruction in every IGRA event, and dive consulting from a PADI Divemaster.">
+<meta property="og:image" content="/logo.webp">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Work+Sans:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<style>
+  /* Home page only */
+  .hero{padding:48px 0 64px;text-align:center}
+  .hero .logo{width:min(340px,74vw);margin:0 auto}
+  .hero h1{font-family:var(--body);font-weight:600;font-size:clamp(1.6rem,3.6vw,2.4rem);color:var(--navy);margin:32px auto 10px;max-width:24ch;line-height:1.2}
+  .hero p{color:var(--muted);max-width:58ch;margin:0 auto 28px}
+  .hero .btns{justify-content:center}
+
+  .creds{background:var(--cream-2);border-block:1px solid var(--tan-light)}
+  .creds ul{list-style:none;display:flex;justify-content:center;flex-wrap:wrap;gap:12px 40px;padding:20px 0;font-family:var(--ui);font-weight:600;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--navy)}
+  .creds li::before{content:"\2726";color:var(--tan);margin-right:10px}
+
+  .paths{display:grid;grid-template-columns:1fr 1fr}
+  @media (max-width:760px){.paths{grid-template-columns:1fr}}
+  .path{padding:64px clamp(20px,5vw,64px) 60px;text-decoration:none;display:flex;flex-direction:column;transition:.25s}
+  .path.rodeo{background:var(--tan);color:#fff}
+  .path.dive{background:var(--navy);color:var(--cream)}
+  .path:hover{filter:brightness(1.07)}
+  .path .eyebrow{color:inherit;opacity:.85}
+  .path h2{font-family:var(--display);font-size:clamp(1.7rem,3.4vw,2.4rem);letter-spacing:.03em;margin:6px 0 10px;line-height:1.1}
+  .path p{opacity:.92;max-width:44ch}
+  .path ul{list-style:none;margin:22px 0 28px;display:grid;gap:10px;font-family:var(--ui);font-weight:500;font-size:.95rem}
+  .path li{padding-left:22px;position:relative}
+  .path li::before{content:"";position:absolute;left:0;top:.7em;width:12px;height:2px;background:currentColor;opacity:.7}
+  .path .go{margin-top:auto;font-family:var(--ui);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem;align-self:flex-start;border-bottom:2px solid currentColor;padding-bottom:2px}
+
+  .recipes{padding:72px 0}
+  .recipes .cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  @media (max-width:860px){.recipes .cards{grid-template-columns:1fr}}
+  .recipes .card{display:flex;flex-direction:column;align-items:flex-start;gap:20px;background:#fff;border:1px solid var(--tan-light);border-left:6px solid var(--tan);border-radius:4px;padding:36px clamp(20px,4vw,40px)}
+  .recipes .card.shop{border-left-color:var(--navy)}
+  .recipes .card .btn{margin-top:auto}
+  .recipes h2{font-family:var(--display);font-size:clamp(1.5rem,3vw,2.1rem);color:var(--navy);letter-spacing:.02em;margin:6px 0 8px}
+  .recipes p{color:var(--muted);max-width:56ch}
+
+  .about{padding:24px 0 88px}
+  .about .grid{display:grid;grid-template-columns:240px 1fr;gap:56px;align-items:center}
+  @media (max-width:800px){.about .grid{grid-template-columns:1fr;gap:28px}.about .badge{max-width:200px;margin:auto}}
+  .badge{background:var(--cream-2);border-radius:50%;padding:24px;border:2px solid var(--tan-light)}
+  .about .section-title{color:var(--navy);font-size:clamp(1.6rem,3.4vw,2.3rem)}
+  .about p+p{margin-top:14px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/"><img src="/emblem.webp" alt="" width="52" height="45"><span>Iron Reef</span></a>
+    <nav><ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/rodeo/">Rodeo</a></li>
+      <li><a href="/diving/">Diving</a></li>
+      <li><a href="/eat-for-your-heart/"><span class="full">Eat for your Heart</span><span class="short">Recipes</span></a></li>
+      <li><a href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Store</a></li>
+      <li class="hide-sm"><a href="/?contact">Contact</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <img class="logo" src="/logo.webp" alt="Iron Reef LLC logo: a bull's head over an anchor above ocean waves, with the motto Ride Hard. Dive Deep." width="340" height="409">
+      <h1>From buckles to bubbles.</h1>
+      <p>Iron Reef LLC brings together two passions: teaching rodeo, from first-timers to Finals contenders, and helping divers plan and prepare for their next dive.</p>
+      <div class="btns">
+        <a class="btn solid" href="/rodeo/">Rodeo consulting</a>
+        <a class="btn line" href="/diving/">Dive consulting</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="creds">
+    <ul class="wrap">
+      <li>2025 World Champion Chute Dogger</li>
+      <li>All 13 IGRA rodeo events</li>
+      <li>PADI Divemaster</li>
+      <li>Caribbean &amp; US freshwater diving</li>
+      <li>Kansas City, Missouri</li>
+    </ul>
+  </div>
+
+  <div class="paths">
+    <a class="path rodeo" href="/rodeo/">
+      <div class="eyebrow">In the arena</div>
+      <h2>Rodeo Consulting</h2>
+      <p>Rodeo school instruction and coaching in every event offered at an IGRA rodeo.</p>
+      <ul>
+        <li>Taught by the 2025 World Champion Chute Dogger</li>
+        <li>Rough stock, roping, speed and camp events</li>
+        <li>Group rodeo school clinics and one-on-one coaching</li>
+        <li>Rodeo school planning for associations</li>
+      </ul>
+      <span class="go">Explore rodeo consulting</span>
+    </a>
+    <a class="path dive" href="/diving/">
+      <div class="eyebrow">Below the surface</div>
+      <h2>Dive Consulting</h2>
+      <p>Guidance from a PADI Divemaster with experience across the Caribbean and US freshwater sites.</p>
+      <ul>
+        <li>Dive trip and destination planning</li>
+        <li>Skills check-ins and gear guidance</li>
+        <li>Nine PADI certifications, from Open Water to Divemaster</li>
+      </ul>
+      <span class="go">Explore dive consulting</span>
+    </a>
+  </div>
+
+  <section class="recipes">
+    <div class="wrap">
+      <div class="cards">
+        <div class="card">
+          <div>
+            <div class="eyebrow">Side project</div>
+            <h2>Eat for your Heart</h2>
+            <p>Heart-healthy recipes that are low or no salt and lower in fat, plus homemade swaps for salty store-bought staples.</p>
+          </div>
+          <a class="btn solid" href="/eat-for-your-heart/">Browse recipes</a>
+        </div>
+        <div class="card shop">
+          <div>
+            <div class="eyebrow">Iron Reef Store</div>
+            <h2>Shop Iron Reef</h2>
+            <p>Shirts, tanks and more from the Iron Reef online store.</p>
+          </div>
+          <a class="btn solid" href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Visit the store</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap grid">
+      <div class="badge"><img src="/emblem.webp" alt="" width="260" height="224"></div>
+      <div>
+        <div class="eyebrow">About Iron Reef</div>
+        <h2 class="section-title">Ride Hard. Dive Deep.</h2>
+        <p>Iron Reef LLC was founded by Ryan Villanueva, a PADI Divemaster who has been diving since 2015 and an IGRA rodeo competitor, rodeo school instructor and 2025 World Finals chute dogging champion. The bull and the anchor in the logo stand for both sides of the work.</p>
+        <p>After relocating from Colorado to the Kansas City area, Ryan rebuilt the business as Iron Reef LLC to bring rodeo and dive consulting together under one name.</p>
+        <p style="margin-top:22px"><a class="btn line" href="/about/">Read my story</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="eyebrow">Let's talk</div>
+      <h2 class="section-title">Book a consultation</h2>
+      <p>Send a note with what you're looking for, your experience level and any dates you have in mind.</p>
+      <div class="btns">
+        <a class="btn solid" href="mailto:info@ironreefllc.com?subject=Rodeo%20consulting%20inquiry">Rodeo consulting</a>
+        <a class="btn line" href="mailto:info@ironreefllc.com?subject=Dive%20consulting%20inquiry">Dive consulting</a>
+      </div>
+      <div class="contact-lines">
+        <a href="mailto:info@ironreefllc.com">info@ironreefllc.com</a>
+        <span>Kansas City, MO</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span class="yr">2026</span> Iron Reef LLC<span class="star">&#10022;</span><span style="white-space:nowrap">Ride Hard. Dive Deep.</span><span class="star">&#10022;</span>Kansas City, Missouri</span>
+    <nav><a href="/about/">About</a><a href="/rodeo/">Rodeo</a><a href="/diving/">Diving</a><a href="/eat-for-your-heart/">Eat for your Heart</a><a href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Store</a><a href="/?contact">Contact</a></nav>
+  </div>
+</footer>
+<script>document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());</script>
+<script src="/contact.js" defer></script>
+</body>
+</html>
