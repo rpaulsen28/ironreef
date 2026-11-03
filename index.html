@@ -29,12 +29,12 @@
   .paths{display:grid;grid-template-columns:1fr 1fr}
   @media (max-width:760px){.paths{grid-template-columns:1fr}}
   .path{padding:64px clamp(20px,5vw,64px) 60px;text-decoration:none;display:flex;flex-direction:column;transition:.25s}
-  .path.rodeo{background:var(--tan);color:#fff}
+  .path.rodeo{background:var(--tan-dark);color:#fff}
   .path.dive{background:var(--navy);color:var(--cream)}
   .path:hover{filter:brightness(1.07)}
-  .path .eyebrow{color:inherit;opacity:.85}
+  .path .eyebrow{color:inherit}
   .path h2{font-family:var(--display);font-size:clamp(1.7rem,3.4vw,2.4rem);letter-spacing:.03em;margin:6px 0 10px;line-height:1.1}
-  .path p{opacity:.92;max-width:44ch}
+  .path p{max-width:44ch}
   .path ul{list-style:none;margin:22px 0 28px;display:grid;gap:10px;font-family:var(--ui);font-weight:500;font-size:.95rem}
   .path li{padding-left:22px;position:relative}
   .path li::before{content:"";position:absolute;left:0;top:.7em;width:12px;height:2px;background:currentColor;opacity:.7}
@@ -58,22 +58,23 @@
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="/"><img src="/emblem.webp" alt="" width="52" height="45"><span>Iron Reef</span></a>
-    <nav><ul>
+    <a class="brand" href="/" aria-label="Iron Reef home"><img src="/emblem.webp" alt="" width="52" height="45"><span>Iron Reef</span></a>
+    <nav aria-label="Main"><ul>
       <li><a href="/about/">About</a></li>
       <li><a href="/rodeo/">Rodeo</a></li>
       <li><a href="/diving/">Diving</a></li>
-      <li><a href="/eat-for-your-heart/"><span class="full">Eat for your Heart</span><span class="short">Recipes</span></a></li>
       <li><a href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Store</a></li>
       <li class="hide-sm"><a href="/?contact">Contact</a></li>
+      <li class="efyh-link"><a href="/eat-for-your-heart/"><img src="/eat-for-your-heart/brand/mark.svg" alt="" width="17" height="20"><span class="full">Eat for your Heart</span><span class="short">Recipes</span></a></li>
     </ul></nav>
   </div>
 </header>
 
-<main>
+<main id="main">
   <section class="hero">
     <div class="wrap">
       <img class="logo" src="/logo.webp" alt="Iron Reef LLC logo: a bull's head over an anchor above ocean waves, with the motto Ride Hard. Dive Deep." width="340" height="409">
@@ -178,7 +179,7 @@
 <footer>
   <div class="wrap">
     <span>&copy; <span class="yr">2026</span> Iron Reef LLC<span class="star">&#10022;</span><span style="white-space:nowrap">Ride Hard. Dive Deep.</span><span class="star">&#10022;</span>Kansas City, Missouri</span>
-    <nav><a href="/about/">About</a><a href="/rodeo/">Rodeo</a><a href="/diving/">Diving</a><a href="/eat-for-your-heart/">Eat for your Heart</a><a href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Store</a><a href="/?contact">Contact</a></nav>
+    <nav aria-label="Footer"><a href="/about/">About</a><a href="/rodeo/">Rodeo</a><a href="/diving/">Diving</a><a href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Store</a><a href="/?contact">Contact</a><a href="/eat-for-your-heart/">Eat for your Heart</a></nav>
   </div>
 </footer>
 <script>document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());</script>

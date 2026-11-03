@@ -64,11 +64,11 @@
   .cf-dialog{margin:auto;border:none;border-radius:8px;padding:0;width:min(580px,calc(100% - 32px));max-height:calc(100dvh - 32px);background:var(--cream);color:var(--ink);box-shadow:0 24px 60px rgba(1,46,77,.35)}
   .cf-dialog::backdrop{background:rgba(1,26,45,.6)}
   .cf-head{background:var(--navy);color:var(--cream);padding:22px 28px;display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
-  .cf-dialog.cf-contact .cf-head{background:var(--tan)}
+  .cf-dialog.cf-contact .cf-head{background:var(--tan-dark)}
   .cf-head .eyebrow{color:var(--tan-light)}
-  .cf-dialog.cf-contact .cf-head .eyebrow{color:#f5ece2}
+  .cf-dialog.cf-contact .cf-head .eyebrow{color:#fff}
   .cf-head h2{font-family:var(--display);font-size:1.5rem;letter-spacing:.02em;line-height:1.15;margin-top:4px}
-  .cf-head p{font-size:.95rem;opacity:.9;margin-top:6px}
+  .cf-head p{font-size:.95rem;margin-top:6px}
   .cf-x{background:none;border:none;color:var(--cream);font-size:1.8rem;line-height:1;cursor:pointer;padding:0 4px}
   .cf-body{padding:24px 28px 28px}
   .cf-form{display:grid;gap:14px}

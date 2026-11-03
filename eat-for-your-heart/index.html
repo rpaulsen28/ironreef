@@ -15,25 +15,26 @@
 <link rel="stylesheet" href="recipes.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <!-- The header and footer are filled in from SITE SETTINGS in the script at the bottom of this file. -->
 <header>
   <div class="wrap nav">
     <a class="brand" id="brand" href="./"><span>Eat for your Heart</span></a>
-    <nav><ul id="navlinks"></ul></nav>
+    <nav aria-label="Main"><ul id="navlinks"></ul></nav>
   </div>
 </header>
 
-<section class="intro">
+<section class="intro" aria-label="Eat for your Heart">
   <div class="wrap">
     <div class="eyebrow">Heart-healthy recipes</div>
-    <h1>Eat for your Heart</h1>
+    <h1 class="logo-h1"><img src="brand/logo-horizontal-reversed.svg" alt="Eat for your Heart" width="650" height="207"></h1>
     <p>Low-salt, lower-fat, cholesterol-conscious cooking that still tastes like something. Real recipes, homemade swaps for salty store-bought staples, and small changes that add up.</p>
     <a class="story-link" href="#how-i-eat">How I eat for my heart <span aria-hidden="true">&rarr;</span></a>
   </div>
 </section>
 
-<main class="wrap">
+<main class="wrap" id="main">
   <div id="list">
     <a class="story-teaser" href="#how-i-eat">
       <span class="heart-icon" aria-hidden="true">&#9829;</span>
@@ -72,13 +73,43 @@
 
     <div class="eyebrow" style="margin-top:22px">My story</div>
     <h2>How I eat for my heart</h2>
-    <p class="story-lead">In April 2023, at 39 years old, I had a heart attack. My right coronary artery was 100% blocked. I'd been a smoker since I was 12.</p>
-    <p>I remember lying in the cath lab, watching my heart die on a monitor while the doctors rushed to place a stent. It was one of the most terrifying moments of my life. It was also one of the most inspiring, because I refuse to let it happen again.</p>
-    <p>After the emergency angioplasty and my time in the hospital, I had to figure out what living heart-healthy meant to me. I quit smoking, learned everything I could about heart health, and started making the changes I needed to make. Not a crash diet. A balance that makes sense for my life and lets me be the best version of me.</p>
+    <div class="story-open">
+      <div>
+      <p class="story-lead">In April 2023, at 39 years old, I had a heart attack. My right coronary artery was 100% blocked. I'd been a smoker since I was 12.</p>
+      <p>I remember lying in the cath lab, watching my heart die on a monitor while the doctors rushed to place a stent. It was one of the most terrifying moments of my life. It was also one of the most inspiring, because I refuse to let it happen again.</p>
+      <p>After the emergency angioplasty and my time in the hospital, I had to figure out what living heart-healthy meant to me. I quit smoking, learned everything I could about heart health, and started making the changes I needed to make. Not a crash diet. A balance that makes sense for my life and lets me be the best version of me.</p>
+      </div>
+      <figure class="story-photo">
+        <img src="photos/hospital.jpg" alt="Ryan in a hospital bed after his emergency angioplasty, giving a peace sign" width="1000" height="751">
+        <figcaption>April 2023, in the hospital after my emergency angioplasty.</figcaption>
+      </figure>
+    </div>
+
+    <div class="story-open flip">
+      <div>
+        <h3>Cardiac rehab</h3>
+        <p>A month after my heart attack, I started cardiac rehab, working out with monitors clipped on while the staff watched every beat. Three months later I'd completed the program, and it showed me my heart could get stronger again.</p>
+        <p>Rehab got me moving. The kitchen is where I keep it going.</p>
+      </div>
+      <figure class="story-photo">
+        <img src="photos/rehab.jpg" alt="Ryan at cardiac rehab wearing a heart monitor and pulse oximeter, giving a peace sign" width="1000" height="751" loading="lazy">
+        <figcaption>Cardiac rehab, which I started a month after my heart attack.</figcaption>
+      </figure>
+    </div>
 
     <h3>I eat local</h3>
     <p>I'm a locavore. The environment matters to me, and buying food grown and made close to home is one of the easiest ways I can shrink my carbon footprint. Farm to table, homemade, no fillers.</p>
     <p>Farmers markets are my grocery store, and whatever is in season decides what I cook. If it looks good at the market, buy it, then figure out how to make that fresh fruit, those vegetables and that protein work for your diet.</p>
+    <div class="photo-pair">
+      <figure class="story-photo">
+        <img src="photos/market.jpg" alt="Ryan smiling at a busy outdoor farmers market" width="1000" height="751" loading="lazy">
+        <figcaption>At the farmers market.</figcaption>
+      </figure>
+      <figure class="story-photo">
+        <img src="photos/market-haul.jpg" alt="A farmers market haul on a kitchen counter: heirloom tomatoes, carrots with tops, green beans, blueberries, beets, bok choy, salad greens, quail eggs and local meat" width="1024" height="769" loading="lazy">
+        <figcaption>One market haul: heirloom tomatoes, carrots, green beans, blueberries, beets, bok choy, greens, quail eggs and local meat.</figcaption>
+      </figure>
+    </div>
 
     <h3>The decisions I make every time I cook</h3>
     <div class="habits">
@@ -91,13 +122,17 @@
     </div>
 
     <h3>I read every label</h3>
-    <p>I'm not against packaged foods. I just use them smartly, and sparingly when I can. On every label, I'm looking for:</p>
-    <ul class="ing">
-      <li><b>Sodium</b>, and how much is in a serving</li>
-      <li><b>Added sugars</b></li>
-      <li><b>High fat with low protein</b></li>
-      <li><b>Refined, high-glycemic carbs</b> that spike blood sugar</li>
-    </ul>
+    <p>I'm not against packaged foods. I just use them smartly, and sparingly when I can. Every label gets checked for the red flags I avoid:</p>
+    <div class="red-flags">
+      <div class="red-flags-title">Red flags on a label</div>
+      <ul>
+        <li><b>High sodium.</b> Salt is the first thing I check, and the number I watch the closest.</li>
+        <li><b>Added sugars.</b> If sugar has been added, I want to know how much and why.</li>
+        <li><b>Lots of fat with little protein.</b> That usually means it's more filler than food.</li>
+        <li><b>Refined, high-glycemic carbs.</b> White flour, syrups and starches that spike blood sugar.</li>
+      </ul>
+      <p>If a label is high in any of these, it goes back on the shelf, or I find a way to make it myself.</p>
+    </div>
     <p>Find a canned-goods brand that doesn't add salt. So much of that added salt just isn't necessary.</p>
     <p><b>Check the serving size, too.</b> Every number on that label is for one serving, not the whole package. A can of soup or a bag of chips is often two or three servings, so eating the whole thing doubles or triples the sodium, sugar and fat. Sometimes the healthiest change isn't a new food at all. It's eating the actual serving size and saving the rest for later.</p>
 
@@ -153,9 +188,9 @@ const SITE = {
       { label: "About",            short: "About",   href: "../about/" },
       { label: "Rodeo",            short: "Rodeo",   href: "../rodeo/" },
       { label: "Diving",           short: "Diving",  href: "../diving/" },
-      { label: "Eat for your Heart", short: "Recipes", href: "./", current: true },
       { label: "Store",            short: "Store",   href: "https://xhs4wp-ky.myshopify.com", external: true },
-      { label: "Contact",          short: "Contact", href: "../?contact", hideSmall: true }
+      { label: "Contact",          short: "Contact", href: "../?contact", hideSmall: true },
+      { label: "Eat for your Heart", short: "Recipes", href: "./", current: true, icon: "brand/mark.svg" }
     ]
   }
 };
@@ -173,12 +208,14 @@ const SITE = {
   const p = SITE.parent;
   if (p) {
     $("brand").href = p.homeUrl;
+    $("brand").setAttribute("aria-label", `${p.name} home`);
     $("brand").innerHTML = `<img src="${esc(p.logo)}" alt="" width="52" height="45"><span>${esc(p.name)}</span>`;
     $("navlinks").innerHTML = p.links.map(l =>
-      `<li${l.hideSmall ? ' class="hide-sm"' : ""}><a href="${esc(l.href)}"${l.current ? ' aria-current="page"' : ""}${l.external ? ' target="_blank" rel="noopener"' : ""}><span class="full">${esc(l.label)}</span><span class="short">${esc(l.short || l.label)}</span></a></li>`).join("");
+      `<li${l.hideSmall ? ' class="hide-sm"' : l.icon ? ' class="efyh-link"' : ""}><a href="${esc(l.href)}"${l.current ? ' aria-current="page"' : ""}${l.external ? ' target="_blank" rel="noopener"' : ""}>${l.icon ? `<img src="${esc(l.icon)}" alt="" width="17" height="20">` : ""}<span class="full">${esc(l.label)}</span><span class="short">${esc(l.short || l.label)}</span></a></li>`).join("");
     $("footer-left").innerHTML = `&copy; ${year} ${esc(p.owner)}<span class="star">&#10022;</span>${esc(p.location)}`;
   } else {
-    $("brand").innerHTML = `<span style="display:inline">${esc(SITE.name)}</span>`;
+    $("brand").setAttribute("aria-label", `${SITE.name} home`);
+    $("brand").innerHTML = `<img src="brand/mark.svg" alt="" width="39" height="45"><span style="display:inline">${esc(SITE.name)}</span>`;
     $("footer-left").innerHTML = `&copy; ${year} ${esc(SITE.name)}`;
   }
   $("footer-right").textContent = SITE.footerRight;
@@ -248,6 +285,15 @@ const SITE = {
     document.title = `${r.title} | ${SITE.name}`;
   }
 
+  // Move keyboard and screen reader focus to the new heading when the view changes
+  let firstRoute = true;
+  function focusHeading(id){
+    const h = $(id).querySelector("h2");
+    if (!h) return;
+    h.tabIndex = -1;
+    if (!firstRoute || location.hash) h.focus({preventScroll:true});
+  }
+
   function route(){
     const id = decodeURIComponent(location.hash.slice(1));
     const story = id === "how-i-eat";
@@ -255,9 +301,10 @@ const SITE = {
     $("list").hidden = !!r || story;
     $("detail").hidden = !r;
     $("story").hidden = !story;
-    if (r) { showDetail(r); window.scrollTo(0, 0); }
-    else if (story) { document.title = `How I Eat for My Heart | ${SITE.name}`; window.scrollTo(0, 0); }
+    if (r) { showDetail(r); window.scrollTo(0, 0); focusHeading("detail"); }
+    else if (story) { document.title = `How I Eat for My Heart | ${SITE.name}`; window.scrollTo(0, 0); focusHeading("story"); }
     else document.title = BASE_TITLE;
+    firstRoute = false;
   }
   window.addEventListener("hashchange", route);
   window.addEventListener("popstate", route);

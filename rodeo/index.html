@@ -64,22 +64,23 @@
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="/"><img src="/emblem.webp" alt="" width="52" height="45"><span>Iron Reef</span></a>
-    <nav><ul>
+    <a class="brand" href="/" aria-label="Iron Reef home"><img src="/emblem.webp" alt="" width="52" height="45"><span>Iron Reef</span></a>
+    <nav aria-label="Main"><ul>
       <li><a href="/about/">About</a></li>
       <li><a href="/rodeo/" aria-current="page">Rodeo</a></li>
       <li><a href="/diving/">Diving</a></li>
-      <li><a href="/eat-for-your-heart/"><span class="full">Eat for your Heart</span><span class="short">Recipes</span></a></li>
       <li><a href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Store</a></li>
       <li class="hide-sm"><a href="/?contact">Contact</a></li>
+      <li class="efyh-link"><a href="/eat-for-your-heart/"><img src="/eat-for-your-heart/brand/mark.svg" alt="" width="17" height="20"><span class="full">Eat for your Heart</span><span class="short">Recipes</span></a></li>
     </ul></nav>
   </div>
 </header>
 
-<main>
+<main id="main">
   <section class="banner rodeo">
     <div class="wrap">
       <div class="title-badge"><span class="star">&#9733;</span>2025 World Champion Chute Dogger</div>
@@ -219,7 +220,7 @@
 <footer>
   <div class="wrap">
     <span>&copy; <span class="yr">2026</span> Iron Reef LLC<span class="star">&#10022;</span><span style="white-space:nowrap">Ride Hard. Dive Deep.</span><span class="star">&#10022;</span>Kansas City, Missouri</span>
-    <nav><a href="/">Home</a><a href="/about/">About</a><a href="/diving/">Diving</a><a href="/eat-for-your-heart/">Eat for your Heart</a><a href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Store</a><a href="/?contact">Contact</a></nav>
+    <nav aria-label="Footer"><a href="/">Home</a><a href="/about/">About</a><a href="/diving/">Diving</a><a href="https://xhs4wp-ky.myshopify.com" target="_blank" rel="noopener">Store</a><a href="/?contact">Contact</a><a href="/eat-for-your-heart/">Eat for your Heart</a></nav>
   </div>
 </footer>
 <script>document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());</script>
