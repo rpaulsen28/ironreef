@@ -314,7 +314,7 @@ const SITE = {
       const id = sectionId(c);
       html += `
       <section class="rsec" id="${id}" aria-labelledby="${id}-h">
-        <div class="rsec-head"><h2 id="${id}-h">${esc(c)} <span class="rsec-count">${items.length}</span></h2>${SECTION_NOTES[c] ? `<p>${esc(SECTION_NOTES[c])}</p>` : ""}</div>
+        <div class="rsec-head"><h2 id="${id}-h">${esc(c)} <span class="rsec-count">(${items.length})</span></h2>${SECTION_NOTES[c] ? `<p>${esc(SECTION_NOTES[c])}</p>` : ""}</div>
         <div class="grid">${shown.map(r => RecipeView.cardHTML(r, "#" + r.id)).join("")}</div>
         ${items.length > SECTION_LIMIT ? `<button class="see-all" type="button" data-cat="${esc(c)}" aria-expanded="${open}">${open ? "Show fewer" : `See all ${items.length}`}</button>` : ""}
       </section>`;

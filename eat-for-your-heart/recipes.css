@@ -216,7 +216,7 @@ nav ul{align-items:center}
 .rsec-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-bottom:4px}
 .rsec-head h2{font-family:var(--display);font-size:clamp(1.3rem,3vw,1.7rem);color:var(--navy);letter-spacing:.02em}
 .rsec-head p{color:var(--muted);font-size:.98rem}
-.rsec-count{font:600 .8rem var(--ui);color:var(--tan-text);background:var(--cream-2);border-radius:99px;padding:2px 9px;vertical-align:4px;letter-spacing:0}
+.rsec-count{font-family:var(--body);font-weight:400;font-size:.75em;color:var(--muted);letter-spacing:0}
 .rsec .grid{padding:12px 0 8px}
 .rsec.featured{background:#fbefed;border:1px solid #efd2ce;border-radius:8px;padding:22px 22px 12px;margin-top:20px}
 .rsec.featured + .rsec{border-top:none}
