@@ -116,3 +116,29 @@ footer .star{color:var(--tan);margin-inline:8px}
 .disclaimer a{color:var(--navy)}
 #connection{font-style:italic;color:var(--navy)}
 .grid{padding-bottom:40px}
+
+/* How I eat for my heart */
+.story-link{display:inline-block;margin-top:18px;font:600 .82rem var(--ui);letter-spacing:.12em;text-transform:uppercase;color:var(--cream);text-decoration:none;border-bottom:2px solid var(--tan);padding-bottom:3px}
+.story-link:hover{color:#fff;border-color:#fff}
+.story-teaser{display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center;margin-top:32px;padding:20px 22px;background:#fbefed;border:1px solid #efd2ce;border-radius:6px;text-decoration:none;color:var(--ink);transition:.2s}
+.story-teaser:hover{border-color:#b4534a;box-shadow:0 6px 18px rgba(1,46,77,.08)}
+.story-teaser b{display:block;font-family:var(--body);font-size:1.15rem;color:var(--navy)}
+.story-teaser > span:nth-child(2) > span{color:var(--muted);font-size:.98rem}
+.story-teaser .go{font:600 .8rem var(--ui);letter-spacing:.1em;text-transform:uppercase;color:#8f3a32;white-space:nowrap}
+@media (max-width:640px){.story-teaser{grid-template-columns:auto 1fr}.story-teaser .go{grid-column:2}}
+.story{padding:28px 0 88px;max-width:760px}
+.story h2{font-family:var(--display);font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.15;color:var(--navy);letter-spacing:.02em;margin:10px 0 18px}
+.story h3{font-family:var(--display);font-size:1.25rem;color:var(--navy);letter-spacing:.03em;margin:40px 0 12px}
+.story p+p{margin-top:14px}
+.story .ing{margin:14px 0 16px}
+.story-lead{font-size:1.2rem;color:var(--navy);font-weight:600}
+.habits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:6px}
+@media (max-width:640px){.habits{grid-template-columns:1fr}}
+.habit{background:#fff;border:1px solid var(--tan-light);border-top:4px solid #b4534a;border-radius:4px;padding:16px 18px}
+.habit b{display:block;color:var(--navy);margin-bottom:4px}
+.habit p{font-size:.97rem;color:var(--muted)}
+.story-cta,.story-mini a{font:600 .85rem var(--ui);letter-spacing:.1em;text-transform:uppercase;color:var(--navy);text-decoration:none;border-bottom:2px solid var(--tan);padding-bottom:3px}
+.story-mini{margin-top:28px}
+.story-mini a{text-transform:none;letter-spacing:0;font-size:.95rem}
+a.back{text-decoration:none;display:inline-block}
+@media print{.story-mini,.story-teaser{display:none !important}}

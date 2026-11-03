@@ -17,7 +17,7 @@
       "1 cup nonfat milk or unsweetened almond milk",
       "1/2 cup plain nonfat Greek yogurt",
       "1 tbsp chia seeds",
-      "1 tsp honey or maple syrup",
+      "1 tsp local honey",
       "1 cup mixed berries"
     ],
     "steps": [
@@ -26,7 +26,7 @@
       "Stir, top with berries and serve cold."
     ],
     "notes": "Keeps in the fridge for up to 3 days.",
-    "heartNotes": "Oats are a good source of soluble fiber. Use nonfat or low-fat milk and plain nonfat Greek yogurt to keep saturated fat low."
+    "heartNotes": "Oats are a good source of soluble fiber, and the berries bring most of the sweetness, so a teaspoon of honey is plenty. Use nonfat or low-fat milk and plain nonfat Greek yogurt to keep saturated fat low."
   },
   {
     "title": "Potato Shakshuka",
@@ -42,7 +42,7 @@
       "brunch"
     ],
     "ingredients": [
-      "2 tablespoons extra-virgin olive oil",
+      "2 tablespoons avocado oil",
       "1 medium yellow onion, chopped",
       "1 pound baby Yukon gold potatoes, halved",
       "2 teaspoons chipotle chile powder",
@@ -50,6 +50,7 @@
       "Freshly ground pepper",
       "1 can (28 oz) no-salt-added crushed tomatoes",
       "1 jar (12 oz) roasted red peppers, rinsed, drained and chopped",
+      "2 cups baby spinach or chopped kale",
       "1/4 cup shredded reduced-fat cheddar (optional)",
       "4 to 6 large eggs",
       "1/4 cup fresh parsley, roughly chopped, for garnish",
@@ -59,11 +60,11 @@
     "steps": [
       "Heat the oil in a large skillet over medium heat. Cook the onion and potatoes until softened, 8 to 10 minutes. Stir in the chipotle powder, smoked paprika and a pinch of pepper for 1 minute.",
       "Add the tomatoes, red peppers and 1/3 cup water. Bring to a low boil, then simmer over medium heat until the sauce thickens and the potatoes are fork-tender, about 5 minutes. Season with pepper.",
-      "Make 4 to 6 wells in the sauce, sprinkle a little cheese into each, if using,, and crack an egg into each one. Cover and cook until the whites are set and the yolks are done the way you like them.",
+      "Stir in the spinach or kale until it wilts. Make 4 to 6 wells in the sauce, sprinkle a little cheese into each if using, and crack an egg into each one. Cover and cook until the whites are set and the yolks are done the way you like them.",
       "Top with parsley and sesame seeds and serve with whole-grain bread."
     ],
     "notes": "",
-    "heartNotes": "Lightened: no added salt, no-salt-added tomatoes, and less cheese (reduced-fat and optional). Eggs fit a heart-healthy diet in moderation; for less cholesterol, use 4 eggs instead of 6."
+    "heartNotes": "Lightened: no added salt, no-salt-added tomatoes, avocado oil, less cheese (reduced-fat and optional), and a couple of cups of greens. Eggs fit a heart-healthy diet in moderation; for less cholesterol, use 4 eggs instead of 6."
   },
   {
     "title": "Black Bean and Corn Salad",
@@ -83,18 +84,20 @@
       "1 1/2 cups corn (frozen and thawed, or fresh)",
       "1 red bell pepper, diced",
       "1/4 red onion, finely diced",
+      "1 cup cherry tomatoes, halved",
+      "1 jalapeño, seeded and minced (optional)",
       "1/4 cup chopped cilantro",
-      "2 tbsp olive oil",
+      "2 tbsp avocado oil",
       "Juice of 2 limes",
       "1/2 tsp ground cumin"
     ],
     "steps": [
-      "Combine the beans, corn, bell pepper, onion and cilantro in a large bowl.",
-      "Whisk the olive oil, lime juice and cumin together.",
+      "Combine the beans, corn, bell pepper, tomatoes, onion, jalapeño and cilantro in a large bowl.",
+      "Whisk the avocado oil, lime juice and cumin together.",
       "Pour the dressing over the salad and toss. Chill 20 minutes before serving if you have time."
     ],
     "notes": "Add diced avocado right before serving.",
-    "heartNotes": "Choose no-salt-added beans, or rinse regular canned beans well to wash away some of the sodium."
+    "heartNotes": "Choose no-salt-added beans, or rinse regular canned beans well to wash away some of the sodium. Beans and vegetables add fiber, and avocado oil keeps the fat unsaturated."
   },
   {
     "title": "Hummus Veggie Wraps",
@@ -115,11 +118,12 @@
       "1 cup baby spinach",
       "1/2 cucumber, sliced into strips",
       "1 carrot, shredded",
+      "1/2 cup shredded red cabbage",
       "1/4 cup roasted red peppers, rinsed and sliced"
     ],
     "steps": [
       "Spread hummus over each tortilla, leaving a small border.",
-      "Layer the spinach, cucumber, carrot and red peppers down the center.",
+      "Layer the spinach, cucumber, carrot, cabbage and red peppers down the center.",
       "Roll up tightly, folding in the sides, and cut in half."
     ],
     "notes": "Wrap in foil to pack for the road or the arena.",
@@ -144,9 +148,11 @@
       "1 white onion, diced",
       "1 carrot, peeled and grated",
       "1 cucumber, cubed",
+      "1 red bell pepper, diced",
       "2/3 pound Roma tomatoes, diced",
       "Capers, rinsed, to taste",
-      "1 serrano pepper, chopped"
+      "1 serrano pepper, chopped",
+      "1/4 cup chopped cilantro"
     ],
     "steps": [
       "Blanch the shrimp or fish in boiling water for 3 minutes.",
@@ -154,13 +160,13 @@
       "Refrigerate for 2 hours.",
       "Drain, then mix with all the remaining ingredients."
     ],
-    "notes": "",
+    "notes": "Serve with a little diced avocado for healthy fat.",
     "heartNotes": "Shrimp is very low in saturated fat. Rinse the capers to wash off some of their salt, and skip any added salt; the lime does the work."
   },
   {
     "title": "Lemon Herb Baked Salmon",
     "category": "Dinner",
-    "summary": "Simple sheet-pan salmon with lemon, garlic and dill.",
+    "summary": "Salmon roasted with lemon, garlic and dill on one pan with asparagus and tomatoes.",
     "prep": "10 min",
     "cook": "15 min",
     "servings": 4,
@@ -172,22 +178,24 @@
     ],
     "ingredients": [
       "4 salmon fillets (about 5 oz each)",
-      "1 tbsp olive oil",
+      "1 tbsp avocado oil",
       "2 cloves garlic, minced",
       "1 lemon, zested and sliced",
       "1 tbsp fresh dill, chopped (or 1 tsp dried)",
-      "1/4 tsp black pepper"
+      "1/4 tsp black pepper",
+      "1 bunch asparagus, ends trimmed",
+      "1 cup cherry tomatoes"
     ],
     "steps": [
       "Heat the oven to 400°F and line a baking sheet with parchment.",
-      "Place the salmon on the sheet. Brush with olive oil and sprinkle with garlic, lemon zest, dill and pepper.",
+      "Toss the asparagus and tomatoes with half the avocado oil and spread them on the sheet. Nestle the salmon in among the vegetables, brush it with the rest of the oil, and sprinkle with garlic, lemon zest, dill and pepper.",
       "Lay lemon slices on top and bake 12–15 minutes, until the fish flakes easily with a fork."
     ],
-    "notes": "Serve with brown rice and a green vegetable.",
+    "notes": "Serve with brown rice.",
     "heartNotes": "Salmon is a fatty fish rich in omega-3s. Lemon, garlic and dill carry the flavor, so there's no salt in this recipe."
   },
   {
-    "title": "Lemon Olive Oil Cod and Orzo",
+    "title": "Lemon Cod and Orzo Skillet",
     "category": "Dinner",
     "summary": "Golden seared cod over lemony orzo and asparagus, all in one skillet.",
     "prep": "10 min",
@@ -204,11 +212,12 @@
       "4 cod fillets (6 to 8 oz each)",
       "Freshly ground pepper",
       "3 tablespoons all-purpose flour",
-      "1 tablespoon olive oil (for the lemons)",
+      "1 tablespoon extra-virgin olive oil (for the lemons)",
       "1 Meyer or regular lemon, sliced, plus more for serving",
       "1 garlic clove, minced or grated",
       "1 bunch asparagus, ends trimmed, cut into 1-inch pieces",
-      "1 cup uncooked orzo",
+      "1 cup uncooked orzo (whole-wheat if you can find it)",
+      "2 cups baby spinach",
       "2 2/3 cups low-sodium chicken broth",
       "1 tablespoon lemon juice",
       "1 tablespoon chopped fresh dill, for serving"
@@ -216,11 +225,11 @@
     "steps": [
       "Heat 2 tablespoons oil in a large cast-iron skillet over medium-high heat. Season the cod with pepper and dust both sides with flour. Sear until golden, 3 to 4 minutes per side, then move to a plate.",
       "Add the remaining tablespoon of oil and sear the lemon slices until golden, about 1 minute per side. Add them to the plate with the cod.",
-      "Add the garlic, asparagus and orzo to the skillet and toast for 2 to 3 minutes. Stir in the broth and lemon juice, bring to a boil, and cook, stirring now and then, until the orzo is al dente, about 10 minutes.",
+      "Add the garlic, asparagus and orzo to the skillet and toast for 2 to 3 minutes. Stir in the broth and lemon juice, bring to a boil, and cook, stirring now and then, until the orzo is al dente, about 10 minutes. Stir in the spinach until it wilts.",
       "Set the cod and lemon slices back on top to warm through. Finish with dill and extra lemon."
     ],
     "notes": "",
-    "heartNotes": "Lightened: olive oil replaces the salted butter and there's no added salt. Cod is a lean fish, and low-sodium broth keeps the orzo in check."
+    "heartNotes": "Lightened: olive oil replaces the salted butter and there's no added salt. Cod is a lean fish, low-sodium broth keeps the orzo in check, and asparagus and spinach add greens."
   },
   {
     "title": "Roasted Vegetable Quinoa Bowl",
@@ -241,21 +250,23 @@
       "1 sweet potato, cubed",
       "1 zucchini, sliced",
       "1 red onion, cut into wedges",
-      "1 can (15 oz) chickpeas, rinsed and drained",
-      "2 tbsp olive oil",
+      "1 red bell pepper, chopped",
+      "1 can (15 oz) no-salt-added chickpeas, rinsed and drained",
+      "2 cups baby kale or spinach, for serving",
+      "2 tbsp avocado oil",
       "2 tbsp tahini",
       "Juice of 1 lemon",
       "2–3 tbsp water for the drizzle"
     ],
     "steps": [
-      "Heat the oven to 425°F. Toss the sweet potato, zucchini, onion and chickpeas with olive oil on a baking sheet.",
+      "Heat the oven to 425°F. Toss the sweet potato, zucchini, onion, bell pepper and chickpeas with avocado oil on a baking sheet.",
       "Roast 25–30 minutes, turning once, until the vegetables are tender and browned.",
       "Meanwhile, simmer the quinoa in the water or broth, covered, for 15 minutes. Let it rest 5 minutes, then fluff.",
       "Whisk the tahini, lemon juice and water into a pourable sauce.",
-      "Divide the quinoa into bowls, top with the vegetables and drizzle with the sauce."
+      "Divide the greens and quinoa into bowls, top with the vegetables and drizzle with the sauce."
     ],
     "notes": "Packs well for lunches through the week.",
-    "heartNotes": "Plant protein from chickpeas and quinoa, healthy fats from olive oil and tahini, and no added salt."
+    "heartNotes": "Plant protein from chickpeas and quinoa, healthy fats from avocado oil and tahini, a bowl full of vegetables, and no added salt."
   },
   {
     "title": "Turkey and Vegetable Chili",
@@ -272,10 +283,11 @@
     ],
     "ingredients": [
       "1 lb lean ground turkey",
-      "1 tbsp olive oil",
+      "1 tbsp avocado oil",
       "1 onion, diced",
       "1 green bell pepper, diced",
       "2 carrots, diced",
+      "1 zucchini, diced",
       "3 cloves garlic, minced",
       "2 tbsp chili powder",
       "1 tsp ground cumin",
@@ -285,12 +297,12 @@
     ],
     "steps": [
       "Heat the oil in a large pot over medium heat. Brown the turkey, breaking it up, about 6 minutes.",
-      "Add the onion, bell pepper, carrots and garlic. Cook 5 minutes until softened.",
+      "Add the onion, bell pepper, carrots, zucchini and garlic. Cook 5 minutes until softened.",
       "Stir in the chili powder and cumin for 1 minute.",
       "Add the tomatoes, beans and broth. Simmer, partly covered, for 30 minutes, stirring now and then."
     ],
     "notes": "Freezes well for up to 3 months.",
-    "heartNotes": "Lean ground turkey, no-salt-added tomatoes and beans, and low-sodium broth keep this chili heart-friendly."
+    "heartNotes": "Lean ground turkey, no-salt-added tomatoes and beans, and low-sodium broth keep this chili heart-friendly, and the extra vegetables add fiber."
   },
   {
     "title": "Seasoned Taco Meat",
@@ -305,6 +317,7 @@
       "1 lb 93% lean ground beef or lean ground turkey",
       "1 white onion, finely diced",
       "3 cloves garlic, minced",
+      "1 small zucchini or 1 bell pepper, very finely diced",
       "2 tbsp chili powder",
       "1 tbsp paprika",
       "1 tbsp cumin",
@@ -312,18 +325,18 @@
       "1/2 tsp dried oregano",
       "1 cup low-sodium chicken stock",
       "1/2 cup no-salt-added tomato sauce",
-      "1 tbsp brown sugar",
+      "1 tsp golden monk fruit sweetener (optional)",
       "1 1/2 tbsp apple cider vinegar"
     ],
     "steps": [
       "Brown the meat in a lightly oiled deep pan, breaking it into very fine pieces. Drain off any fat.",
       "Cook until all the liquid has evaporated.",
-      "Add the onion and garlic and sweat for 3 to 4 minutes, then add all the spices and cook until fragrant.",
-      "Add the stock, tomato sauce, brown sugar and vinegar.",
+      "Add the onion, garlic and zucchini or pepper and sweat for 3 to 4 minutes, then add all the spices and cook until fragrant.",
+      "Add the stock, tomato sauce, sweetener and vinegar.",
       "Bring to a simmer, then reduce over low heat for 15 to 20 minutes."
     ],
-    "notes": "",
-    "heartNotes": "Use 93% lean ground beef or lean ground turkey, low-sodium stock and no-salt-added tomato sauce. Drain any fat after browning."
+    "notes": "The finely diced vegetables disappear into the meat and stretch it further. Monk fruit tip: many monk fruit sweeteners are blended with erythritol. Check the label and pick pure monk fruit or a monk fruit and allulose blend.",
+    "heartNotes": "Use 93% lean ground beef or lean ground turkey, low-sodium stock and no-salt-added tomato sauce, and drain any fat after browning. The brown sugar is swapped for a little optional monk fruit, and hidden vegetables stretch the meat."
   },
   {
     "title": "Cowboy Butter Air Fryer Chicken",
@@ -357,7 +370,7 @@
       "Coat the chicken thighs in the cowboy butter and marinate for 1 hour, or overnight.",
       "Air fry at 385°F for 16 minutes, flipping halfway, until the chicken reaches 165°F inside."
     ],
-    "notes": "",
+    "notes": "Serve with roasted vegetables or a big salad.",
     "heartNotes": "Lightened: made with light mayonnaise instead of butter, skinless chicken, and no added salt. Worcestershire and Dijon add sodium, so use low-sodium versions if you can find them."
   },
   {
@@ -375,14 +388,14 @@
     ],
     "ingredients": [
       "1 lb green beans, trimmed",
-      "1 tbsp olive oil",
+      "1 tbsp avocado oil",
       "3 cloves garlic, thinly sliced",
       "1/4 tsp black pepper",
       "1 tsp lemon zest"
     ],
     "steps": [
       "Heat the oven to 425°F.",
-      "Toss the green beans with olive oil, garlic and pepper on a baking sheet.",
+      "Toss the green beans with avocado oil, garlic and pepper on a baking sheet.",
       "Roast 12–15 minutes, until tender and lightly browned. Sprinkle with lemon zest."
     ],
     "notes": "",
@@ -402,7 +415,7 @@
       "Southwest"
     ],
     "ingredients": [
-      "1 tablespoon olive oil",
+      "1 tablespoon avocado oil",
       "1 small onion, diced",
       "1 poblano pepper, diced",
       "1 jalapeño pepper, diced (seeds removed if you don't want it spicy)",
@@ -533,7 +546,7 @@
     "ingredients": [
       "1 cup low-sodium beef or vegetable broth",
       "1 tablespoon vinegar (balsamic, cider or rice)",
-      "2 teaspoons molasses or brown sugar",
+      "1 teaspoon molasses (for color and depth), or 2 teaspoons golden monk fruit sweetener",
       "1/8 teaspoon ground ginger",
       "1/8 teaspoon garlic powder",
       "1/8 teaspoon black pepper",
@@ -543,7 +556,7 @@
       "Whisk everything together in a pot and bring to a boil. Boil for 1 minute.",
       "Lower the heat to medium and cook for 10 minutes more. Remove from the heat and let cool."
     ],
-    "notes": "",
+    "notes": "Monk fruit tip: many monk fruit sweeteners are blended with erythritol. Check the label and pick pure monk fruit or a monk fruit and allulose blend.",
     "heartNotes": "Uses only 1/8 teaspoon of salt for the whole cup. Use it anywhere you'd use soy sauce, plus in place of fish, hoisin, oyster or teriyaki sauce."
   },
   {
@@ -566,14 +579,14 @@
       "1 1/2 cups tomato puree (no salt added)",
       "1 tablespoon low-sodium Dijon mustard",
       "1/2 cup apple cider vinegar",
-      "2 oz apple juice concentrate",
+      "1 oz apple juice concentrate",
       "1 tablespoon lemon juice",
       "1 1/2 tablespoons chili powder (no salt added)",
       "1 teaspoon liquid smoke",
       "1 teaspoon fresh ground black pepper",
       "Hot sauce, to taste",
       "1/4 cup bourbon",
-      "2 tablespoons honey"
+      "2 tablespoons local honey"
     ],
     "steps": [
       "In a large pot over medium heat, cook the onion, bell pepper, garlic, apple juice concentrate and vinegar.",
@@ -581,7 +594,7 @@
       "Add everything else. Bring to a boil, then lower the heat and simmer for 1 hour."
     ],
     "notes": "",
-    "heartNotes": "No-salt-added tomato puree and chili powder keep the sodium low, and there's no added fat."
+    "heartNotes": "No-salt-added tomato puree and chili powder keep the sodium low, and there's no added fat. It uses half the usual apple juice concentrate, so it's lower in sugar than bottled sauce."
   },
   {
     "title": "Red Sauce",
@@ -666,18 +679,19 @@
     ],
     "ingredients": [
       "6 tablespoons red wine vinegar",
-      "5 tablespoons honey",
-      "1/3 cup oil",
+      "3 to 5 tablespoons local honey, to taste",
+      "1/3 cup avocado oil",
       "1/2 teaspoon oregano",
       "1/2 teaspoon salt substitute",
       "2 chipotle peppers",
-      "2 garlic cloves"
+      "2 garlic cloves",
+      "Juice of 1 lime"
     ],
     "steps": [
       "Blend everything together until smooth."
     ],
     "notes": "",
-    "heartNotes": "Uses salt substitute instead of salt. Choose an oil low in saturated fat, like olive or canola. Chipotles in adobo do contain some sodium, so taste before adding more."
+    "heartNotes": "Uses salt substitute instead of salt, and avocado oil, which is low in saturated fat. Start with less honey and add to taste. Chipotles in adobo do contain some sodium, so taste before adding more."
   },
   {
     "title": "Spicy Peanut Sauce",
@@ -693,10 +707,10 @@
       "spicy"
     ],
     "ingredients": [
-      "1/4 cup creamy peanut butter",
-      "2 tablespoons maple syrup",
+      "1/4 cup natural creamy peanut butter (no salt or sugar added)",
+      "1 tablespoon local honey",
       "1 1/2–2 tablespoons water, depending on preferred thickness",
-      "1 tablespoon low-sodium soy sauce",
+      "1 tablespoon Low-Sodium Soy Sauce Substitute (from this site) or reduced-sodium soy sauce",
       "1 tablespoon sriracha",
       "2 teaspoons rice vinegar",
       "1 teaspoon sesame oil"
@@ -705,7 +719,7 @@
       "Whisk everything together until smooth, adding water until it's as thick or thin as you like."
     ],
     "notes": "",
-    "heartNotes": "Use low-sodium soy sauce, or the Low-Sodium Soy Sauce Substitute, to cut sodium further. Peanut butter's fat is mostly unsaturated, but a little goes a long way."
+    "heartNotes": "Natural peanut butter and the homemade soy sauce substitute cut the salt, and a tablespoon of honey replaces the maple syrup. Peanut butter's fat is mostly unsaturated, but a little goes a long way."
   },
   {
     "title": "Lighter Tartar Sauce",
@@ -755,12 +769,12 @@
       "2 tablespoons plain nonfat yogurt",
       "1/2 cup nonfat milk",
       "2 cloves garlic, crushed",
-      "2 tablespoons olive oil",
+      "2 tablespoons avocado oil",
       "1 tablespoon no-salt-added tomato paste",
       "1 teaspoon ground pepper",
       "1 teaspoon paprika",
       "1 teaspoon oregano",
-      "1 teaspoon honey",
+      "1 teaspoon local honey",
       "1 teaspoon mustard or lemon juice"
     ],
     "steps": [
@@ -768,7 +782,7 @@
       "Coat skinless chicken (breasts, tenders or skinless wings) and marinate 1 to 2 hours, then bake, grill or air fry."
     ],
     "notes": "",
-    "heartNotes": "Lightened from Ryan's wing marinade: no added salt, less oil, nonfat dairy, and made for skinless chicken, since most of a wing's saturated fat is in the skin."
+    "heartNotes": "Lightened from Ryan's wing marinade: no added salt, less oil (avocado oil), nonfat dairy, and made for skinless chicken, since most of a wing's saturated fat is in the skin."
   },
   {
     "title": "Cranberry Sauce",
@@ -785,23 +799,23 @@
     ],
     "ingredients": [
       "1 cup water",
-      "1 cup sugar",
+      "1/2 to 2/3 cup monk fruit sweetener, to taste",
       "1 package (12 oz) fresh cranberries",
       "1 orange, peeled and pureed",
       "1 apple, peeled, cored and diced",
       "1 pear, peeled, cored and diced",
-      "1 cup chopped pecans",
+      "1/2 cup chopped pecans",
       "1 teaspoon cinnamon",
       "1/2 teaspoon nutmeg",
-      "1 cup dried fruit, chopped"
+      "1/2 cup unsweetened dried fruit, chopped (optional)"
     ],
     "steps": [
-      "Bring the water to a boil, then add the sugar and let it dissolve.",
+      "Bring the water to a boil, then stir in the monk fruit sweetener until it dissolves.",
       "Lower the heat to a simmer and add everything else.",
       "Cover and simmer for 30 minutes, or until the cranberries burst. Let cool."
     ],
-    "notes": "Great spooned over plain nonfat Greek yogurt or oatmeal.",
-    "heartNotes": "No salt and no fat added. It still has a cup of sugar for the whole batch, so enjoy it in small spoonfuls."
+    "notes": "Great spooned over plain nonfat Greek yogurt or oatmeal. Cranberries are very tart, so taste near the end and add a little more sweetener if needed. Monk fruit tip: many monk fruit sweeteners are blended with erythritol. Check the label and pick pure monk fruit or a monk fruit and allulose blend.",
+    "heartNotes": "No salt and no fat added. The cup of sugar is replaced with monk fruit, the dried fruit is unsweetened and optional, and the orange, apple and pear bring natural sweetness."
   },
   {
     "title": "Baked Cinnamon Apples",
@@ -819,17 +833,213 @@
     "ingredients": [
       "4 apples, cored and sliced",
       "1 tsp ground cinnamon",
-      "1 tbsp maple syrup",
+      "1 tbsp local honey",
       "1/2 cup rolled oats",
       "2 tbsp chopped walnuts"
     ],
     "steps": [
       "Heat the oven to 350°F.",
-      "Toss the apples with cinnamon and maple syrup and spread in a small baking dish.",
+      "Toss the apples with cinnamon and honey and spread in a small baking dish.",
       "Sprinkle with oats and walnuts.",
       "Bake 25–30 minutes, until the apples are soft."
     ],
     "notes": "Top with a spoonful of plain Greek yogurt.",
-    "heartNotes": "A naturally sweet dessert with fiber from the apples and oats, and no butter."
+    "heartNotes": "A naturally sweet dessert with fiber from the apples and oats, no butter, and just a drizzle of honey."
+  },
+  {
+    "title": "Mahi Mahi with Tomato Lemon Sauce",
+    "category": "Dinner",
+    "summary": "Golden seared mahi mahi in a quick blistered-tomato, lemon and basil pan sauce.",
+    "prep": "5 min",
+    "cook": "15 min",
+    "servings": 4,
+    "replaces": "",
+    "tags": [
+      "fish",
+      "seafood",
+      "one-pan",
+      "quick"
+    ],
+    "ingredients": [
+      "4 mahi mahi fillets",
+      "1/2 teaspoon black pepper",
+      "1/2 teaspoon garlic powder",
+      "2 tablespoons extra-virgin olive oil",
+      "2 cups cherry tomatoes",
+      "2/3 cup finely diced shallots",
+      "4 garlic cloves, minced",
+      "2 cups baby spinach",
+      "1/2 cup no-salt-added or low-sodium chicken broth",
+      "1 tablespoon white wine vinegar",
+      "1 tablespoon lemon juice",
+      "1 teaspoon lemon zest",
+      "2 tablespoons chopped fresh basil"
+    ],
+    "steps": [
+      "Pat the fillets dry and season both sides with the pepper and garlic powder.",
+      "Heat the olive oil in a large skillet over medium-high heat. Sear the fish without moving it until golden, about 3 minutes, then flip and cook about 3 minutes more. Move the fish to a plate.",
+      "Add the tomatoes to the same pan and cook until they start to blister, about 4 minutes. Stir in the shallots and garlic and cook about 1 minute, until fragrant.",
+      "Pour in the broth, vinegar and lemon juice. Simmer about 4 minutes, until the tomatoes slump into a sauce. Stir in the spinach until it wilts, then the lemon zest and basil.",
+      "Return the fish to the pan and spoon the sauce over the top to serve."
+    ],
+    "notes": "Adapted from Every Last Bite (everylastbite.com).",
+    "heartNotes": "Lightened: olive oil replaces the butter, the added salt is gone, and the broth is low-sodium. Garlic powder, lemon and vinegar carry the flavor, and spinach adds greens. Mahi mahi is a lean, low-fat fish."
+  },
+  {
+    "title": "Chili Garlic Shrimp Pasta",
+    "category": "Dinner",
+    "summary": "One-pan spaghetti cooked right in a garlicky chili sauce, finished with shrimp and lime.",
+    "prep": "5 min",
+    "cook": "15 min",
+    "servings": 3,
+    "replaces": "",
+    "tags": [
+      "shrimp",
+      "seafood",
+      "pasta",
+      "one-pan",
+      "spicy",
+      "quick"
+    ],
+    "ingredients": [
+      "8 oz shrimp, peeled and deveined",
+      "2 cups broccoli florets",
+      "2 cups baby spinach",
+      "8 oz whole-wheat spaghetti",
+      "1 1/2 tablespoons avocado oil",
+      "4 garlic cloves, minced",
+      "1/2 to 1 teaspoon red pepper flakes (or 1 teaspoon chili crisp)",
+      "1 tablespoon Low-Sodium Soy Sauce Substitute (from this site) or reduced-sodium soy sauce",
+      "1 teaspoon rice vinegar",
+      "Pinch of monk fruit sweetener (optional)",
+      "2 to 4 1/2 cups water",
+      "1 lime, half sliced and half in wedges",
+      "2 scallions, sliced"
+    ],
+    "steps": [
+      "Warm the avocado oil in a large skillet over medium-high heat. Add the garlic and red pepper flakes and stir for 15 to 20 seconds, just until fragrant.",
+      "Stir in the soy sauce substitute, rice vinegar, sweetener and 2 cups of water.",
+      "Turn the heat to high, add the dry spaghetti and bring to a simmer, turning the noodles as they soften.",
+      "Keep stirring as the liquid reduces and turns glossy from the pasta starch. Add more water about 1/2 cup at a time only if the noodles need it.",
+      "When the liquid has reduced by about half, add the broccoli and cook 2 minutes. Add the shrimp and lime slices and cook just until the shrimp turn pink, 2 to 3 minutes, then fold in the spinach until it wilts.",
+      "Top with scallions and serve with lime wedges."
+    ],
+    "notes": "Keep the sauce a little loose; it thickens fast as it sits. Adapted from Chef Fatty (cheffatty.com). Monk fruit tip: many monk fruit sweeteners are blended with erythritol. Check the label and pick pure monk fruit or a monk fruit and allulose blend.",
+    "heartNotes": "Lightened: the original's teaspoon of salt and the fish sauce are gone, avocado oil replaces the butter, and a homemade or reduced-sodium soy sauce stands in for regular. Chili crisp is salty, so red pepper flakes are the default. Whole-wheat pasta, broccoli and spinach add fiber."
+  },
+  {
+    "title": "Spicy Bulgogi (Pork, Beef or Chicken)",
+    "category": "Dinner",
+    "summary": "Sweet, spicy, garlicky Korean-style bulgogi built on a low-sodium sauce.",
+    "prep": "20 min",
+    "cook": "20 min",
+    "servings": 4,
+    "replaces": "",
+    "tags": [
+      "pork",
+      "beef",
+      "chicken",
+      "korean",
+      "spicy",
+      "low-sodium"
+    ],
+    "ingredients": [
+      "1 lb pork tenderloin, flank steak or boneless skinless chicken breast, cut into 1/4-inch strips",
+      "1/2 large sweet onion, thinly sliced",
+      "1 red bell pepper, thinly sliced",
+      "1 cup shredded carrots",
+      "2 tablespoons Low-Sodium Soy Sauce Substitute (from this site) or coconut aminos",
+      "1 tablespoon toasted sesame oil",
+      "1 tablespoon golden monk fruit sweetener",
+      "1 tablespoon sherry vinegar",
+      "6 garlic cloves, pressed or minced",
+      "1 teaspoon minced fresh ginger",
+      "1 tablespoon gochugaru (Korean red pepper flakes)",
+      "1 tablespoon salt-free hot sauce (optional)",
+      "1 tablespoon avocado oil, divided",
+      "1 tablespoon balsamic vinegar",
+      "2 scallions, chopped",
+      "Toasted sesame seeds, for garnish"
+    ],
+    "steps": [
+      "Stir together the soy sauce substitute, sesame oil, sweetener, sherry vinegar, garlic, ginger, gochugaru and hot sauce. Leave out the balsamic for now.",
+      "Heat a little of the oil in a cast-iron or heavy skillet and cook the onion, bell pepper and carrots until just soft. Move them to a plate.",
+      "Add a little more oil and sear the meat in small batches in a single layer, leaving each batch alone for about 2 minutes so it browns. Add each batch to the vegetables. Lean cuts cook fast, so keep the strips thin.",
+      "Return the meat and vegetables to the hot pan over high heat, pour in the sauce and toss for 1 to 2 minutes, until it thickens slightly. Turn off the heat.",
+      "Once it stops bubbling, stir in the balsamic vinegar. Top with scallions and sesame seeds."
+    ],
+    "notes": "Serve over brown rice or wrapped in lettuce leaves. To make it mild, skip the gochugaru and hot sauce. Adapted from Sans Salt (sans-salt.com). Monk fruit tip: many monk fruit sweeteners are blended with erythritol. Check the label and pick pure monk fruit or a monk fruit and allulose blend.",
+    "heartNotes": "Already low in sodium thanks to the homemade soy sauce substitute. Lightened further: lean pork tenderloin, flank steak or chicken breast replaces fatty pork shoulder, monk fruit replaces the brown sugar, and peppers and carrots add vegetables."
+  },
+  {
+    "title": "Ginger Scallion Oil",
+    "category": "Sauces & Seasonings",
+    "summary": "A sizzling, fragrant ginger and scallion oil to spoon over rice, noodles, fish or chicken.",
+    "prep": "5 min",
+    "cook": "5 min + 5 min resting",
+    "servings": 8,
+    "replaces": "",
+    "tags": [
+      "sauce",
+      "chinese",
+      "no-salt",
+      "condiment"
+    ],
+    "ingredients": [
+      "4 scallions",
+      "1 1/2-inch piece fresh ginger",
+      "1/3 cup avocado oil",
+      "1 teaspoon unseasoned rice vinegar (optional)",
+      "Pinch of salt (optional)"
+    ],
+    "steps": [
+      "Peel the ginger with the edge of a spoon and mince it finely. Finely chop the scallions. Chop them almost to a paste for a smooth sauce, or leave them coarser for texture. Put both in a heatproof bowl.",
+      "Warm the oil in a small saucepan over medium heat until tiny bubbles rise from the bottom. Take it off the heat.",
+      "Carefully pour the hot oil over the ginger and scallions. It will sizzle.",
+      "Let it cool for at least 5 minutes, then stir in the rice vinegar if using and stir again before serving."
+    ],
+    "notes": "For heat, add dried chilies or Sichuan peppercorns to the bowl before the hot oil. Keeps up to 2 weeks in a sealed jar in the fridge. Adapted from Phase Change Kitchen (phasechangeskitchen.com).",
+    "heartNotes": "Lightened: the salt is now an optional pinch, and a splash of rice vinegar brightens it instead. Avocado oil is mostly unsaturated fat. It's still oil, so a spoonful goes a long way."
+  },
+  {
+    "title": "Thai Coconut Shrimp Curry",
+    "category": "Dinner",
+    "summary": "A creamy red curry with shrimp, peppers and jalapeño, ready in 30 minutes.",
+    "prep": "15 min",
+    "cook": "15 min",
+    "servings": 4,
+    "replaces": "",
+    "tags": [
+      "shrimp",
+      "seafood",
+      "thai",
+      "curry",
+      "spicy"
+    ],
+    "ingredients": [
+      "1 lb raw shrimp, peeled and deveined",
+      "1 tablespoon avocado oil",
+      "1 white onion, diced",
+      "1 red bell pepper, sliced",
+      "1 cup snap peas or chopped broccoli",
+      "1 to 2 jalapeños, sliced",
+      "2 cups baby spinach",
+      "2 tablespoons red curry paste",
+      "1 can (13.5 oz) light coconut milk",
+      "2 teaspoons golden monk fruit sweetener",
+      "1 1/2 tablespoons cornstarch mixed with 1 1/2 tablespoons cold water",
+      "Juice of 1 lime, plus wedges for serving",
+      "2 to 3 tablespoons chopped Thai basil",
+      "Red pepper flakes, to taste"
+    ],
+    "steps": [
+      "Heat the oil in a large pan over medium-high heat. Cook the onion, bell pepper, snap peas and jalapeño until just softened, 4 to 5 minutes. Lift them out with a slotted spoon.",
+      "Lower the heat to medium. Whisk in the coconut milk, curry paste and sweetener and bring to a gentle boil.",
+      "Stir in the cornstarch slurry and simmer about 5 minutes, stirring now and then, until thickened.",
+      "Pat the shrimp dry and add them to the sauce with the vegetables. Simmer gently just until the shrimp are pink and opaque, then stir in the spinach until it wilts.",
+      "Stir in the lime juice, taste, and add red pepper flakes for more heat. Top with Thai basil and serve with brown rice and lime wedges."
+    ],
+    "notes": "Leave the jalapeño seeds in for more heat, or take them out for a milder curry. Adapted from Peas and Crayons (peasandcrayons.com). Monk fruit tip: many monk fruit sweeteners are blended with erythritol. Check the label and pick pure monk fruit or a monk fruit and allulose blend.",
+    "heartNotes": "Lightened: light coconut milk replaces full-fat, which cuts the saturated fat by more than half. The fish sauce is gone, there's less curry paste (it's salty), monk fruit replaces the brown sugar, and lime makes up the difference. Extra vegetables stretch each serving."
   }
 ]
