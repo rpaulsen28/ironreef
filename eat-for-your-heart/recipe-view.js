@@ -17,7 +17,7 @@ window.RecipeView = (() => {
     return `
       <a class="card" href="${esc(href || "#")}">
         <span class="cat">${esc(r.category)}${r.replaces ? ` <span class="swap-badge">Swap</span>` : ""}</span>
-        <h2>${esc(r.title)}</h2>
+        <h3>${esc(r.title)}</h3>
         <p>${esc(r.summary)}</p>
         <div class="meta">${timeLabel(r)}${r.servings ? `<span>Serves ${esc(r.servings)}</span>` : ""}</div>
       </a>`;

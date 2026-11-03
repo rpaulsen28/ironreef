@@ -58,6 +58,7 @@
       <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
       <div class="count" id="count" aria-live="polite"></div>
     </div>
+    <div id="sections"></div>
     <div class="grid" id="grid"></div>
     <p class="empty" id="empty" hidden>No recipes match that search. Try a different word or category.</p>
     <aside class="disclaimer">
@@ -182,6 +183,10 @@ const SITE = {
   name: "Eat for your Heart",
   footerRight: "Heart-healthy recipes",
 
+  // "Start here" row at the top of the recipe list. List up to 3 recipe titles,
+  // spelled exactly as they appear on the site. Leave it empty [] to show the 3 newest recipes.
+  featured: ["Southwest Chicken Salad", "Thai Coconut Shrimp Curry", "Spicy Bulgogi (Pork, Beef or Chicken)"],
+
   parent: {
     name: "Iron Reef",
     owner: "Iron Reef LLC",
@@ -202,7 +207,10 @@ const SITE = {
 /* ============== END OF SITE SETTINGS ============== */
 
 (() => {
-  const CATEGORY_ORDER = ["Breakfast","Lunch","Dinner","Sides","Sauces & Seasonings","Snacks","Desserts","Drinks"];
+  const CATEGORY_ORDER = ["Breakfast","Lunch","Dinner","Sides","Snacks","Desserts","Drinks","Sauces & Seasonings"];
+  const SECTION_LIMIT = 6;   // cards shown per section before "See all"
+  const SECTION_NOTES = { "Sauces & Seasonings": "Homemade building blocks to replace salty store-bought versions." };
+  const expanded = new Set();
   const $ = id => document.getElementById(id);
   const { esc, slug } = RecipeView;
   let recipes = [], active = "All", swapsOnly = false;
@@ -270,13 +278,58 @@ const SITE = {
     return q.split(/\s+/).every(w => hay.includes(w));
   }
 
+  const sectionId = c => "cat-" + slug(c);
+
   function render(){
     const q = $("q").value.trim().toLowerCase();
+    const browsing = !q && active === "All" && !swapsOnly;
     const list = recipes.filter(r => matches(r, q));
-    $("grid").innerHTML = list.map(r => RecipeView.cardHTML(r, "#" + r.id)).join("");
-    $("empty").hidden = list.length > 0;
     $("count").textContent = `${list.length} recipe${list.length === 1 ? "" : "s"}`;
+    $("empty").hidden = list.length > 0;
+
+    // Searching or filtering: one grid of matches
+    if (!browsing) {
+      $("sections").innerHTML = "";
+      $("grid").hidden = false;
+      $("grid").innerHTML = list.map(r => RecipeView.cardHTML(r, "#" + r.id)).join("");
+      return;
+    }
+
+    // Browsing: "Start here", then a section per category
+    $("grid").hidden = true; $("grid").innerHTML = "";
+    let picks = (SITE.featured || []).map(t => recipes.find(r => r.title === t)).filter(Boolean).slice(0, 3);
+    if (!picks.length) picks = recipes.slice(-3).reverse();
+    const cats = [...new Set(recipes.map(r => r.category).filter(Boolean))]
+      .sort((a,b) => (CATEGORY_ORDER.indexOf(a)+1 || 99) - (CATEGORY_ORDER.indexOf(b)+1 || 99));
+    let html = picks.length ? `
+      <section class="rsec featured" aria-labelledby="sec-start">
+        <div class="rsec-head"><h2 id="sec-start">Start here</h2><p>New and favorite recipes</p></div>
+        <div class="grid">${picks.map(r => RecipeView.cardHTML(r, "#" + r.id)).join("")}</div>
+      </section>` : "";
+    for (const c of cats) {
+      const items = recipes.filter(r => r.category === c);
+      const open = expanded.has(c);
+      const shown = open ? items : items.slice(0, SECTION_LIMIT);
+      const id = sectionId(c);
+      html += `
+      <section class="rsec" id="${id}" aria-labelledby="${id}-h">
+        <div class="rsec-head"><h2 id="${id}-h">${esc(c)} <span class="rsec-count">${items.length}</span></h2>${SECTION_NOTES[c] ? `<p>${esc(SECTION_NOTES[c])}</p>` : ""}</div>
+        <div class="grid">${shown.map(r => RecipeView.cardHTML(r, "#" + r.id)).join("")}</div>
+        ${items.length > SECTION_LIMIT ? `<button class="see-all" type="button" data-cat="${esc(c)}" aria-expanded="${open}">${open ? "Show fewer" : `See all ${items.length}`}</button>` : ""}
+      </section>`;
+    }
+    $("sections").innerHTML = html;
   }
+
+  $("sections").addEventListener("click", e => {
+    const b = e.target.closest(".see-all"); if (!b) return;
+    const c = b.dataset.cat;
+    expanded.has(c) ? expanded.delete(c) : expanded.add(c);
+    render();
+    const sec = $(sectionId(c));
+    if (!expanded.has(c)) sec.scrollIntoView({block:"start"});
+    sec.querySelector(".see-all")?.focus();
+  });
 
   function showDetail(r){
     $("detail").innerHTML = `
