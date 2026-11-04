@@ -3,10 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eat for your Heart</title>
+<title>Eat for your Heart | Heart-Healthy, Low-Salt Recipes</title>
 <meta name="description" content="Eat for your Heart: heart-healthy recipes that are low or no salt, lower in saturated fat and cholesterol-conscious, plus homemade swaps for salty store-bought staples.">
 <meta property="og:title" content="Eat for your Heart">
 <meta property="og:description" content="Heart-healthy recipes and homemade swaps for salty store-bought staples.">
+<link rel="canonical" href="https://ironreefllc.com/eat-for-your-heart/">
+<meta property="og:url" content="https://ironreefllc.com/eat-for-your-heart/">
+<meta property="og:image" content="https://ironreefllc.com/eat-for-your-heart/photos/market-haul.jpg">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -215,7 +218,7 @@ const SITE = {
   const $ = id => document.getElementById(id);
   const { esc, slug } = RecipeView;
   let recipes = [], active = "All", swapsOnly = false;
-  const BASE_TITLE = SITE.parent ? `${SITE.name} | ${SITE.parent.owner}` : SITE.name;
+  const BASE_TITLE = `${SITE.name} | Heart-Healthy, Low-Salt Recipes`;
   const year = new Date().getFullYear();
 
   // Header and footer
@@ -293,7 +296,7 @@ const SITE = {
     if (!browsing) {
       $("sections").innerHTML = "";
       $("grid").hidden = false;
-      $("grid").innerHTML = list.map(r => RecipeView.cardHTML(r, "#" + r.id)).join("");
+      $("grid").innerHTML = list.map(r => RecipeView.cardHTML(r, "recipes/" + r.id)).join("");
       return;
     }
 
@@ -306,7 +309,7 @@ const SITE = {
     let html = picks.length ? `
       <section class="rsec featured" aria-labelledby="sec-start">
         <div class="rsec-head"><h2 id="sec-start">Start here</h2><p>New and favorite recipes</p></div>
-        <div class="grid">${picks.map(r => RecipeView.cardHTML(r, "#" + r.id)).join("")}</div>
+        <div class="grid">${picks.map(r => RecipeView.cardHTML(r, "recipes/" + r.id)).join("")}</div>
       </section>` : "";
     for (const c of cats) {
       const items = recipes.filter(r => r.category === c);
@@ -316,7 +319,7 @@ const SITE = {
       html += `
       <section class="rsec" id="${id}" aria-labelledby="${id}-h">
         <div class="rsec-head"><h2 id="${id}-h">${esc(c)} <span class="rsec-count">(${items.length})</span></h2>${SECTION_NOTES[c] ? `<p>${esc(SECTION_NOTES[c])}</p>` : ""}</div>
-        <div class="grid">${shown.map(r => RecipeView.cardHTML(r, "#" + r.id)).join("")}</div>
+        <div class="grid">${shown.map(r => RecipeView.cardHTML(r, "recipes/" + r.id)).join("")}</div>
         ${items.length > SECTION_LIMIT ? `<button class="see-all" type="button" data-cat="${esc(c)}" aria-expanded="${open}">${open ? "Show fewer" : `See all ${items.length}`}</button>` : ""}
       </section>`;
     }
@@ -366,6 +369,14 @@ const SITE = {
     else document.title = BASE_TITLE;
     firstRoute = false;
   }
+  // Cards link to each recipe's own page (so search engines can find them);
+  // on this page, open the recipe in place instead.
+  document.addEventListener("click", e => {
+    const a = e.target.closest('a.card[href^="recipes/"]');
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
+    e.preventDefault();
+    location.hash = a.getAttribute("href").slice(8);
+  });
   window.addEventListener("hashchange", route);
   window.addEventListener("popstate", route);
 })();

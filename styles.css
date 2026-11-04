@@ -114,3 +114,12 @@ nav ul{align-items:center}
 .dark :focus-visible,.path.dive:focus-visible,footer :focus-visible,.intro :focus-visible{outline-color:#f9f6f3}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none !important;animation:none !important}}
 .dark .eyebrow{color:var(--tan-on-dark)}
+
+/* Shop strip (gear cards linking to the store) */
+.gear{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:32px}
+@media (max-width:900px){.gear{grid-template-columns:repeat(2,1fr)}}
+.gear a{display:flex;flex-direction:column;background:#fff;border:1px solid var(--tan-light);border-radius:4px;text-decoration:none;overflow:hidden;transition:.2s}
+.gear a:hover{border-color:var(--tan);transform:translateY(-2px)}
+.gear img{aspect-ratio:1;object-fit:cover;width:100%;background:var(--cream-2)}
+.gear b{font-family:var(--body);font-weight:600;color:var(--navy);padding:12px 14px 2px;line-height:1.3}
+.gear span{font-family:var(--ui);font-size:.82rem;color:var(--muted);padding:0 14px 14px}
