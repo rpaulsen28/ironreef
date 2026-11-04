@@ -1,4 +1,4 @@
-/* Iron Reef LLC: pop-up forms.
+/* Iron Reef: pop-up forms.
    Two forms share this file:
    - "Book a consultation": opened by any button that links to mailto:info@ironreefllc.com
      (the Ask about... and Email Iron Reef buttons).
@@ -42,7 +42,7 @@
       data: f => ({ service: f.service.value, experience: f.experience.value, preferred_dates: f.dates.value.trim(), phone: f.phone.value.trim() })
     },
     contact: {
-      eyebrow: "Iron Reef LLC",
+      eyebrow: "Iron Reef",
       title: "Contact Iron Reef",
       intro: "Questions about the store, recipes, sponsorships or anything else.",
       send: "Send message",

@@ -31,7 +31,7 @@ export async function onRequestGet(context){
     "@context": "https://schema.org", "@type": "Recipe",
     name: r.title, description: r.summary || desc, url,
     author: {"@type": "Person", name: "Ryan Villanueva", url: `${SITE}/about/`},
-    publisher: {"@type": "Organization", name: "Iron Reef LLC", url: SITE},
+    publisher: {"@type": "Organization", name: "Iron Reef", url: SITE},
     recipeCategory: r.category, keywords: ["heart-healthy", "low sodium", ...(r.tags || [])].join(", "),
     recipeYield: r.servings ? `${r.servings} servings` : undefined,
     prepTime: isoDuration(r.prep) || undefined, cookTime: isoDuration(r.cook) || undefined,
@@ -114,7 +114,7 @@ export async function onRequestGet(context){
 </main>
 <footer>
   <div class="wrap">
-    <span>&copy; ${new Date().getFullYear()} Iron Reef LLC<span class="star">&#10022;</span>Kansas City, Missouri</span>
+    <span>&copy; ${new Date().getFullYear()} Iron Reef<span class="star">&#10022;</span>Kansas City, Missouri</span>
     <span>Heart-healthy recipes</span>
   </div>
 </footer>
