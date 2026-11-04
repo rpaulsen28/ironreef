@@ -2,7 +2,7 @@
 // Built on request from recipes.json, so new recipes from the Recipe Editor get a page automatically.
 import { SITE, esc, recipes, isoDuration } from "../../_lib.js";
 
-const STORE = "https://xhs4wp-ky.myshopify.com/collections/iron-reef";
+const STORE = "https://shop.ironreefllc.com/collections/iron-reef";
 
 export async function onRequestGet(context){
   const id = String(context.params.slug || "").replace(/\/$/, "");
