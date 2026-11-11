@@ -100,6 +100,7 @@ export async function onRequestGet(context){
   <article class="detail" id="detail">
     <div class="actions">
       <a class="back" href="/eat-for-your-heart/">&larr; All recipes</a>
+      <form class="mini-search" role="search" action="/eat-for-your-heart/" method="get"><input name="q" type="search" placeholder="Search recipes or ingredients" aria-label="Search recipes or ingredients"><button type="submit">Search</button></form>
       <button class="print" type="button" onclick="window.print()">Print recipe</button>
     </div>
     <div class="detail-head">

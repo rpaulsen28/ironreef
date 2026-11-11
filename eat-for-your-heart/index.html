@@ -52,7 +52,7 @@
         <div class="pillar"><b>Cholesterol- and sugar-conscious</b><p>Plenty of vegetables, fish, beans and whole grains, with cheese and eggs in moderation. Sweetness comes from fruit and spices first, then a little local honey or monk fruit (never erythritol).</p></div>
         <div class="pillar swapcard"><b>Homemade swaps</b><p>More than 70% of the sodium Americans eat comes from packaged, prepared and restaurant foods. Look for the <span class="swap-badge">Swap</span> tag to make your own versions of salty store-bought staples.</p></div>
       </div>
-      <p class="no-cilantro"><b>Why there's no cilantro:</b> You won't find cilantro in any of these recipes. That's on purpose. Wherever a dish would normally call for it, I use fresh parsley instead, and ground coriander (the seed of the same plant) still shows up in spice blends. If you love cilantro, swap it right back in.</p>
+      <p class="no-cilantro"><b>Why there's no cilantro:</b> You won't find cilantro in any of these recipes. To me it tastes like soap, and I'm not alone: for some people it's genetic. Wherever a dish would normally call for it, I use fresh parsley instead, and ground coriander (the seed of the same plant) still shows up in spice blends. If you love cilantro, swap it right back in.</p>
     </section>
     <div class="controls">
       <label class="search">
@@ -257,7 +257,10 @@ const SITE = {
       recipes = data.map(r => ({...r, id: slug(r.title)}));
       recipes.forEach(r => r.facets = RecipeView.facets(r));
       RecipeView.setRecipes(recipes);
-      buildChips(); buildFilters(); render(); route();
+      buildChips(); buildFilters();
+      const q0 = new URLSearchParams(location.search).get("q");
+      if (q0) { $("q").value = q0; } render(); route();
+      if (q0 && !location.hash) document.querySelector(".controls").scrollIntoView();
     })
     .catch(err => {
       $("list").hidden = true;
@@ -387,6 +390,7 @@ const SITE = {
     $("detail").innerHTML = `
       <div class="actions">
         <button class="back" type="button" id="back">&larr; All recipes</button>
+        <form class="mini-search" role="search" action="./" method="get"><input name="q" type="search" placeholder="Search recipes or ingredients" aria-label="Search recipes or ingredients"><button type="submit">Search</button></form>
         <button class="print" type="button" onclick="window.print()">Print recipe</button>
       </div>
       ${RecipeView.detailHTML(r)}`;

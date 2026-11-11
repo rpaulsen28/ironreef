@@ -265,3 +265,11 @@ nav ul{align-items:center}
 .note p:first-of-type{margin-top:4px}
 .note .note-list{margin:8px 0 4px;padding-left:1.2em;display:grid;gap:8px}
 .note strong{display:block}
+
+/* Search box on recipe pages */
+.actions{gap:12px;flex-wrap:wrap}
+.mini-search{display:flex;flex:1 1 260px;max-width:420px;margin:0 auto}
+.mini-search input{flex:1;min-width:0;font:500 .92rem var(--ui);padding:8px 12px;border:1.5px solid var(--tan-light);border-right:0;border-radius:8px 0 0 8px;background:#fff;color:var(--ink)}
+.mini-search button{font:600 .78rem var(--ui);letter-spacing:.08em;text-transform:uppercase;padding:8px 14px;border:1.5px solid var(--navy);background:var(--navy);color:var(--cream);border-radius:0 8px 8px 0;cursor:pointer}
+@media (max-width:640px){.mini-search{order:3;flex-basis:100%;max-width:none}}
+@media print{.mini-search{display:none !important}}
