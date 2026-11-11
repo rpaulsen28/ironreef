@@ -1,5 +1,2 @@
 /brand/*
   Access-Control-Allow-Origin: *
-/print-files/*
-  Access-Control-Allow-Origin: *
-  X-Robots-Tag: noindex
