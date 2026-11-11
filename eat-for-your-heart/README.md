@@ -55,6 +55,10 @@ Rules that keep the file working:
 - To split ingredients into groups, add a line that ends with a colon, like `"For the dressing:"`. It shows as a small heading.
 - Categories that already exist: Breakfast, Lunch, Dinner, Sides, Snacks, Desserts, Drinks. A new category name creates a new filter button automatically.
 
+Notes formatting: in `notes`, start a new line for a new paragraph, and start a line with `- ` to make it a bullet (a `Name:` at the start of a bullet shows in bold). The Wild Rice with Carrots variations are an example.
+
+Filters: the Total time, Protein and Carb filters work themselves out from each recipe's prep/cook times and ingredients. If one gets it wrong, add `"protein": "Fish & seafood"` or `"carb": "Rice"` (or a list like `["Rice", "Breads & tortillas"]`) to that recipe. Protein choices: Chicken & turkey, Beef & pork, Fish & seafood, Beans, tofu & eggs, No meat or eggs. Carb choices: Rice, Pasta & noodles, Potatoes, Breads & tortillas, Grains & oats, Low-carb / veggie.
+
 If the page says the recipe list couldn't be read, there's a missing or extra comma, quote or bracket. GitHub's editor shows a red marker on the problem line.
 
 ## Make it a separate website

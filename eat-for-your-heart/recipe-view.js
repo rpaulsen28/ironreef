@@ -39,6 +39,62 @@ window.RecipeView = (() => {
     return html.replace(/ \(from this site\)/g, "");
   }
 
+
+  // Notes: each line is its own paragraph; lines starting with "- " become a bulleted list,
+  // and a "Name:" at the start of a bullet is shown in bold.
+  function notesHTML(text, selfId){
+    const lines = String(text || "").split(/\n+/).map(l => l.trim()).filter(Boolean);
+    let html = "", list = [];
+    const flush = () => { if (list.length) { html += `<ul class="note-list">${list.join("")}</ul>`; list = []; } };
+    for (const l of lines) {
+      if (/^[-•]\s+/.test(l)) {
+        const t = l.replace(/^[-•]\s+/, ""), m = /^([^:]{2,40}):\s+(.*)$/.exec(t);
+        list.push(`<li>${m ? `<b>${esc(m[1])}:</b> ${linkify(m[2], selfId)}` : linkify(t, selfId)}</li>`);
+      } else { flush(); html += `<p>${linkify(l, selfId)}</p>`; }
+    }
+    flush();
+    return html;
+  }
+
+  // Filters: total time, main protein and main carb, worked out from the recipe itself.
+  // A recipe can set "protein" or "carb" (text or list) in recipes.json to override.
+  const minutes = s => { s = String(s || ""); if (/none/i.test(s)) return 0;
+    const h = /(\d+(?:\.\d+)?)\s*h/i.exec(s), m = /(\d+)\s*min/i.exec(s);
+    return (h ? parseFloat(h[1]) * 60 : 0) + (m ? +m[1] : 0); };
+  function totalMinutes(r){ return minutes(r.prep) + minutes(r.cook); }
+  function timeBucket(r){ const t = totalMinutes(r); return t <= 30 ? "30 min or less" : t <= 60 ? "31 to 60 min" : "Over an hour"; }
+  const PROTEINS = [
+    ["Chicken & turkey", /\b(chicken|turkey)\b(?!\s*(broth|stock))/],
+    ["Beef & pork", /\b(beef|pork|steak|sirloin|flank)\b(?!\s*(broth|stock))/],
+    ["Fish & seafood", /\b(shrimp|salmon|cod|halibut|mahi|fish|tuna|clams?|mussels|scallops|crab|tilapia|snapper)\b(?!\s*sauce)/],
+    ["Beans, tofu & eggs", /\b(tofu|(?<!green |string )beans?|lentils?|chickpeas?|eggs?|edamame)\b/]
+  ];
+  const CARBS = [
+    ["Rice", /\brice\b(?!\s*(vinegar|wine))/],
+    ["Pasta & noodles", /\b(pasta|noodles?|spaghetti|linguine|penne|orzo|udon|soba|fettuccine|rigatoni|macaroni)\b/],
+    ["Potatoes", /\bpotato(es)?\b/],
+    ["Breads & tortillas", /\b(bread|tortillas?|pita|flatbreads?|buns?|wraps?|rolls)\b(?!crumbs)/],
+    ["Grains & oats", /\b(quinoa|oats|oatmeal|bulgur|farro|barley|couscous|grits)\b/]
+  ];
+  const asList = v => Array.isArray(v) ? v : v ? [v] : null;
+  function facets(r){
+    const ing = (r.ingredients || []).filter(i => !/:\s*$/.test(i)).join(" | ").toLowerCase();
+    const component = /sauce|seasoning|dessert/i.test(r.category || "");
+    let protein = asList(r.protein);
+    if (!protein) {
+      protein = component ? [] : PROTEINS.filter(([, re]) => re.test(ing)).map(([n]) => n);
+      // Eggs or beans alongside meat or fish are a side player, not the main protein
+      if (protein.length > 1) protein = protein.filter(p => p !== "Beans, tofu & eggs");
+      if (!protein.length) protein = ["No meat or eggs"];
+    }
+    let carb = asList(r.carb);
+    if (!carb) {
+      carb = component ? [] : CARBS.filter(([, re]) => re.test(ing)).map(([n]) => n);
+      if (!carb.length) carb = ["Low-carb / veggie"];
+    }
+    return { time: timeBucket(r), protein, carb };
+  }
+
   function timeLabel(r){
     const parts = [];
     if (r.prep) parts.push(`<span>Prep ${esc(r.prep)}</span>`);
@@ -80,9 +136,9 @@ window.RecipeView = (() => {
         <section><h3>Steps</h3><ol class="steps">${(r.steps||[]).map(s => `<li>${linkify(s, slug(r.title))}</li>`).join("")}</ol></section>
       </div>
       ${r.heartNotes ? `<div class="heart-note"><span class="heart-icon" aria-hidden="true">&#9829;</span><div><strong>Heart-healthy notes</strong><p>${linkify(r.heartNotes, slug(r.title))}</p></div></div>` : ""}
-      ${r.notes ? `<div class="note"><strong>Note:</strong> ${linkify(r.notes, slug(r.title))}</div>` : ""}
+      ${r.notes ? `<div class="note"><strong>Notes</strong>${notesHTML(r.notes, slug(r.title))}</div>` : ""}
       ${(r.tags||[]).length ? `<div class="tags">${r.tags.map(t => `<span>${esc(t)}</span>`).join("")}</div>` : ""}`;
   }
 
-  return { esc, slug, cardHTML, detailHTML, setRecipes };
+  return { esc, slug, cardHTML, detailHTML, setRecipes, facets, totalMinutes, notesHTML };
 })();

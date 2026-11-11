@@ -52,6 +52,7 @@
         <div class="pillar"><b>Cholesterol- and sugar-conscious</b><p>Plenty of vegetables, fish, beans and whole grains, with cheese and eggs in moderation. Sweetness comes from fruit and spices first, then a little local honey or monk fruit (never erythritol).</p></div>
         <div class="pillar swapcard"><b>Homemade swaps</b><p>More than 70% of the sodium Americans eat comes from packaged, prepared and restaurant foods. Look for the <span class="swap-badge">Swap</span> tag to make your own versions of salty store-bought staples.</p></div>
       </div>
+      <p class="no-cilantro"><b>Why there's no cilantro:</b> You won't find cilantro in any of these recipes. That's on purpose. Wherever a dish would normally call for it, I use fresh parsley instead, and ground coriander (the seed of the same plant) still shows up in spice blends. If you love cilantro, swap it right back in.</p>
     </section>
     <div class="controls">
       <label class="search">
@@ -59,6 +60,12 @@
         <input id="q" type="search" placeholder="Search recipes or ingredients" aria-label="Search recipes or ingredients">
       </label>
       <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+      <div class="filters" role="group" aria-label="More filters">
+        <label>Total time<select id="f-time"><option value="">Any time</option></select></label>
+        <label>Protein<select id="f-protein"><option value="">Any protein</option></select></label>
+        <label>Carb<select id="f-carb"><option value="">Any carb</option></select></label>
+        <button type="button" class="clear-filters" id="f-clear" hidden>Clear filters</button>
+      </div>
       <div class="count" id="count" aria-live="polite"></div>
     </div>
     <div id="sections"></div>
@@ -213,6 +220,7 @@ const SITE = {
 (() => {
   const CATEGORY_ORDER = ["Breakfast","Lunch","Soups","Dinner","Sides","Snacks","Desserts","Drinks","Sauces & Seasonings"];
   const SECTION_LIMIT = 6;   // cards shown per section before "See all"
+  const GROUP_BY_PROTEIN = ["Dinner"];   // these sections are split into protein groups
   const SECTION_NOTES = { "Sauces & Seasonings": "Homemade building blocks to replace salty store-bought versions." };
   const expanded = new Set();
   const $ = id => document.getElementById(id);
@@ -247,8 +255,9 @@ const SITE = {
     })
     .then(data => {
       recipes = data.map(r => ({...r, id: slug(r.title)}));
+      recipes.forEach(r => r.facets = RecipeView.facets(r));
       RecipeView.setRecipes(recipes);
-      buildChips(); render(); route();
+      buildChips(); buildFilters(); render(); route();
     })
     .catch(err => {
       $("list").hidden = true;
@@ -257,6 +266,21 @@ const SITE = {
         ? "The recipe list couldn't be read. Check recipes.json for a missing comma, quote or bracket near your last edit."
         : "The recipe list couldn't be loaded. Please try again later.";
     });
+
+  const FILTERS = { time: ["30 min or less", "31 to 60 min", "Over an hour"],
+    protein: ["Chicken & turkey", "Beef & pork", "Fish & seafood", "Beans, tofu & eggs", "No meat or eggs"],
+    carb: ["Rice", "Pasta & noodles", "Potatoes", "Breads & tortillas", "Grains & oats", "Low-carb / veggie"] };
+  const fv = () => ({ time: $("f-time").value, protein: $("f-protein").value, carb: $("f-carb").value });
+  function buildFilters(){
+    const f = recipes.map(r => r.facets);
+    for (const k of ["time", "protein", "carb"]) {
+      const have = new Set(f.flatMap(x => [].concat(x[k])));
+      const opts = [...FILTERS[k].filter(v => have.has(v)), ...[...have].filter(v => !FILTERS[k].includes(v))];
+      $("f-" + k).insertAdjacentHTML("beforeend", opts.map(v => `<option>${esc(v)}</option>`).join(""));
+      $("f-" + k).addEventListener("change", render);
+    }
+    $("f-clear").addEventListener("click", () => { ["time","protein","carb"].forEach(k => $("f-" + k).value = ""); render(); });
+  }
 
   function buildChips(){
     const present = [...new Set(recipes.map(r => r.category).filter(Boolean))];
@@ -278,6 +302,10 @@ const SITE = {
   function matches(r, q){
     if (active !== "All" && r.category !== active) return false;
     if (swapsOnly && !r.replaces) return false;
+    const f = fv();
+    if (f.time && r.facets.time !== f.time) return false;
+    if (f.protein && !r.facets.protein.includes(f.protein)) return false;
+    if (f.carb && !r.facets.carb.includes(f.carb)) return false;
     if (!q) return true;
     const hay = [r.title, r.summary, r.category, r.replaces, r.heartNotes, ...(r.tags||[]), ...(r.ingredients||[])].join(" ").toLowerCase();
     return q.split(/\s+/).every(w => hay.includes(w));
@@ -287,7 +315,9 @@ const SITE = {
 
   function render(){
     const q = $("q").value.trim().toLowerCase();
-    const browsing = !q && active === "All" && !swapsOnly;
+    const f = fv(), filtered = !!(f.time || f.protein || f.carb);
+    $("f-clear").hidden = !filtered;
+    const browsing = !q && active === "All" && !swapsOnly && !filtered;
     const list = recipes.filter(r => matches(r, q));
     $("count").textContent = `${list.length} recipe${list.length === 1 ? "" : "s"}`;
     $("empty").hidden = list.length > 0;
@@ -313,6 +343,21 @@ const SITE = {
       </section>` : "";
     for (const c of cats) {
       const items = recipes.filter(r => r.category === c);
+      if (GROUP_BY_PROTEIN.includes(c)) {
+        const id = sectionId(c);
+        const groups = FILTERS.protein.map(p => [p, items.filter(r => r.facets.protein[0] === p)]).filter(([, l]) => l.length);
+        html += `
+      <section class="rsec" id="${id}" aria-labelledby="${id}-h">
+        <div class="rsec-head"><h2 id="${id}-h">${esc(c)} <span class="rsec-count">(${items.length})</span></h2><p>Full meals, grouped by the main protein.</p></div>
+        <nav class="subnav" aria-label="${esc(c)} by protein">${groups.map(([p, l]) => `<a href="#${id}-${slug(p)}" data-jump>${esc(p)} <span>${l.length}</span></a>`).join("")}</nav>
+        ${groups.map(([p, l]) => `
+        <div class="subsec" id="${id}-${slug(p)}">
+          <h3>${esc(p)}</h3>
+          <div class="grid">${l.map(r => RecipeView.cardHTML(r, "recipes/" + r.id)).join("")}</div>
+        </div>`).join("")}
+      </section>`;
+        continue;
+      }
       const open = expanded.has(c);
       const shown = open ? items : items.slice(0, SECTION_LIMIT);
       const id = sectionId(c);
@@ -327,6 +372,8 @@ const SITE = {
   }
 
   $("sections").addEventListener("click", e => {
+    const j = e.target.closest("a[data-jump]");
+    if (j) { e.preventDefault(); document.querySelector(j.getAttribute("href"))?.scrollIntoView({behavior:"smooth", block:"start"}); return; }
     const b = e.target.closest(".see-all"); if (!b) return;
     const c = b.dataset.cat;
     expanded.has(c) ? expanded.delete(c) : expanded.add(c);
@@ -342,8 +389,7 @@ const SITE = {
         <button class="back" type="button" id="back">&larr; All recipes</button>
         <button class="print" type="button" onclick="window.print()">Print recipe</button>
       </div>
-      ${RecipeView.detailHTML(r)}
-      <p class="story-mini"><a href="#how-i-eat">How I eat for my heart: the everyday habits behind these recipes &rarr;</a></p>`;
+      ${RecipeView.detailHTML(r)}`;
     $("back").addEventListener("click", () => { history.pushState("", "", location.pathname); route(); });
     document.title = `${r.title} | ${SITE.name}`;
   }

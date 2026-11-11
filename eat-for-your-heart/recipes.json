@@ -1813,38 +1813,6 @@
     "heartNotes": "Lightened: no salt in the pasta water or the sauce (the original used over a tablespoon), a quarter less oil, half the Parmesan, and whole-wheat spaghetti. Arugula adds greens."
   },
   {
-    "title": "Whole-Wheat Spaghetti with Kale, Poached Eggs and Toasted Breadcrumbs",
-    "category": "Dinner",
-    "summary": "Whole-wheat spaghetti with garlicky Tuscan kale, crunchy breadcrumbs and a poached egg on top.",
-    "prep": "20 min",
-    "cook": "35 min",
-    "servings": 4,
-    "ingredients": [
-      "1 piece (2 oz) whole-wheat baguette, cubed",
-      "2 tablespoons extra-virgin olive oil, divided",
-      "3 cups sliced onion (about 1 medium)",
-      "14 cups stemmed, coarsely chopped Tuscan kale (about 18 oz)",
-      "1/2 cup water",
-      "1/4 teaspoon crushed red pepper",
-      "4 garlic cloves, chopped",
-      "1 teaspoon white vinegar (for poaching)",
-      "4 large eggs",
-      "8 oz whole-wheat spaghetti",
-      "1 oz pecorino Romano, grated",
-      "1/2 teaspoon coarsely ground black pepper"
-    ],
-    "steps": [
-      "Heat the oven to 400°F. Pulse the bread in a food processor into crumbs, toss with 2 teaspoons of the oil, and bake 8 minutes, stirring once, until toasted.",
-      "Heat 1 teaspoon of oil in a large nonstick skillet over medium-high heat and cook the onion 8 minutes, until golden. Add the kale a handful at a time, letting each wilt.",
-      "Stir in the water, red pepper and garlic. Lower the heat to medium and cook, uncovered, 12 minutes, until the kale is tender.",
-      "Bring a large pot of water and the vinegar to a gentle simmer. Crack each egg into a small bowl and slide it into the water. Cook 3 minutes, until the whites are set, and lift out with a slotted spoon.",
-      "Bring the water back to a boil and cook the spaghetti 10 minutes. Drain and toss with half the cheese, the remaining tablespoon of oil and the black pepper.",
-      "Put kale in each bowl, top with pasta, an egg and the breadcrumbs, and sprinkle with the rest of the cheese."
-    ],
-    "notes": "Regular curly kale or Swiss chard works too; cut the cooking time in half for chard. Adapted from Cooking Light.",
-    "heartNotes": "Lightened: the 2 1/4 teaspoons of salt are gone (vinegar helps the eggs poach instead), and the pecorino is cut in half. With whole-wheat pasta and a pound of kale, each bowl has about 13 grams of fiber."
-  },
-  {
     "title": "Black Bean Cakes with Greens and Eggs",
     "category": "Dinner",
     "summary": "Crispy cumin-spiced black bean patties with a lime-dressed salad and a fried egg.",
@@ -1925,7 +1893,11 @@
       "Serve the dal over brown rice with the salad and flatbreads."
     ],
     "notes": "Ground coriander is the dried seed and tastes warm and citrusy. Adapted from Cooking Light.",
-    "heartNotes": "Lightened: the salt is gone (over a teaspoon in the original), half the oil in the salad, honey instead of sugar, and whole-wheat dough. Lentils, spinach, carrots and brown rice give each plate about 11 grams of fiber."
+    "heartNotes": "Lightened: the salt is gone (over a teaspoon in the original), half the oil in the salad, honey instead of sugar, and whole-wheat dough. Lentils, spinach, carrots and brown rice give each plate about 11 grams of fiber.",
+    "carb": [
+      "Rice",
+      "Breads & tortillas"
+    ]
   },
   {
     "title": "Grilled Sweet Potato and Napa Cabbage Salad with Lime Vinaigrette",
@@ -1984,7 +1956,7 @@
   {
     "title": "Wild Rice with Carrots",
     "category": "Sides",
-    "summary": "Nutty wild rice with tender sautéed carrots and parsley, plus three easy variations.",
+    "summary": "Nutty wild rice with tender sautéed carrots and parsley, plus three easy swaps.",
     "prep": "5 min",
     "cook": "10 min",
     "servings": 4,
@@ -2000,13 +1972,13 @@
       "Heat the oil in a large nonstick skillet over medium heat. Cook the carrot 8 minutes, stirring often, until tender.",
       "Stir in the rice, parsley and pepper and cook 1 minute."
     ],
-    "notes": "Variations: (1) Bell pepper and fennel: cook 1/2 cup each diced yellow bell pepper and fennel in the oil instead of carrot, and finish with 1 1/2 teaspoons fresh oregano. (2) Cucumber and feta: toss the rice with 1 cup diced English cucumber, 1 1/2 tablespoons olive oil, 1 tablespoon lemon juice and 1 oz crumbled feta. (3) Tomatoes and pine nuts: cook 1/4 cup pine nuts and 8 quartered cherry tomatoes in the oil for 8 minutes, then stir in the rice and 1 tablespoon basil. If you can't find precooked wild rice, use precooked brown rice. Adapted from Cooking Light.",
+    "notes": "If you can't find precooked wild rice, use precooked brown rice.\nSwap the carrots for one of these:\n- Bell pepper and fennel: Cook 1/2 cup each diced yellow bell pepper and fennel in the oil instead of the carrot. Finish with 1 1/2 teaspoons chopped fresh oregano.\n- Cucumber and feta (no cooking): Toss the warm rice with 1 cup diced English cucumber, 1 1/2 tablespoons olive oil, 1 tablespoon lemon juice and 1 oz crumbled feta.\n- Tomatoes and pine nuts: Cook 1/4 cup pine nuts and 8 quartered cherry tomatoes in the oil for 8 minutes, then stir in the rice and 1 tablespoon chopped basil.\nAdapted from Cooking Light.",
     "heartNotes": "Lightened: olive oil replaces the butter and the salt is gone in every version. The feta version uses half the original cheese. Wild rice is a whole grain with more protein than most."
   },
   {
     "title": "Napa Cabbage Slaw",
     "category": "Sides",
-    "summary": "A crisp, gingery Asian-style slaw of napa cabbage, squash and carrot.",
+    "summary": "A crisp, gingery Asian-style slaw of napa cabbage, squash and carrot, with apple for a sweet crunch.",
     "prep": "15 min",
     "cook": "None",
     "servings": 4,
@@ -2016,19 +1988,21 @@
       "1 tablespoon rice vinegar",
       "1 teaspoon honey",
       "1 teaspoon grated fresh ginger",
-      "1/2 teaspoon crushed red pepper",
+      "1/2 teaspoon gochugaru (Korean red pepper flakes), or crushed red pepper",
       "2 cups thinly sliced napa cabbage",
       "1/2 cup shredded red cabbage",
       "1/2 cup julienned yellow squash",
       "1/2 cup matchstick-cut carrot",
+      "1 small apple (Honeycrisp or Fuji), cut into matchsticks",
       "1/4 cup diagonally sliced green onions"
     ],
     "steps": [
-      "Whisk the soy sauce, sesame oil, vinegar, honey, ginger and red pepper in a large bowl.",
-      "Add the vegetables, toss well, and let stand 10 minutes before serving."
+      "Whisk the soy sauce, sesame oil, vinegar, honey, ginger and gochugaru in a large bowl.",
+      "Add the vegetables and apple, toss well, and let stand 10 minutes before serving."
     ],
-    "notes": "Great with the Spicy Bulgogi or alongside grilled fish. Adapted from Cooking Light.",
-    "heartNotes": "Lightened: honey and extra red pepper replace bottled sweet chili sauce, which is mostly sugar, and there's a little less sesame oil. Red cabbage adds color and fiber."
+    "notes": "Shortcut: use 3 cups of a premixed bag of shredded cabbage or coleslaw mix in place of the napa cabbage, red cabbage and carrot.\nGochugaru brings a fruity, smoky heat that's milder than crushed red pepper. Find it in the Asian aisle or at Korean markets.\nToss the apple in right before serving so it stays crisp. Great with the Spicy Bulgogi (Pork, Beef or Chicken) or alongside grilled fish. Adapted from Cooking Light.",
+    "heartNotes": "Lightened: honey and gochugaru replace bottled sweet chili sauce, which is mostly sugar, and there's a little less sesame oil. Red cabbage adds color and fiber.",
+    "tags": []
   },
   {
     "title": "Corn Chowchow",
@@ -2134,42 +2108,8 @@
       "Spoon the batter into 12 muffin cups coated with cooking spray. Bake 18 minutes, until a toothpick comes out clean. Remove from the pan right away and cool on a rack."
     ],
     "notes": "A treat, not an everyday breakfast. Monk fruit tip: many monk fruit sweeteners are blended with erythritol. Check the label and pick pure monk fruit or a monk fruit and allulose blend. Adapted from Cooking Light.",
-    "heartNotes": "Lightened: avocado oil replaces 5 tablespoons of butter (cutting saturated fat by about two-thirds), nonfat milk replaces whole, half the flour is whole wheat, half the sugar is swapped for monk fruit and allulose, there are fewer chocolate chips, and the salt is gone."
-  },
-  {
-    "title": "Lemon Squares",
-    "category": "Desserts",
-    "summary": "Bright, tart lemon bars on a pine nut shortbread crust, lightened for an occasional treat.",
-    "prep": "15 min",
-    "cook": "40 min + 2 hr chilling",
-    "servings": 16,
-    "ingredients": [
-      "For the crust:",
-      "3/4 cup all-purpose flour (about 3.4 oz)",
-      "1/4 cup powdered sugar",
-      "3 tablespoons pine nuts, toasted and coarsely chopped",
-      "3 tablespoons avocado oil",
-      "1 tablespoon cold water",
-      "Cooking spray",
-      "For the filling:",
-      "1/2 cup granulated sugar",
-      "1/4 cup allulose",
-      "2 tablespoons all-purpose flour",
-      "1 teaspoon grated lemon rind",
-      "1/2 cup fresh lemon juice",
-      "2 large eggs",
-      "1 large egg white",
-      "1 tablespoon powdered sugar, for dusting"
-    ],
-    "steps": [
-      "Heat the oven to 350°F.",
-      "Pulse the flour, powdered sugar and pine nuts in a food processor. Add the oil and water and pulse 3 to 5 times, until it looks like coarse meal.",
-      "Press the mixture into an 8-inch square baking dish coated with cooking spray. Bake 20 minutes, until lightly browned. Lower the oven to 325°F.",
-      "Whisk the sugar, allulose, flour, lemon rind, lemon juice, eggs and egg white until smooth. Pour over the crust.",
-      "Bake at 325°F for 20 minutes, until set. Cool completely in the pan, then cover and chill at least 2 hours.",
-      "Dust with the powdered sugar and cut into 16 squares."
-    ],
-    "notes": "Allulose browns faster than sugar, so check the filling at 17 minutes. Adapted from Cooking Light.",
-    "heartNotes": "Lightened: avocado oil replaces the butter in the crust, a third of the sugar is swapped for allulose, the dusting sugar is halved, and the salt is gone. Each square is about 110 calories."
+    "heartNotes": "Lightened: avocado oil replaces 5 tablespoons of butter (cutting saturated fat by about two-thirds), nonfat milk replaces whole, half the flour is whole wheat, half the sugar is swapped for monk fruit and allulose, there are fewer chocolate chips, and the salt is gone.",
+    "protein": "No meat or eggs",
+    "carb": "Breads & tortillas"
   }
 ]

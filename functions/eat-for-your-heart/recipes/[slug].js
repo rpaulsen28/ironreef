@@ -24,6 +24,20 @@ export async function onRequestGet(context){
     for (const m of marks) html = html.slice(0, m.start) + `<a class="recipe-link" href="/eat-for-your-heart/recipes/${m.l.id}">${m.t}</a>` + html.slice(m.end);
     return html.replace(/ \(from this site\)/g, "");
   };
+  // Same note formatting as the recipe page: one paragraph per line, "- " lines as a bulleted list.
+  const notesHTML = text => {
+    const lines = String(text || "").split(/\n+/).map(l => l.trim()).filter(Boolean);
+    let out = "", list = [];
+    const flush = () => { if (list.length) { out += `<ul class="note-list">${list.join("")}</ul>`; list = []; } };
+    for (const l of lines) {
+      if (/^[-•]\s+/.test(l)) {
+        const t = l.replace(/^[-•]\s+/, ""), m = /^([^:]{2,40}):\s+(.*)$/.exec(t);
+        list.push(`<li>${m ? `<b>${esc(m[1])}:</b> ${linkify(m[2])}` : linkify(t)}</li>`);
+      } else { flush(); out += `<p>${linkify(l)}</p>`; }
+    }
+    flush();
+    return out;
+  };
   const related = list.filter(x => x.category === r.category && x.id !== r.id).slice(0, 6);
   const desc = (r.summary ? r.summary + " " : "") + "A heart-healthy recipe: low salt, lower saturated fat.";
 
@@ -106,10 +120,9 @@ export async function onRequestGet(context){
       <section><h2>Steps</h2><ol class="steps">${(r.steps||[]).map(s => `<li>${linkify(s)}</li>`).join("")}</ol></section>
     </div>
     ${r.heartNotes ? `<div class="heart-note"><span class="heart-icon" aria-hidden="true">&#9829;</span><div><strong>Heart-healthy notes</strong><p>${linkify(r.heartNotes)}</p></div></div>` : ""}
-    ${r.notes ? `<div class="note"><strong>Note:</strong> ${linkify(r.notes)}</div>` : ""}
+    ${r.notes ? `<div class="note"><strong>Notes</strong>${notesHTML(r.notes)}</div>` : ""}
     ${(r.tags||[]).length ? `<div class="tags">${r.tags.map(t => `<span>${esc(t)}</span>`).join("")}</div>` : ""}
     ${related.length ? `<nav class="related" aria-label="More recipes"><h2>More ${esc(r.category.toLowerCase())} recipes</h2><ul>${related.map(x => `<li><a href="/eat-for-your-heart/recipes/${x.id}">${esc(x.title)}</a></li>`).join("")}</ul></nav>` : ""}
-    <p class="story-mini"><a href="/eat-for-your-heart/#how-i-eat">How I eat for my heart: the everyday habits behind these recipes &rarr;</a></p>
   </article>
 </main>
 <footer>
