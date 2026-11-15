@@ -273,3 +273,5 @@ nav ul{align-items:center}
 .mini-search button{font:600 .78rem var(--ui);letter-spacing:.08em;text-transform:uppercase;padding:8px 14px;border:1.5px solid var(--navy);background:var(--navy);color:var(--cream);border-radius:0 8px 8px 0;cursor:pointer}
 @media (max-width:640px){.mini-search{order:3;flex-basis:100%;max-width:none}}
 @media print{.mini-search{display:none !important}}
+
+@media (max-width:480px){ .nav{gap:10px} .brand{flex-shrink:0} .brand img{width:40px;height:auto} nav ul{gap:10px;font-size:.68rem;letter-spacing:.03em} nav .hide-xs{display:none} }

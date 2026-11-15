@@ -88,10 +88,11 @@ export async function onRequestGet(context){
   <div class="wrap nav">
     <a class="brand" href="/" aria-label="Iron Reef home"><img src="/emblem.webp" alt="" width="52" height="45"><span>Iron Reef</span></a>
     <nav aria-label="Main"><ul>
-      <li><a href="/about/"><span class="full">About</span><span class="short">About</span></a></li>
+      <li class="hide-xs"><a href="/about/"><span class="full">About</span><span class="short">About</span></a></li>
       <li><a href="/rodeo/"><span class="full">Rodeo</span><span class="short">Rodeo</span></a></li>
       <li><a href="/diving/"><span class="full">Diving</span><span class="short">Diving</span></a></li>
       <li><a href="${STORE}" target="_blank" rel="noopener"><span class="full">Store</span><span class="short">Store</span></a></li>
+      <li><a href="/journal/"><span class="full">Journal</span><span class="short">Journal</span></a></li>
       <li class="efyh-link"><a href="/eat-for-your-heart/" aria-current="page"><img src="/eat-for-your-heart/brand/mark.svg" alt="" width="17" height="20"><span class="full">Eat for your Heart</span><span class="short">Recipes</span></a></li>
     </ul></nav>
   </div>

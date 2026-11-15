@@ -206,10 +206,11 @@ const SITE = {
     connection: "Eat for your Heart is a side project from Ryan Villanueva of Iron Reef: good food to fuel the arena and the dive.",
     logo: "../emblem.webp",
     links: [
-      { label: "About",            short: "About",   href: "../about/" },
+      { label: "About",            short: "About",   href: "../about/", hideXs: true },
       { label: "Rodeo",            short: "Rodeo",   href: "../rodeo/" },
       { label: "Diving",           short: "Diving",  href: "../diving/" },
       { label: "Store",            short: "Store",   href: "https://shop.ironreefllc.com/collections/iron-reef", external: true },
+      { label: "Journal",          short: "Journal", href: "../journal/" },
       { label: "Contact",          short: "Contact", href: "../?contact", hideSmall: true },
       { label: "Eat for your Heart", short: "Recipes", href: "./", current: true, icon: "brand/mark.svg" }
     ]
@@ -236,7 +237,7 @@ const SITE = {
     $("brand").setAttribute("aria-label", `${p.name} home`);
     $("brand").innerHTML = `<img src="${esc(p.logo)}" alt="" width="52" height="45"><span>${esc(p.name)}</span>`;
     $("navlinks").innerHTML = p.links.map(l =>
-      `<li${l.hideSmall ? ' class="hide-sm"' : l.icon ? ' class="efyh-link"' : ""}><a href="${esc(l.href)}"${l.current ? ' aria-current="page"' : ""}${l.external ? ' target="_blank" rel="noopener"' : ""}>${l.icon ? `<img src="${esc(l.icon)}" alt="" width="17" height="20">` : ""}<span class="full">${esc(l.label)}</span><span class="short">${esc(l.short || l.label)}</span></a></li>`).join("");
+      `<li${l.hideSmall ? ' class="hide-sm"' : l.hideXs ? ' class="hide-xs"' : l.icon ? ' class="efyh-link"' : ""}><a href="${esc(l.href)}"${l.current ? ' aria-current="page"' : ""}${l.external ? ' target="_blank" rel="noopener"' : ""}>${l.icon ? `<img src="${esc(l.icon)}" alt="" width="17" height="20">` : ""}<span class="full">${esc(l.label)}</span><span class="short">${esc(l.short || l.label)}</span></a></li>`).join("");
     $("footer-left").innerHTML = `&copy; ${year} ${esc(p.owner)}<span class="star">&#10022;</span>${esc(p.location)}`;
   } else {
     $("brand").setAttribute("aria-label", `${SITE.name} home`);

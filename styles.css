@@ -123,3 +123,5 @@ nav ul{align-items:center}
 .gear img{aspect-ratio:1;object-fit:cover;width:100%;background:var(--cream-2)}
 .gear b{font-family:var(--body);font-weight:600;color:var(--navy);padding:12px 14px 2px;line-height:1.3}
 .gear span{font-family:var(--ui);font-size:.82rem;color:var(--muted);padding:0 14px 14px}
+
+@media (max-width:480px){ .nav{gap:10px} .brand{flex-shrink:0} .brand img{width:40px;height:auto} nav ul{gap:10px;font-size:.68rem;letter-spacing:.03em} nav .hide-xs{display:none} }
