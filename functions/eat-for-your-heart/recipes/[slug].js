@@ -92,7 +92,7 @@ export async function onRequestGet(context){
       <li><a href="/rodeo/"><span class="full">Rodeo</span><span class="short">Rodeo</span></a></li>
       <li><a href="/diving/"><span class="full">Diving</span><span class="short">Diving</span></a></li>
       <li><a href="${STORE}" target="_blank" rel="noopener"><span class="full">Store</span><span class="short">Store</span></a></li>
-      <li><a href="/journal/"><span class="full">Journal</span><span class="short">Journal</span></a></li>
+      <li><a href="/journal/"><span class="full">Divelog</span><span class="short">Divelog</span></a></li>
       <li class="efyh-link"><a href="/eat-for-your-heart/" aria-current="page"><img src="/eat-for-your-heart/brand/mark.svg" alt="" width="17" height="20"><span class="full">Eat for your Heart</span><span class="short">Recipes</span></a></li>
     </ul></nav>
   </div>
