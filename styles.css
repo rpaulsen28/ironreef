@@ -151,3 +151,4 @@ nav ul{align-items:center}
 .lightbox .lb-prev{left:12px;top:50%;transform:translateY(-50%)}
 .lightbox .lb-next{right:12px;top:50%;transform:translateY(-50%)}
 @media (max-width:640px){.gallery-track img{height:220px}.gallery-nav{display:none}.lightbox figure{padding:56px 8px 16px}.lightbox .lb-prev,.lightbox .lb-next{top:auto;bottom:16px;transform:none}}
+.gallery-track.auto{scroll-snap-type:none;scroll-behavior:auto}
