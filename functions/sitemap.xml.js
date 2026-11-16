@@ -1,7 +1,7 @@
 // /sitemap.xml — static pages, journal posts and one URL per recipe (kept current from recipes.json).
 import { SITE, recipes, asset } from "./_lib.js";
 
-const PAGES = ["/", "/about/", "/rodeo/", "/diving/", "/journal/", "/eat-for-your-heart/"];
+const PAGES = ["/", "/about/", "/rodeo/", "/diving/", "/gear/", "/journal/", "/eat-for-your-heart/"];
 
 export async function onRequestGet(context){
   let posts = [];
