@@ -2996,8 +2996,11 @@
       "Take the pan off the heat and stir in the Parmesan until melted and smooth.",
       "Add the protein and pasta back to the pan and toss well. Add splashes of the saved pasta water to thin the sauce until the pasta is well coated. Top with parsley and serve."
     ],
-    "notes": "The flour does the thickening that reducing heavy cream does in a classic Alfredo, so the sauce stays creamy without the cream. For a special occasion, you can swap half the milk for half-and-half. Parmesan is naturally salty, so the sauce doesn't need any added salt. Want it spicy? Try the Spicy Gochujang Shrimp or Chicken Alfredo.",
-    "heartNotes": "A classic Alfredo uses heavy cream, a lot of butter and up to a cup of cheese. This version uses 1% milk thickened with a little flour, a tablespoon of butter plus a tablespoon of avocado oil, and 1/3 cup Parmesan, cutting most of the saturated fat. There's no added salt, the seasonings are salt-free, and whole-wheat pasta adds fiber."
+    "notes": "The flour does the thickening that reducing heavy cream does in a classic Alfredo, so the sauce stays creamy without the cream. For a special occasion, you can swap half the milk for half-and-half. Parmesan is naturally salty, so the sauce doesn't need any added salt. Want it spicy? Try the Spicy Gochujang Shrimp or Chicken Alfredo. Tortellini works great in place of the pasta too; store-bought filled pasta can be higher in sodium, so check labels.",
+    "heartNotes": "A classic Alfredo uses heavy cream, a lot of butter and up to a cup of cheese. This version uses 1% milk thickened with a little flour, a tablespoon of butter plus a tablespoon of avocado oil, and 1/3 cup Parmesan, cutting most of the saturated fat. There's no added salt, the seasonings are salt-free, and whole-wheat pasta adds fiber.",
+    "image": "lighter-alfredo-shrimp-tortellini.jpg",
+    "imageAlt": "Shrimp in a creamy Parmesan Alfredo sauce over tri-color cheese tortellini",
+    "imageCaption": "Pictured with shrimp over prepackaged tortellini instead of pasta."
   },
   {
     "title": "Spicy Gochujang Shrimp or Chicken Alfredo",
@@ -3096,5 +3099,81 @@
     ],
     "notes": "Curry pastes vary a lot in heat and salt; check the label and pick a lower-sodium brand if you can. Leftovers keep 3 days in the fridge and reheat well. Inspired by a recipe shared by Recipes Smart on Facebook.",
     "heartNotes": "The added salt is gone. The 2 tablespoons of fish sauce in the original become 1 teaspoon, the soy sauce is homemade or low-sodium, the broth is low-sodium, and there's a little less curry paste, which together cut most of the sodium. Light coconut milk replaces full-fat to cut saturated fat, avocado oil replaces vegetable oil and is used only for browning, honey replaces brown sugar, and lean chicken breast and whole-wheat panko keep the meatballs light."
+  },
+  {
+    "title": "Slow Cooker Mexican Chicken and Rice",
+    "category": "Dinner",
+    "summary": "Chicken, brown rice, black beans, corn and tomatoes with green chiles cooked together in the slow cooker, then shredded and topped with melty cheese.",
+    "prep": "10 min",
+    "cook": "3 to 7 hr",
+    "servings": 6,
+    "replaces": "",
+    "tags": [
+      "chicken",
+      "mexican",
+      "slow-cooker",
+      "one-pot",
+      "beans",
+      "low-sodium"
+    ],
+    "ingredients": [
+      "4 boneless skinless chicken breasts (about 2 lb)",
+      "1 cup long-grain brown rice, rinsed",
+      "1 (15 oz) can low-sodium black beans, drained and rinsed",
+      "1 (15 oz) can low-sodium corn, drained (or 1 1/2 cups frozen corn)",
+      "1 (10 oz) can low-sodium diced tomatoes with green chiles",
+      "2 tablespoons No-Salt Taco and Fajita Seasoning (from this site)",
+      "1 1/2 cups low-sodium chicken broth",
+      "1/4 teaspoon black pepper",
+      "1/2 cup shredded reduced-fat sharp cheddar",
+      "For topping: sliced green onions and lime wedges"
+    ],
+    "steps": [
+      "Arrange the chicken in the bottom of the slow cooker.",
+      "In a bowl, stir together the rice, black beans, corn, tomatoes with their juice, taco seasoning, broth and pepper. Pour it over the chicken.",
+      "Cover and cook on low 6 to 7 hours or on high 3 to 4 hours, until the chicken is cooked through (165°F) and the rice is tender. If the rice looks dry near the end, stir in a splash more broth.",
+      "Shred the chicken right in the slow cooker with two forks and stir it into the rice and beans.",
+      "Sprinkle with the cheese, cover and let sit 10 minutes to melt. Top with green onions and serve with lime wedges."
+    ],
+    "notes": "Great as burrito bowls, in whole-wheat tortillas, or over greens. Leftovers keep 4 days in the fridge. Inspired by a slow cooker recipe shared on Facebook.",
+    "heartNotes": "A taco seasoning packet can carry well over 1,500 mg of sodium; the salt-free homemade blend replaces it, and the added salt is gone. Low-sodium beans, corn, tomatoes and broth cut the sodium further. Brown rice adds fiber, the beans add more, and a half cup of reduced-fat cheddar replaces a full cup of regular."
+  },
+  {
+    "title": "Slow Cooker Honey Lime Shredded Chicken",
+    "category": "Dinner",
+    "summary": "Sweet, tangy shredded chicken with honey, lime and smoked paprika, made for tacos, salads and bowls with almost no effort.",
+    "prep": "5 min",
+    "cook": "3 to 7 hr",
+    "servings": 6,
+    "replaces": "",
+    "tags": [
+      "chicken",
+      "slow-cooker",
+      "meal-prep",
+      "tacos",
+      "low-sodium"
+    ],
+    "ingredients": [
+      "2 lb boneless skinless chicken breasts",
+      "1/4 cup honey",
+      "1/4 cup lime juice",
+      "Zest of 1 lime",
+      "2 garlic cloves, minced",
+      "1 teaspoon chili powder (salt-free)",
+      "1/2 teaspoon smoked paprika",
+      "1/2 teaspoon ground cumin",
+      "1/4 teaspoon black pepper",
+      "1/4 cup low-sodium chicken broth",
+      "For serving: lime wedges and sliced green onions"
+    ],
+    "steps": [
+      "Put the chicken in the slow cooker.",
+      "Whisk the honey, lime juice and zest, garlic, chili powder, smoked paprika, cumin, pepper and broth in a small bowl. Pour it over the chicken.",
+      "Cover and cook on low 6 to 7 hours or on high 3 to 4 hours, until the chicken is tender and cooked through (165°F).",
+      "Take the chicken out and shred it with two forks. Return it to the slow cooker and stir to coat it in the sauce.",
+      "Serve over brown rice, in whole-wheat tortillas or on a salad, with lime wedges and green onions."
+    ],
+    "notes": "Freezes well in its sauce for up to 3 months, so it's an easy meal-prep protein. Inspired by a recipe shared by Foodie Idea on Facebook.",
+    "heartNotes": "The salt is gone; lime zest, garlic, cumin, chili powder and smoked paprika carry the flavor. The honey is cut in half to 1/4 cup, which keeps the sweet-tangy glaze with much less added sugar. Skinless chicken breast keeps it lean, and the broth is low-sodium."
   }
 ]

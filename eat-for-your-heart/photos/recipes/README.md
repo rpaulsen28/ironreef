@@ -7,3 +7,4 @@ Put recipe photos in this folder, then add the file name to that recipe's `"imag
 - About 1200 pixels wide and under 400 KB keeps pages fast.
 - Optional: `"imageAlt"` describes the photo for screen readers. If left out, the recipe title is used.
 - Optional: `"image2"` (and `"image2Alt"`) adds a second photo shown under the main one on the recipe page. Only the main photo appears on recipe cards.
+- Optional: `"imageCaption"` adds a short line under the photo on the recipe page.

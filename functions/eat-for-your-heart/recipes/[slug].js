@@ -17,9 +17,10 @@ export async function onRequestGet(context){
   }
   const photoSrc = f => /^(https?:)?\/\//.test(f) || String(f).startsWith("/") ? f : `/eat-for-your-heart/photos/recipes/${f}`;
   const fig = (f, alt, extra) => `<figure class="recipe-photo${extra || ""}" data-photo><img src="${esc(photoSrc(f))}" alt="${esc(alt || r.title)}"${extra ? ' loading="lazy"' : ""} onerror="this.closest('[data-photo]').remove()"></figure>`;
-  const photos = !r.image ? "" : (r.image2
+  const photoBlock = !r.image ? "" : (r.image2
     ? `<div class="recipe-photos">${fig(r.image, r.imageAlt)}${fig(r.image2, r.image2Alt, " recipe-photo-2")}</div>`
     : fig(r.image, r.imageAlt));
+  const photos = r.image && r.imageCaption ? `<div class="recipe-photo-block">${photoBlock}<p class="photo-caption">${esc(r.imageCaption)}</p></div>` : photoBlock;
 
   const url = `${SITE}/eat-for-your-heart/recipes/${r.id}`;
   const links = list.filter(x => x.id !== r.id && x.title.length > 6).sort((a,b) => b.title.length - a.title.length);

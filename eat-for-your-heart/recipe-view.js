@@ -133,9 +133,10 @@ window.RecipeView = (() => {
         ${r.image ? (() => {
           const main = `<figure class="recipe-photo" data-photo><img src="${esc(imgSrc(r))}" alt="${esc(r.imageAlt || r.title)}" ${hideOnError}></figure>`;
           // Optional second photo: "image2" (+ "image2Alt") shows under the main one.
-          if (!r.image2) return main;
-          const second = `<figure class="recipe-photo recipe-photo-2" data-photo><img src="${esc(fileSrc(r.image2))}" alt="${esc(r.image2Alt || r.title)}" loading="lazy" ${hideOnError}></figure>`;
-          return `<div class="recipe-photos">${main}${second}</div>`;
+          const second = r.image2 ? `<figure class="recipe-photo recipe-photo-2" data-photo><img src="${esc(fileSrc(r.image2))}" alt="${esc(r.image2Alt || r.title)}" loading="lazy" ${hideOnError}></figure>` : "";
+          const block = second ? `<div class="recipe-photos">${main}${second}</div>` : main;
+          // Optional "imageCaption" shows a short line under the photo(s).
+          return r.imageCaption ? `<div class="recipe-photo-block">${block}<p class="photo-caption">${esc(r.imageCaption)}</p></div>` : block;
         })() : ""}
       </div>
       <div class="cols">
