@@ -885,48 +885,6 @@
     "heartNotes": "Lightened: olive oil replaces the butter, the added salt is gone, and the broth is low-sodium. Garlic powder, lemon and vinegar carry the flavor, and spinach adds greens. Mahi mahi is a lean, low-fat fish."
   },
   {
-    "title": "Chili Garlic Shrimp Pasta",
-    "category": "Dinner",
-    "summary": "One-pan spaghetti cooked right in a garlicky chili sauce, finished with shrimp and lime.",
-    "prep": "5 min",
-    "cook": "15 min",
-    "servings": 3,
-    "replaces": "",
-    "tags": [
-      "shrimp",
-      "seafood",
-      "pasta",
-      "one-pan",
-      "spicy",
-      "quick"
-    ],
-    "ingredients": [
-      "8 oz shrimp, peeled and deveined",
-      "2 cups broccoli florets",
-      "2 cups baby spinach",
-      "8 oz whole-wheat spaghetti",
-      "1 1/2 tablespoons avocado oil",
-      "4 garlic cloves, minced",
-      "1/2 to 1 teaspoon red pepper flakes (or 1 teaspoon chili crisp)",
-      "1 tablespoon Low-Sodium Soy Sauce Substitute (from this site) or reduced-sodium soy sauce",
-      "1 teaspoon rice vinegar",
-      "Pinch of monk fruit sweetener (optional)",
-      "2 to 4 1/2 cups water",
-      "1 lime, half sliced and half in wedges",
-      "2 scallions, sliced"
-    ],
-    "steps": [
-      "Warm the avocado oil in a large skillet over medium-high heat. Add the garlic and red pepper flakes and stir for 15 to 20 seconds, just until fragrant.",
-      "Stir in the soy sauce substitute, rice vinegar, sweetener and 2 cups of water.",
-      "Turn the heat to high, add the dry spaghetti and bring to a simmer, turning the noodles as they soften.",
-      "Keep stirring as the liquid reduces and turns glossy from the pasta starch. Add more water about 1/2 cup at a time only if the noodles need it.",
-      "When the liquid has reduced by about half, add the broccoli and cook 2 minutes. Add the shrimp and lime slices and cook just until the shrimp turn pink, 2 to 3 minutes, then fold in the spinach until it wilts.",
-      "Top with scallions and serve with lime wedges."
-    ],
-    "notes": "Keep the sauce a little loose; it thickens fast as it sits. For a thick, chewy noodle version, try Chili Garlic Shrimp Udon. Adapted from Chef Fatty (cheffatty.com). Monk fruit tip: many monk fruit sweeteners are blended with erythritol. Check the label and pick pure monk fruit or a monk fruit and allulose blend.",
-    "heartNotes": "Lightened: the original's teaspoon of salt and the fish sauce are gone, avocado oil replaces the butter, and a homemade or reduced-sodium soy sauce stands in for regular. Chili crisp is salty, so red pepper flakes are the default. Whole-wheat pasta, broccoli and spinach add fiber."
-  },
-  {
     "title": "Chili Garlic Shrimp Udon",
     "category": "Dinner",
     "summary": "Thick, chewy fresh udon and shrimp tossed with red bell pepper in a glossy garlic-chili sauce, ready in about 15 minutes.",
@@ -967,7 +925,7 @@
       "Add the shrimp and lime slices and cook 1 minute. Add the udon and toss for 1 to 2 minutes, until the shrimp turn pink and the sauce coats the noodles in a glossy layer. Add a splash more water if it gets too thick.",
       "Top with green onions and serve with lime wedges."
     ],
-    "notes": "Fresh udon only needs a quick warm-up, so it goes in at the end instead of simmering in the sauce like dry pasta. For the spaghetti version with broccoli and spinach, see Chili Garlic Shrimp Pasta. Adapted from Chef Fatty (cheffatty.com).",
+    "notes": "Fresh udon only needs a quick warm-up, so it goes in at the end instead of simmering in the sauce like dry pasta. Adapted from Chef Fatty (cheffatty.com).",
     "heartNotes": "The original's teaspoon of salt and the fish sauce are gone, avocado oil replaces the butter, and the homemade or low-sodium soy sauce cuts the sodium further. Honey stands in for sugar, and red pepper flakes are the default since chili crisp is salty. Packaged fresh udon can carry some sodium, so check labels and give the noodles a rinse after loosening them."
   },
   {
