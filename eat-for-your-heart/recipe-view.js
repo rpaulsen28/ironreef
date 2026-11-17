@@ -9,11 +9,12 @@ window.RecipeView = (() => {
   // or a full path/URL. Recipes without one simply show no photo.
   const PHOTO_DIR = "photos/recipes/";
   const BASE = (document.currentScript && document.currentScript.src) ? new URL(".", document.currentScript.src).href : "";
-  function imgSrc(r){
-    if (!r.image) return "";
-    if (/^(https?:)?\/\//.test(r.image) || r.image.startsWith("/")) return r.image;
-    return BASE + (r.image.includes("/") ? r.image : PHOTO_DIR + r.image);
+  function fileSrc(f){
+    if (!f) return "";
+    if (/^(https?:)?\/\//.test(f) || f.startsWith("/")) return f;
+    return BASE + (f.includes("/") ? f : PHOTO_DIR + f);
   }
+  function imgSrc(r){ return fileSrc(r.image); }
   const hideOnError = `onerror="this.closest('[data-photo]').remove()"`;
 
   // Links: any mention of another recipe's exact title becomes a link to that recipe.
@@ -129,7 +130,13 @@ window.RecipeView = (() => {
             ${r.servings ? `<div><b>${esc(r.servings)}</b>Servings</div>` : ""}
           </div>
         </div>
-        ${r.image ? `<figure class="recipe-photo" data-photo><img src="${esc(imgSrc(r))}" alt="${esc(r.imageAlt || r.title)}" ${hideOnError}></figure>` : ""}
+        ${r.image ? (() => {
+          const main = `<figure class="recipe-photo" data-photo><img src="${esc(imgSrc(r))}" alt="${esc(r.imageAlt || r.title)}" ${hideOnError}></figure>`;
+          // Optional second photo: "image2" (+ "image2Alt") shows under the main one.
+          if (!r.image2) return main;
+          const second = `<figure class="recipe-photo recipe-photo-2" data-photo><img src="${esc(fileSrc(r.image2))}" alt="${esc(r.image2Alt || r.title)}" loading="lazy" ${hideOnError}></figure>`;
+          return `<div class="recipe-photos">${main}${second}</div>`;
+        })() : ""}
       </div>
       <div class="cols">
         <section><h3>Ingredients</h3><ul class="ing">${(r.ingredients||[]).map(i => /:\s*$/.test(i) ? `<li class="ing-group">${esc(i.replace(/:\s*$/, ""))}</li>` : `<li>${linkify(i, slug(r.title))}</li>`).join("")}</ul></section>

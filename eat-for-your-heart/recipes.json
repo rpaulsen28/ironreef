@@ -846,24 +846,26 @@
     "heartNotes": "A naturally sweet dessert with fiber from the apples and oats, no butter, and just a drizzle of honey."
   },
   {
-    "title": "Mahi Mahi with Tomato Lemon Sauce",
+    "title": "Mahi Mahi or Chicken with Tomato Lemon Sauce",
     "category": "Dinner",
-    "summary": "Golden seared mahi mahi in a quick blistered-tomato, lemon and basil pan sauce.",
+    "summary": "Golden seared mahi mahi or chicken thighs in a quick blistered-tomato, lemon and basil pan sauce.",
     "prep": "5 min",
-    "cook": "15 min",
+    "cook": "15 to 25 min",
     "servings": 4,
     "replaces": "",
     "tags": [
       "fish",
       "seafood",
+      "chicken",
       "one-pan",
-      "quick"
+      "quick",
+      "low-sodium"
     ],
     "ingredients": [
-      "4 mahi mahi fillets",
+      "4 mahi mahi fillets, or 4 boneless skinless chicken thighs (about 1 1/2 lb)",
       "1/2 teaspoon black pepper",
       "1/2 teaspoon garlic powder",
-      "2 tablespoons extra-virgin olive oil",
+      "2 tablespoons avocado oil",
       "2 cups cherry tomatoes",
       "2/3 cup finely diced shallots",
       "4 garlic cloves, minced",
@@ -875,14 +877,21 @@
       "2 tablespoons chopped fresh basil"
     ],
     "steps": [
-      "Pat the fillets dry and season both sides with the pepper and garlic powder.",
-      "Heat the olive oil in a large skillet over medium-high heat. Sear the fish without moving it until golden, about 3 minutes, then flip and cook about 3 minutes more. Move the fish to a plate.",
+      "Pat the fish or chicken dry and season both sides with the pepper and garlic powder.",
+      "Heat the avocado oil in a large skillet over medium-high heat. For mahi mahi, sear without moving until golden, about 3 minutes, then flip and cook about 3 minutes more. For chicken thighs, sear 6 to 7 minutes per side, until golden and cooked through to 165°F. Move to a plate.",
       "Add the tomatoes to the same pan and cook until they start to blister, about 4 minutes. Stir in the shallots and garlic and cook about 1 minute, until fragrant.",
       "Pour in the broth, vinegar and lemon juice. Simmer about 4 minutes, until the tomatoes slump into a sauce. Stir in the spinach until it wilts, then the lemon zest and basil.",
-      "Return the fish to the pan and spoon the sauce over the top to serve."
+      "Return the fish or chicken to the pan and spoon the sauce over the top. Finish with extra lemon zest and serve."
     ],
-    "notes": "Adapted from Every Last Bite (everylastbite.com).",
-    "heartNotes": "Lightened: olive oil replaces the butter, the added salt is gone, and the broth is low-sodium. Garlic powder, lemon and vinegar carry the flavor, and spinach adds greens. Mahi mahi is a lean, low-fat fish."
+    "notes": "Pictured made with chicken thighs, served over brown rice with green beans. Adapted from Every Last Bite (everylastbite.com).",
+    "heartNotes": "Lightened: avocado oil replaces the butter, the added salt is gone, and the broth is low-sodium. Garlic powder, lemon and vinegar carry the flavor, and spinach adds greens. Mahi mahi is a lean, low-fat fish. For chicken, skinless thighs keep the saturated fat much lower than skin-on; if you do cook them with the skin for crispness, remove it before eating.",
+    "image": "tomato-lemon-chicken-plated.jpg",
+    "imageAlt": "Seared chicken thighs with lemon zest over brown rice with tomato lemon sauce and green beans",
+    "image2": "tomato-lemon-chicken-searing.jpg",
+    "image2Alt": "Two chicken thighs searing golden brown in a stainless steel skillet",
+    "oldSlugs": [
+      "mahi-mahi-with-tomato-lemon-sauce"
+    ]
   },
   {
     "title": "Chili Garlic Shrimp Udon",
@@ -926,7 +935,10 @@
       "Top with green onions and serve with lime wedges."
     ],
     "notes": "Fresh udon only needs a quick warm-up, so it goes in at the end instead of simmering in the sauce like dry pasta. Adapted from Chef Fatty (cheffatty.com).",
-    "heartNotes": "The original's teaspoon of salt and the fish sauce are gone, avocado oil replaces the butter, and the homemade or low-sodium soy sauce cuts the sodium further. Honey stands in for sugar, and red pepper flakes are the default since chili crisp is salty. Packaged fresh udon can carry some sodium, so check labels and give the noodles a rinse after loosening them."
+    "heartNotes": "The original's teaspoon of salt and the fish sauce are gone, avocado oil replaces the butter, and the homemade or low-sodium soy sauce cuts the sodium further. Honey stands in for sugar, and red pepper flakes are the default since chili crisp is salty. Packaged fresh udon can carry some sodium, so check labels and give the noodles a rinse after loosening them.",
+    "oldSlugs": [
+      "chili-garlic-shrimp-pasta"
+    ]
   },
   {
     "title": "Spicy Bulgogi (Pork, Beef or Chicken)",

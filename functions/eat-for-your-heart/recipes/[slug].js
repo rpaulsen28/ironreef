@@ -9,7 +9,17 @@ export async function onRequestGet(context){
   let list;
   try { list = await recipes(context); } catch (e) { return new Response("Recipes unavailable", {status: 503}); }
   const r = list.find(x => x.id === id);
-  if (!r) return Response.redirect(new URL("/eat-for-your-heart/", context.request.url).toString(), 302);
+  if (!r) {
+    // Renamed recipes keep their old addresses working: list them in the recipe's "oldSlugs".
+    const moved = list.find(x => (x.oldSlugs || []).includes(id));
+    if (moved) return Response.redirect(new URL(`/eat-for-your-heart/recipes/${moved.id}`, context.request.url).toString(), 301);
+    return Response.redirect(new URL("/eat-for-your-heart/", context.request.url).toString(), 302);
+  }
+  const photoSrc = f => /^(https?:)?\/\//.test(f) || String(f).startsWith("/") ? f : `/eat-for-your-heart/photos/recipes/${f}`;
+  const fig = (f, alt, extra) => `<figure class="recipe-photo${extra || ""}" data-photo><img src="${esc(photoSrc(f))}" alt="${esc(alt || r.title)}"${extra ? ' loading="lazy"' : ""} onerror="this.closest('[data-photo]').remove()"></figure>`;
+  const photos = !r.image ? "" : (r.image2
+    ? `<div class="recipe-photos">${fig(r.image, r.imageAlt)}${fig(r.image2, r.image2Alt, " recipe-photo-2")}</div>`
+    : fig(r.image, r.imageAlt));
 
   const url = `${SITE}/eat-for-your-heart/recipes/${r.id}`;
   const links = list.filter(x => x.id !== r.id && x.title.length > 6).sort((a,b) => b.title.length - a.title.length);
@@ -104,7 +114,7 @@ export async function onRequestGet(context){
       <form class="mini-search" role="search" action="/eat-for-your-heart/" method="get"><input name="q" type="search" placeholder="Search recipes or ingredients" aria-label="Search recipes or ingredients"><button type="submit">Search</button></form>
       <button class="print" type="button" onclick="window.print()">Print recipe</button>
     </div>
-    <div class="detail-head">
+    <div class="detail-head${r.image ? " has-photo" : ""}">
       <div>
         <div class="eyebrow" style="margin-top:22px">${esc(r.category)}</div>
         <h1 class="recipe-title">${esc(r.title)}</h1>
@@ -116,6 +126,7 @@ export async function onRequestGet(context){
           ${r.servings ? `<div><b>${esc(r.servings)}</b>Servings</div>` : ""}
         </div>
       </div>
+      ${photos}
     </div>
     <div class="cols">
       <section><h2>Ingredients</h2><ul class="ing">${(r.ingredients||[]).map(i => /:\s*$/.test(i) ? `<li class="ing-group">${esc(i.replace(/:\s*$/, ""))}</li>` : `<li>${linkify(i)}</li>`).join("")}</ul></section>
