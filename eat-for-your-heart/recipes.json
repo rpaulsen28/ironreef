@@ -923,8 +923,52 @@
       "When the liquid has reduced by about half, add the broccoli and cook 2 minutes. Add the shrimp and lime slices and cook just until the shrimp turn pink, 2 to 3 minutes, then fold in the spinach until it wilts.",
       "Top with scallions and serve with lime wedges."
     ],
-    "notes": "Keep the sauce a little loose; it thickens fast as it sits. Adapted from Chef Fatty (cheffatty.com). Monk fruit tip: many monk fruit sweeteners are blended with erythritol. Check the label and pick pure monk fruit or a monk fruit and allulose blend.",
+    "notes": "Keep the sauce a little loose; it thickens fast as it sits. For a thick, chewy noodle version, try Chili Garlic Shrimp Udon. Adapted from Chef Fatty (cheffatty.com). Monk fruit tip: many monk fruit sweeteners are blended with erythritol. Check the label and pick pure monk fruit or a monk fruit and allulose blend.",
     "heartNotes": "Lightened: the original's teaspoon of salt and the fish sauce are gone, avocado oil replaces the butter, and a homemade or reduced-sodium soy sauce stands in for regular. Chili crisp is salty, so red pepper flakes are the default. Whole-wheat pasta, broccoli and spinach add fiber."
+  },
+  {
+    "title": "Chili Garlic Shrimp Udon",
+    "category": "Dinner",
+    "summary": "Thick, chewy fresh udon and shrimp tossed with red bell pepper in a glossy garlic-chili sauce, ready in about 15 minutes.",
+    "prep": "10 min",
+    "cook": "10 min",
+    "servings": 2,
+    "replaces": "",
+    "tags": [
+      "shrimp",
+      "seafood",
+      "noodles",
+      "one-pan",
+      "spicy",
+      "quick",
+      "low-sodium"
+    ],
+    "image": "chili-garlic-shrimp-udon.jpg",
+    "imageAlt": "Chili garlic shrimp udon with red bell pepper and sliced green onions on a floral plate",
+    "ingredients": [
+      "2 packs fresh udon noodles (about 14 oz total)",
+      "8 oz shrimp, peeled and deveined",
+      "1 tablespoon avocado oil",
+      "1 red bell pepper, thinly sliced",
+      "4 garlic cloves, minced",
+      "1/2 to 1 teaspoon red pepper flakes (or 1 teaspoon chili crisp)",
+      "1 tablespoon Low-Sodium Soy Sauce Substitute (from this site) or low-sodium soy sauce",
+      "1 teaspoon rice vinegar",
+      "1/2 teaspoon honey",
+      "1/2 cup water, plus more as needed",
+      "1 lime, half sliced and half in wedges",
+      "2 green onions, sliced"
+    ],
+    "steps": [
+      "Loosen the udon: put the noodles in a bowl of hot water for about 1 minute (or follow the package), gently separate them, then drain and rinse.",
+      "Heat the avocado oil in a large skillet over medium-high heat. Add the bell pepper and cook 2 to 3 minutes, until just tender.",
+      "Add the garlic and red pepper flakes and stir for 15 to 20 seconds, just until fragrant.",
+      "Stir in the soy sauce, rice vinegar, honey and 1/2 cup water and bring to a simmer.",
+      "Add the shrimp and lime slices and cook 1 minute. Add the udon and toss for 1 to 2 minutes, until the shrimp turn pink and the sauce coats the noodles in a glossy layer. Add a splash more water if it gets too thick.",
+      "Top with green onions and serve with lime wedges."
+    ],
+    "notes": "Fresh udon only needs a quick warm-up, so it goes in at the end instead of simmering in the sauce like dry pasta. For the spaghetti version with broccoli and spinach, see Chili Garlic Shrimp Pasta. Adapted from Chef Fatty (cheffatty.com).",
+    "heartNotes": "The original's teaspoon of salt and the fish sauce are gone, avocado oil replaces the butter, and the homemade or low-sodium soy sauce cuts the sodium further. Honey stands in for sugar, and red pepper flakes are the default since chili crisp is salty. Packaged fresh udon can carry some sodium, so check labels and give the noodles a rinse after loosening them."
   },
   {
     "title": "Spicy Bulgogi (Pork, Beef or Chicken)",
