@@ -1,6 +1,6 @@
 /* Iron Reef: pop-up forms.
    Two forms share this file:
-   - "Book a consultation": opened by any button that links to mailto:info@ironreefllc.com
+   - "Book a consultation": opened by any button that links to mailto:ironreefllc@gmail.com
      (the Ask about... and Email Iron Reef buttons).
    - "Contact Iron Reef": opened by any link to /?contact (the Contact menu and footer links),
      for general questions that aren't consultation requests.
@@ -123,7 +123,7 @@
           <p>${M.doneText}</p>
           <button class="btn line cf-close" type="button">Close</button>
         </div>
-        <p class="cf-alt">Prefer email? Write to <a href="mailto:info@ironreefllc.com">info@ironreefllc.com</a>.</p>
+        <p class="cf-alt">Prefer email? Write to <a href="mailto:ironreefllc@gmail.com">ironreefllc@gmail.com</a>.</p>
       </div>`;
     dlg.querySelector(".cf-x").addEventListener("click", () => dlg.close());
     dlg.querySelector(".cf-close").addEventListener("click", () => dlg.close());
@@ -141,7 +141,7 @@
   dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
 
   // Consultation buttons (links to the email address)
-  document.querySelectorAll('a.btn[href^="mailto:info@ironreefllc.com"]').forEach(a => {
+  document.querySelectorAll('a.btn[href^="mailto:ironreefllc@gmail.com"]').forEach(a => {
     const subj = decodeURIComponent(a.href.split("subject=")[1] || "").toLowerCase();
     const service = subj.includes("dive") ? "Dive consulting" : subj.includes("rodeo") ? "Rodeo consulting" : "";
     a.addEventListener("click", e => { e.preventDefault(); open("book", service); });
@@ -180,7 +180,7 @@
       if (!r.ok || !j.success) throw new Error(j.message || "failed");
       f.hidden = true; dlg.querySelector(".cf-done").hidden = false;
     } catch (x) {
-      err('Sorry, that didn\'t go through. Please try again, or email <a href="mailto:info@ironreefllc.com">info@ironreefllc.com</a>.');
+      err('Sorry, that didn\'t go through. Please try again, or email <a href="mailto:ironreefllc@gmail.com">ironreefllc@gmail.com</a>.');
       send.disabled = false; send.textContent = M.send;
     }
   }
