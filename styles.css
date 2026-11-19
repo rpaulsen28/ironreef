@@ -83,6 +83,8 @@ nav a:hover,nav a[aria-current]{border-color:var(--tan)}
 .contact-lines a{color:var(--navy);text-decoration:none;border-bottom:1px solid var(--tan-light)}
 .contact-lines a:hover{border-color:var(--navy)}
 .contact-lines span{color:var(--navy)}
+.contact-lines .mail-addr{flex-basis:100%;text-align:center;font-style:normal;font-weight:400;color:var(--navy);font-size:.95rem}
+.contact-lines .mail-addr .lbl{font-weight:600;letter-spacing:.06em}
 
 /* Footer */
 footer{background:var(--navy);color:#b9c6d3;padding:32px 0;font-family:var(--ui);font-size:.85rem}
